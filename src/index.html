@@ -5,36 +5,29 @@
   <meta charset="UTF-8">
   <title>Ampersan (DEVELOPER MODE)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style01.css">
+  <link rel="stylesheet" href="navbars.css">
 </head>
 
-
-
 <body>
-  <div class="menutop"></div>
-  <img src="assets/Ampersan__alpha_small.png" class="Ampersan" />
-  <h1>Hello User!</h1>
-  <p>Welcome to Ampersan.</p>
+  <div class="horizontal-navbar">
+    <img src="assets/Ampersan__alpha_small.png" class="ampersanlogo" />
+    <li style="float:right"><a href="index.html">Logout</a></li>
+    <li style="float:right"><a id="username01">A Critical Error Has Occured!</a></li>
+  </div>
+
+  <div class="vertical-navbar">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+    <li><a href="settings.html">Settings</a></li>
+  </div>
 </body>
 
 </html>
 
-<style>
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: black;
-  }
-
-  .menutop {
-    width: 99vw;
-    height: 11vh;
-    background: rgb(158, 0, 0);
-  }
-
-  .Ampersan {
-    position: absolute;
-    top: 1vh;
-    left: 1vw;
-    width: auto;
-    height: 10%;
-  }
-</style>
+<script>
+  var Username = "Ethan";
+  document.getElementById("username01").innerHTML = ("Welcome, " + Username);
+</script>
