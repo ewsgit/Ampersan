@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ampersan (DEVELOPER MODE)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style01.css">
+  <link rel="stylesheet" href="navbars.css">
+</head>
+
+<body>
+  <div class="horizontal-navbar">
+    <img src="assets/Ampersan__alpha_small.png" class="ampersanlogo" />
+    <li style="float:right"><a href="index.html">Logout</a></li>
+    <li style="float:right"><a id="username01">A Critical Error Has Occured!</a></li>
+  </div>
+
+  <div class="vertical-navbar">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+    <li><a href="settings.html">Settings</a></li>
+  </div>
+</body>
+
+</html>
+
+<script>
+  var Username = "Ethan";
+  document.getElementById("username01").innerHTML = ("Welcome, " + Username);
+</script>
