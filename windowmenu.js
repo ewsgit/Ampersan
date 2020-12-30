@@ -92,7 +92,7 @@ const template = [
         label: 'Documentation',
         click: async () => {
           const { shell } = require('electron')
-          await shell.openExternal('https://github.com/X-Code-Software/Ampersan/raw/main/Documentation.xlsx')
+          await shell.openExternal('https://github.com/ewsgit/Ampersan/raw/main/Documentation.xlsx')
         }
       }
     ]
