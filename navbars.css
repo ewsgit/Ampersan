@@ -28,6 +28,10 @@
   list-style-type: none;
 }
 
+.active {
+  background-colour: #353;
+}
+
 li a {
   display: block;
   color: white;
