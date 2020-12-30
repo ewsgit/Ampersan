@@ -28,10 +28,6 @@
   list-style-type: none;
 }
 
-.active {
-  background-colour: #353;
-}
-
 li a {
   display: block;
   color: white;
@@ -84,4 +80,8 @@ a:link {
 a:visited {
   color: white;
   text-decoration: none;
+}
+
+.active {
+  background-colour: #353;
 }
