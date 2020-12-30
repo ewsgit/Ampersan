@@ -82,6 +82,7 @@ a:visited {
   text-decoration: none;
 }
 
-li.active {
-  background-colour: #353;
+ul li a.active
+{
+  background-color: #373;
 }
