@@ -16,3 +16,7 @@ p {
   color: black;
   font-style: none;
 }
+
+.maincontent {
+  margin-left: 10vw;
+}

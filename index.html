@@ -121,6 +121,11 @@ span.psw {
      width: 100%;
   }
 }
+
+.pfbox {
+  transition: 200ms;
+  opacity: 0;
+}
 </style>
 </head>
 <body>
@@ -139,6 +144,8 @@ span.psw {
       <label for="psw"><b>Password</b></label>
       <input id="passwordbox" class="textbox" type="password" placeholder="Enter Password" name="psw" required>
         
+      <a id="pfbox" class="pfbox">Password Failed</a>
+
       <button id="Submitbutton" type="submit">Login</button>
       <a href="Forgot.html"><button type="button" class="forgotbtn">Forgot Password?</button></a>
     </div>
@@ -155,8 +162,12 @@ span.psw {
   }
 
   if (document.getElementById('Submitbutton').clicked == true) {
-    if ((password = "6166")&&(username = "ethan")) {
+    if ((password = "minecraft")&&(username = "ethan")) {
       window.location.replace("Apps.html");
+    } else {
+      document.getElementById(pfbox).style.opacity = 100
+      await sleep(2000)
+      document.getElementById(pfbox).style.opacity = 0
     }
   };
 </script> 
