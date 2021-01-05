@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ampersan User Settings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style01.css">
+  <link rel="stylesheet" href="navbars.css">
+</head>
+
+<body>
+  <div id="navbars">
+    <div class="horizontal-navbar">
+      <img src="assets/Ampersan__alpha_small.png"/>
+      <li style="float:right"><a href="index.html">Logout</a></li>
+      <li style="float:right"><a id="username01">A Critical Error Has Occured!</a></li>
+    </div>
+
+    <div class="vertical-navbar">
+      <li><a href="Apps.html">Apps</a></li>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+      <li><a href="settings.html" class="active">Settings</a></li>
+    </div>
+
+    <div class="maincontent" id="maincontent">
+      <h1>Settings</h1>
+        <div>
+          <li><a href="SettingsUser.html" class="active">User</a></li>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+  var Username = "Unknown User";
+  document.getElementById("username01").innerHTML = ("Welcome, " + Username);
+</script>

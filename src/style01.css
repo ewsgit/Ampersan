@@ -1,0 +1,22 @@
+body {
+  background-color: #595959;
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-size: 48px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: black;
+  font-style: none;
+}
+
+.maincontent {
+  margin-left: 10vw;
+}
