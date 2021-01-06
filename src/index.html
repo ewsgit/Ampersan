@@ -132,21 +132,21 @@ span.psw {
 
 <div id="id01" style="display: block" class="modal">
   
-  <form class="modal-content animate" method="post">
+  <form class="modal-content animate">
     <div class="container">
     <img class="avatar" src="assets/Ampersan__alpha_small.png">
     </div>
     <div class="container">
 
       <label for="uname"><b>Username</b></label>
-      <input id="usernamebox" class="textbox" type="text" placeholder="Enter Username" name="uname" required>
+      <input id="usernamebox" class="textbox" type="text" placeholder="Enter Username" name="uname">
 
       <label for="psw"><b>Password</b></label>
-      <input id="passwordbox" class="textbox" type="password" placeholder="Enter Password" name="psw" required>
+      <input id="passwordbox" class="textbox" type="password" placeholder="Enter Password" name="psw">
         
       <a id="pfbox" class="pfbox">Password Failed</a>
 
-      <button id="Submitbutton" type="submit">Login</button>
+      <button id="Submitbutton">Login</button>
       <a href="Forgot.html"><button type="button" class="forgotbtn">Forgot Password?</button></a>
     </div>
   </form>
@@ -155,8 +155,9 @@ span.psw {
 </body>
 </html>
 <script>
-  alert("Ampersan Beta v0.0.5 - The System For Loging In Is Not Yet Complete To Login Press Forgot Password.");
-
+  alert("Ampersan Beta v0.0.5 - The Login System Is Not Yet Complete. To Login Press Forgot Password.");
+while(1 == 1) {
+  await sleep(200);
   if (document.getElementById('Submitbutton').clicked == true) {
     var username = document.getElementById("usernamebox").value;
     var password = document.getElementById("passwordbox").value;
@@ -164,4 +165,5 @@ span.psw {
       window.location.replace("Apps.html");
     }
   };
+}
 </script> 
