@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ampersan Settings Account</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style01.css">
+  <link rel="stylesheet" href="navbars.css">
+</head>
+
+<body>
+  <div class="insetnb" id="insetnb">
+    <h1 class="insetnbtext">Settings</h1>
+    <li><a href="settings_User.html">User</a></li>
+    <li><a href="settings_Account.html" class="active">Account</a></li>
+  </div>
+
+    <div class="horizontalnb">
+      <img src="assets/Ampersan__alpha_small.png" />
+      <li style="float:right"><a href="index.html">Logout</a></li>
+      <li style="float:right"><a id="username01">A CRITICAL Error Has Occured In The User System!</a></li>
+    </div>
+  
+    <div class="vnpossync">
+      <div class="verticalnb">
+        <li><a href="Apps.html">Apps</a></li>
+        <li><a href="settings_User.html" class="active">Settings</a></li>
+      </div>
+    </div>
+
+    <div class="maincontent" id="maincontent">
+      <h1 class="maincontenttitle">Account</h1>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+  var Username = "Unknown User";
+  document.getElementById("username01").innerHTML = ("Welcome, " + Username);
+</script>
