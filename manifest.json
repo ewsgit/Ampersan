@@ -1,0 +1,19 @@
+{
+    "name": "Ampersan Development Beta",
+    "short_name": "Ampersan",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#fdfdfd",
+    "theme_color": "#333",
+    "orientation": "landscape-primary",
+    "icons": [
+      {
+        "src": "favicon.png",
+        "type": "image/png", "sizes": "89x89"
+      },
+      {
+        "src": "favicon.ico",
+        "type": "image/ico", "sizes": "89x89"
+      }
+    ]
+  }
