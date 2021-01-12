@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="manifest" href="manifest.json" />
-  <link rel="serviceWorker" href="serviceWorker.js"/>
+  <link rel="serviceWorker" href="sw.js"/>
 
 <!--IOS PWA SUPPORT-->
 <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar" content="#ffffff" />
 <meta name="theme-color" content="#333" />
 <!--End Of IOS PWA SUPPORT-->
-<meta charset="UTF-8"> 
+<meta charset="UTF-8">
 <title>Ampersan-Login</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -118,12 +118,12 @@ span.psw {
 }
 
 @-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
+  from {-webkit-transform: scale(0)}
   to {-webkit-transform: scale(1)}
 }
-  
+
 @keyframes animatezoom {
-  from {transform: scale(0)} 
+  from {transform: scale(0)}
   to {transform: scale(1)}
 }
 
@@ -147,7 +147,7 @@ span.psw {
 <body>
 
 <div id="id01" style="display: block" class="modal">
-  
+
   <form class="modal-content animate">
     <div class="container">
     <img class="avatar" src="assets/Ampersan__alpha_small.png">
@@ -159,7 +159,7 @@ span.psw {
 
       <label for="psw"><b>Password</b></label>
       <input id="passwordbox" class="textbox" type="password" placeholder="Enter Password" name="psw">
-        
+
       <a id="pfbox" class="pfbox">Password Failed</a>
 
       <button id="Submitbutton">Login</button>
@@ -170,3 +170,17 @@ span.psw {
 
 </body>
 </html>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+</script>
