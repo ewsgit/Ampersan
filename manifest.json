@@ -3,17 +3,17 @@
     "short_name": "Ampersan",
     "start_url": "index.html",
     "display": "standalone",
-    "background_color": "#fdfdfd",
+    "background_color": "#ffffff,
     "theme_color": "#333",
     "orientation": "landscape-primary",
     "icons": [
       {
         "src": "favicon.png",
-        "type": "image/png", "sizes": "89x89"
+        "type": "image/png", "sizes": "144x144"
       },
       {
         "src": "favicon.ico",
-        "type": "image/ico", "sizes": "89x89"
+        "type": "image/ico", "sizes": "144x144"
       }
     ]
   }
