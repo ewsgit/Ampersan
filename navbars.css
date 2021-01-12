@@ -6,7 +6,7 @@
   height: 92vh;
   overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
-  box-shadow: 1vw 0vh 1vw rgb(31, 31, 31);
+  box-shadow: 1vw 1vh 0.5vw rgb(31, 31, 31);
 }
 
 .vnpossync {
@@ -17,13 +17,13 @@
   list-style-type: none;
   text-decoration: none;
   margin: 0;
-  width: 27vw;
+  width: 20vw;
   background-color: #333;
   position: fixed;
   height: 93vh;
   overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
-  box-shadow: 1vw 0vh 1vw rgb(31, 31, 31);
+  box-shadow: 1vw 0vh 0.5vw rgb(31, 31, 31);
   padding-left: 10vw;
   padding-top: 5vh;
 }
@@ -38,7 +38,7 @@
   height: 93vh;
   overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
-  box-shadow: 1vw 0vh 1vw rgb(31, 31, 31);
+  box-shadow: 1vw 0vh 0.5vw rgb(31, 31, 31);
   padding-left: 10vw;
   padding-top: 5vh;
 }
@@ -61,7 +61,7 @@
   list-style-type: none;
   height: 6vh;
   position: fixed;
-  box-shadow: 0vw 2vh 1vw rgb(31, 31, 31);
+  box-shadow: 0vw 2vh 0.5vw rgb(31, 31, 31);
 }
 
 li a {
@@ -76,7 +76,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: rgb(34, 34, 34);
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 10px;
 }

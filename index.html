@@ -2,8 +2,9 @@
 <html>
 <head>
   <link rel="manifest" href="manifest.json" />
-  <link rel="serviceWorker" href="ServiceWorker.js"/>
-<!-- ios support -->
+  <link rel="serviceWorker" href="serviceWorker.js"/>
+
+<!--IOS PWA SUPPORT-->
 <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
 <link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
 <link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
@@ -14,6 +15,8 @@
 <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
 <meta name="apple-mobile-web-app-status-bar" content="#ffffff" />
 <meta name="theme-color" content="#333" />
+<!--End Of IOS PWA SUPPORT-->
+<meta charset="UTF-8"> 
 <title>Ampersan-Login</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -167,25 +170,3 @@ span.psw {
 
 </body>
 </html>
-<script>
-  alert("Ampersan Beta v0.0.5 - The Login System Is Not Yet Complete. To Login Press Forgot Password.");
-while(1 == 1) {
-  await sleep(200);
-  if (document.getElementById('Submitbutton').clicked == true) {
-    var username = document.getElementById("usernamebox").value;
-    var password = document.getElementById("passwordbox").value;
-    if ((password == "minecraft")&&(username == "ethan")) {
-      window.location.replace("Apps.html");
-    }
-  };
-}
-
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function() {
-    navigator.serviceWorker
-      .register("/serviceWorker.js")
-      .then(res => console.log("service worker registered"))
-      .catch(err => console.log("service worker not registered", err))
-  })
-}
-</script> 

@@ -1,5 +1,5 @@
 body {
-  background-color: #595959;
+  background-color: #333;
   color: white;
 }
 
@@ -7,7 +7,7 @@ h1 {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
-  font-size: 6vw;
+  font-size: 4vw;
 }
 
 p {

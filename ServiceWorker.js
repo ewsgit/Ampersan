@@ -1,17 +1,7 @@
 const Ampercache = "Ampersanv1"
 const Ampercachecomps = [
   "/",
-  "/index.html",
-  "/style.css",
-  "/app.js",
-  "/Forgot.html",
-  "/manifest.json",
-  "/favicon.ico",
-  "/navbars.css",
-  "/Apps.html",
-  "/settings_Account.html",
-  "/settings_User.html",
-  "/assets/Ampersan__alpha_small.png",
+  "/assets/",
 ]
 
 self.addEventListener("install", installEvent => {
@@ -26,5 +16,5 @@ self.addEventListener("fetch", fetchEvent => {
       caches.match(fetchEvent.request).then(res => {
         return res || fetch(fetchEvent.request)
       })
-    )
+    )   
   })
