@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="manifest" href="manifest.json" />
-  <link rel="serviceWorker" href="sw.js"/>
-  <meta name="google-site-verification" content="vxHSi2-cPewI2WV2E3m1u-TH4We-2o2HmxGslcJl2Jc" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="serviceWorker" href="/js/sw.js"/>
+  <meta name="description" content="Ampersan Progressive Web Application">
 
 <!--IOS PWA SUPPORT-->
-<link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-144x144.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
-<link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
+<link rel="apple-touch-icon" href="/assets/icons/favicon.png" />
+<!--Icon Above Not Present-->
+<link rel="apple-touch-icon" href="/assets/icons/favicon.png" />
+<!--Icon Above Not Present-->
+<link rel="apple-touch-icon" href="/assets/icons/favicon.png" />
+<!--Icon Above Not Present-->
+<link rel="apple-touch-icon" href="/assets/icons/favicon.png" />
+<!--Icon Above Not Present-->
+<link rel="apple-touch-icon" href="/assets/icons/favicon.png" />
+<!--Icon Above Not Present-->
+<link rel="apple-touch-icon" href="/assets/icons/favicon.png" />
+<!--Icon Above Not Present-->
+<link rel="apple-touch-icon" href="/assets/icons/favicon.png" />
+<!--Icon Above Not Present-->
+<link rel="apple-touch-icon" href="/assets/icons/favicon.png" />
+<!--Icon Above Not Present-->
 <meta name="apple-mobile-web-app-status-bar" content="#ffffff" />
 <meta name="theme-color" content="#333" />
 <!--End Of IOS PWA SUPPORT-->
 
 <meta charset="UTF-8">
-<title>Ampersan-Login</title>
+<title>Ampersan-Login (Not Working)</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
@@ -64,6 +72,18 @@ button:hover {
 .forgotbtn:hover {
   width: auto;
   background-color: #bb342a;
+  border-radius: 25px;
+}
+
+.tempbutton {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f4b136;
+}
+
+.tempbutton:hover {
+  width: auto;
+  background-color: #b68427;
   border-radius: 25px;
 }
 
@@ -152,7 +172,7 @@ span.psw {
 
   <form class="modal-content animate">
     <div class="container">
-    <img class="avatar" src="assets/Ampersan__alpha_small.png">
+    <img class="avatar" alt="Logo" src="/assets/Ampersan__alpha_large.png">
     </div>
     <div class="container">
 
@@ -164,8 +184,9 @@ span.psw {
 
       <a id="pfbox" class="pfbox">Password Failed</a>
 
-      <button id="Submitbutton">Login</button>
-      <a href="Forgot.html"><button type="button" class="forgotbtn">Forgot Password?</button></a>
+      <button id="Submitbutton">Login</button>  
+      <a href="/Forgot.html"><button type="button" class="forgotbtn">Forgot Password?</button></a>
+      <a href="/WarningtmpLogin.html"><button type="button" class="tempbutton">Temporary Login Bypass</button></a>
     </div>
   </form>
 </div>
@@ -180,9 +201,10 @@ if ('serviceWorker' in navigator) {
       // Registration was successful
       console.log('ServiceWorker registration successful with scope: ', registration.scope);
     }, function(err) {
-      // registration failed :(
+      // registration failed :
       console.log('ServiceWorker registration failed: ', err);
-    });
-  });
+  })
+}
+)
 };
 </script>

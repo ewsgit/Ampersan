@@ -1,0 +1,10 @@
+                              -----------------------------
+                                         Warning
+                              -----------------------------
+
+                       This version of Ampersan is experimental.
+                 Expect bugs and expect things to not work as expected.
+                                 
+                            The Ampersan Project - 18/01/2021
+
+                                   By Ethan Wells-Smith
