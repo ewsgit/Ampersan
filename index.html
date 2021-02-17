@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="manifest" href="/manifest.json" />
-  <link rel="serviceWorker" href="/js/sw.js"/>
+  <link rel="manifest" href="/Ampersan/manifest.json" />
+  <link rel="serviceWorker" href="/Ampersan/js/sw.js"/>
   <meta name="description" content="Ampersan Progressive Web Application">
 
 <!--IOS PWA SUPPORT-->
-<link rel="apple-touch-icon" href="/assets/icons/favicon.png" />
+<link rel="apple-touch-icon" href="/Ampersan/assets/icons/favicon.png" />
 <!--Icon Above Not Present-->
-<link rel="apple-touch-icon" href="/assets/icons/favicon.png" />
+<link rel="apple-touch-icon" href="/Ampersan/assets/icons/favicon.png" />
 <!--Icon Above Not Present-->
-<link rel="apple-touch-icon" href="/assets/icons/favicon.png" />
+<link rel="apple-touch-icon" href="/Ampersan/assets/icons/favicon.png" />
 <!--Icon Above Not Present-->
-<link rel="apple-touch-icon" href="/assets/icons/favicon.png" />
+<link rel="apple-touch-icon" href="/Ampersan/assets/icons/favicon.png" />
 <!--Icon Above Not Present-->
-<link rel="apple-touch-icon" href="/assets/icons/favicon.png" />
+<link rel="apple-touch-icon" href="/Ampersan/assets/icons/favicon.png" />
 <!--Icon Above Not Present-->
-<link rel="apple-touch-icon" href="/assets/icons/favicon.png" />
+<link rel="apple-touch-icon" href="/Ampersan/assets/icons/favicon.png" />
 <!--Icon Above Not Present-->
-<link rel="apple-touch-icon" href="/assets/icons/favicon.png" />
+<link rel="apple-touch-icon" href="/Ampersan/assets/icons/favicon.png" />
 <!--Icon Above Not Present-->
-<link rel="apple-touch-icon" href="/assets/icons/favicon.png" />
+<link rel="apple-touch-icon" href="/Ampersan/assets/icons/favicon.png" />
 <!--Icon Above Not Present-->
 <meta name="apple-mobile-web-app-status-bar" content="#ffffff" />
 <meta name="theme-color" content="#333" />
@@ -172,7 +172,7 @@ span.psw {
 
   <form class="modal-content animate">
     <div class="container">
-    <img class="avatar" alt="Logo" src="/assets/Ampersan__alpha_large.png">
+    <img class="avatar" alt="Logo" src="/Ampersan/assets/Ampersan__alpha_large.png">
     </div>
     <div class="container">
 
@@ -185,8 +185,8 @@ span.psw {
       <a id="pfbox" class="pfbox">Password Failed</a>
 
       <button id="Submitbutton">Login</button>  
-      <a href="/Forgot.html"><button type="button" class="forgotbtn">Forgot Password?</button></a>
-      <a href="/WarningtmpLogin.html"><button type="button" class="tempbutton">Temporary Login Bypass</button></a>
+      <a href="/Ampersan/Forgot.html"><button type="button" class="forgotbtn">Forgot Password?</button></a>
+      <a href="/Ampersan/WarningtmpLogin.html"><button type="button" class="tempbutton">Temporary Login Bypass</button></a>
     </div>
   </form>
 </div>
@@ -197,7 +197,7 @@ span.psw {
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/Ampersan/sw.js').then(function(registration) {
+    navigator.serviceWorker.register('/Ampersan/js/sw.js').then(function(registration) {
       // Registration was successful
       console.log('ServiceWorker registration successful with scope: ', registration.scope);
     }, function(err) {
