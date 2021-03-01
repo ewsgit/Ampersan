@@ -1,33 +1,16 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <link rel="manifest" href="/Ampersan/manifest.json" />
-  <link rel="serviceWorker" href="/Ampersan/js/sw.js"/>
-  <meta name="description" content="Ampersan Progressive Web Application">
 
-<!--IOS PWA SUPPORT-->
-<link rel="apple-touch-icon" href="/Ampersan/assets/icons/favicon.png" />
-<!--Icon Above Not Present-->
-<link rel="apple-touch-icon" href="/Ampersan/assets/icons/favicon.png" />
-<!--Icon Above Not Present-->
-<link rel="apple-touch-icon" href="/Ampersan/assets/icons/favicon.png" />
-<!--Icon Above Not Present-->
-<link rel="apple-touch-icon" href="/Ampersan/assets/icons/favicon.png" />
-<!--Icon Above Not Present-->
-<link rel="apple-touch-icon" href="/Ampersan/assets/icons/favicon.png" />
-<!--Icon Above Not Present-->
-<link rel="apple-touch-icon" href="/Ampersan/assets/icons/favicon.png" />
-<!--Icon Above Not Present-->
-<link rel="apple-touch-icon" href="/Ampersan/assets/icons/favicon.png" />
-<!--Icon Above Not Present-->
+<html>
+<!--START OF IOS PWA SUPPORT-->
+<!--Icon Below Not present-->
 <link rel="apple-touch-icon" href="/Ampersan/assets/icons/favicon.png" />
 <!--Icon Above Not Present-->
 <meta name="apple-mobile-web-app-status-bar" content="#ffffff" />
 <meta name="theme-color" content="#333" />
-<!--End Of IOS PWA SUPPORT-->
+<!--END OF IOS PWA SUPPORT-->
 
 <meta charset="UTF-8">
-<title>Ampersan-Login (Not Working)</title>
+<title>Ampersan Login</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
@@ -36,13 +19,22 @@ body {
 }
 
 /* Full-width input fields */
-input[type=text], input[type=password] {
+input[type=email], input[type=password] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  border-radius: 10px;
+  transition: 500ms;
+}
+
+input[type=email]:hover, input[type=password]:hover {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border-color: #f44336;
 }
 
 /* Set a style for all buttons */
@@ -99,6 +91,7 @@ img.avatar {
 
 .container {
   padding: 16px;
+  border-radius: 20px;
 }
 
 span.psw {
@@ -124,9 +117,17 @@ span.psw {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
+  margin: 5% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 0.5vh solid rgb(29, 29, 29);
   width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 20px;
+  transition: 500ms;
+  box-shadow: 0vw 0vh 0.5vw rgb(0, 0, 0);
+}
+
+.modal-content:hover {
+  border: 1vh solid rgb(29, 29, 29);
+  box-shadow: 0vw 0vh 2vw rgb(0, 0, 0);
 }
 
 .textbox {
@@ -170,41 +171,35 @@ span.psw {
 
 <div id="id01" style="display: block" class="modal">
 
+
   <form class="modal-content animate">
     <div class="container">
+      <button onclick="adminloginbypass()">Admin Login Bypass</button>
     <img class="avatar" alt="Logo" src="/Ampersan/assets/Ampersan__alpha_large.png">
     </div>
     <div class="container">
+      <input type="email" placeholder="email..." id="email_field">
+      <input type="password" placeholder="Password..." id="password_field">
 
-      <label for="uname"><b>Username</b></label>
-      <input id="usernamebox" class="textbox" type="text" placeholder="Enter Username" name="uname">
-
-      <label for="psw"><b>Password</b></label>
-      <input id="passwordbox" class="textbox" type="password" placeholder="Enter Password" name="psw">
-
-      <a id="pfbox" class="pfbox">Password Failed</a>
-
-      <button id="Submitbutton">Login</button>  
+      <button onclick="Login()">Login</button>  
       <a href="/Ampersan/Forgot.html"><button type="button" class="forgotbtn">Forgot Password?</button></a>
-      <a href="/Ampersan/WarningtmpLogin.html"><button type="button" class="tempbutton">Temporary Login Bypass</button></a>
+      <a><button type="button" onclick="Signup()" class="forgotbtn">Create Account?</button></a>
     </div>
   </form>
 </div>
 
-</body>
-</html>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
 
 <script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/Ampersan/js/sw.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :
-      console.log('ServiceWorker registration failed: ', err);
-  })
-}
-)
-};
-</script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDfc4F_P0ifLZzwu8FtriGZRVO7pz-Ex2g",
+    authDomain: "ampersan-main.firebaseapp.com",
+    projectId: "ampersan-main",
+  }
