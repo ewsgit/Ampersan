@@ -8,11 +8,11 @@
     "orientation": "landscape-primary",
     "icons": [
       {
-        "src": "favicon.png",
+        "src": "/Ampersan/assets/favicon.png",
         "type": "image/png", "sizes": "144x144"
       },
       {
-        "src": "favicon.ico",
+        "src": "/Ampersan/assets/favicon.ico",
         "type": "image/ico", "sizes": "144x144"
       }
     ]
