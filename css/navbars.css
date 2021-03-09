@@ -1,0 +1,194 @@
+.verticalnb {
+  list-style-type: none;
+  width: 10vw;
+  background-color: #333;
+  position: fixed;
+  height: 92vh;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0vw 0vh 1vw rgb(31, 31, 31);
+  z-index: 9;
+}
+
+.vnpossync {
+  padding-top: 6vh;
+}
+
+.insetnb {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  width: 20vw;
+  background-color: #333;
+  position: fixed;
+  height: 93vh;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0vw 0vh 1vw rgb(31, 31, 31);
+  padding-left: 10vw;
+  padding-top: 5vh;
+}
+
+.insetnbfull {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  width: 89vw;
+  background-color: #333;
+  position: fixed;
+  height: 93vh;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0vw 0vh 1vw rgb(31, 31, 31);
+  padding-left: 10vw;
+  padding-top: 5vh;
+}
+
+.insetnbfulltext {
+  text-align: center;
+}
+
+.insetnbtext {
+  text-align: center;
+}
+
+.horizontalnb {
+  width: 99vw;
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  overflow: hidden;
+  list-style-type: none;
+  height: 6vh;
+  position: fixed;
+  box-shadow: 0vw 0vh 1vw rgb(31, 31, 31);
+  z-index: 10;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 500ms;
+}
+
+li a:hover {
+  background-color: rgb(34, 34, 34);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.active {
+  background-color: rgb(77, 77, 77);
+}
+
+button {
+  float: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: #333;
+}
+
+button a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Change the link color to #111 (black) on hover */
+button a:hover {
+  background-color: rgb(223, 223, 223);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.maincontent {
+  padding-left: 38vw;
+  padding-top: 2vh;
+}
+
+.maincontenttitle {
+  text-align: center;
+}
+
+.maincontentnoleftnav {
+  padding-left: 10vw;
+  padding-top: 2vh;
+}
+
+.appcard {
+  text-align: center;
+  background-color: #333333;
+  color: white;
+  margin: 2vw;
+  padding: 1vw;
+  border-radius: 20px;
+  transition: 0.5s;
+  box-shadow: 0vw 0vh 0.5vw rgb(31, 31, 31);
+}
+
+.appcard:hover {
+  box-shadow: 0vw 0vh 2vw rgb(31, 31, 31);
+}
+
+.appcards {
+  display: flex;
+  padding-top: 0vh;
+  padding-left: 10vw;
+}
+
+p {
+  color: white;
+}
+
+ /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #333333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2px;
+  transition: 500ms;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(94, 94, 94);
+} 

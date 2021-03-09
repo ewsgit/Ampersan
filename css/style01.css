@@ -1,5 +1,5 @@
 body {
-  background-color: #595959;
+  background-color: #333;
   color: white;
 }
 
@@ -7,7 +7,7 @@ h1 {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
-  font-size: 48px;
+  font-size: 4vw;
 }
 
 p {
@@ -17,6 +17,8 @@ p {
   font-style: none;
 }
 
-.maincontent {
-  margin-left: 10vw;
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-style: none;
 }
