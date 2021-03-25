@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ampersan Amperdesktop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Ampersan/css/style01.css">
+  <link rel="stylesheet" href="/Ampersan/css/navbars.css">
+</head>
+
+<body>
+  <div id="windowsettings">
+      <div id="windowsettingsheader">
+        <a>Settings</a>
+        <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-square.svg" class="educake" id="settingsmaximise">
+      </div>
+    <iframe style="z-index: 8" class="windowframe" src="/Ampersan/Amperdesktop/defaultapps/Settings/src/app.html" frameborder="0"></iframe>
+  </div>
+  <div id="windoweducake">
+    <div id="windoweducakeheader">
+      <a>Educake</a>
+      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-square.svg" class="educake" id="educakemaximise">
+    </div>
+    <iframe style="z-index: 8" class="windowframe" src="https://educake.co.uk" frameborder="0"></iframe>
+  </div>
+  <div id="windowkahoot">
+    <div id="windowkahootheader">
+      <a>Kahoot</a>
+      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-square.svg" class="educake" id="kahootmaximise">
+    </div>
+    <iframe style="z-index: 8" class="windowframe" src="https://kahoot.it" frameborder="0"></iframe>
+  </div>
+    <div>
+      <div id="sidebar">
+        <div class="notificationssb">
+          <h2>Notifications</h2>
+          <div class="notificationcard">
+            <p class="sbnotificationtextlarge">Educake</p>
+            <p class="sbnotificationtextsmall">Username: ethanw0758</p>
+          </div>
+          <div class="notificationcard">
+            <p class="sbnotificationtextlarge">404</p>
+            <p class="sbnotificationtextsmall">Code Me Idiot</p>
+          </div>
+        </div>
+        <div class="usersb">
+          <img class="sbuserlogo" src="/Ampersan/assets/blankusericon.png" alt="Nothing to see here.">
+          <h2>Unknown User</h2>
+          <li class="sbuserlogout">
+            <a href="/Ampersan/Apps.html">Logout</a>
+          </li>
+        </div>
+        <div class="settingssb"></div>
+      </div>
+      <footer class="footer">
+        <div class="taskbar">
+
+          <div class="taskbarapp">
+            <input type="image" id="placeholder" class="app" src="/Ampersan/assets/icons/appiconerror.png">
+            </input>
+          </div>
+
+          <div class="taskbarapp">
+            <input type="image" class="app" id="notes" src="/Ampersan/assets/IMG_0794.png">
+            </input>
+          </div>
+
+          <div class="taskbarapp">
+            <input type="image" class="app" id="educake" src="/Ampersan/Amperdesktop/defaultapps/Educake/appicon.png">
+            </input>
+          </div>
+
+          <div class="taskbarapp">
+            <input type="image" class="app" id="settings" src="/Ampersan/Amperdesktop/defaultapps/Settings/appicon.png">
+            </input>
+          </div>
+
+          <div class="taskbarapp">
+            <input type="image" class="app" id="kahoot" src="/Ampersan/Amperdesktop/defaultapps/Kahoot/appicon.png">
+            </input>
+          </div>
+
+          <div class="taskbarsolidleft">
+            <input type="image" class="app" src="/Ampersan/assets/IMG_0810.PNG">
+            </input>
+          </div>
+
+          <div class="taskbarsolidright">
+            <input type="image" id="sidebartoggle" class="app" src="/Ampersan/assets/IMG_0808.PNG">
+            </input>
+          </div>
+        </footer>
+      </div>
+    </div>
+</body>
+
+</html>
+
+<script src="/Ampersan/js/UserVisualData.js"></script>
+<script src="/Ampersan/Amperdesktop/defaultapps/Settings/window_api.js"></script>
+<script src="/Ampersan/Amperdesktop/defaultapps/Educake/window_api.js"></script>
+<script src="/Ampersan/Amperdesktop/defaultapps/Kahoot/window_api.js"></script>
+
+<style>
+  iframe {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  #sidebar {
+    background-color: rgb(99, 99, 99);
+    width: 0vw;
+    height: 91vh;
+    margin-left: 99vw;
+    position: fixed;
+    overflow-x: hidden;
+    transition: 250ms;
+  }
+
+  .taskbar {
+    background-color: rgb(99, 99, 99);
+    margin-top: auto;
+    display: flex;
+    margin-right: 1vw;
+    overflow: hidden;
+    z-index: 1;
+    position: fixed;
+    bottom: 1vh;
+    width: 99vw;
+    text-align: center;
+  }
+
+  .taskbarsolidleft {
+    background-color: rgb(99, 99, 99);
+    margin-top: auto;
+    display: flex;
+    margin-right: 1vw;
+    z-index: 2;
+    position: fixed;
+    width: 4.7vw;
+    height: 4.8vh;
+    text-align: center;
+  }
+
+    .taskbarsolidright {
+    background-color: rgb(99, 99, 99);
+    margin-top: auto;
+    display: flex;
+    margin-right: 1vw;
+    z-index: 2;
+    position: fixed;
+    width: 4.7vw;
+    height: 4.8vh;
+    text-align: center;
+    margin-left: 94vw;
+  }
+
+  .taskbarapp {
+    width: 4.8vw;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-right: 0.1vw;
+  }
+
+  .footer {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+  }
+
+  .app {
+    background-color: rgba(255, 0, 255, 0);
+    border: 0;
+    width: 4.8vw;
+  }
+
+  #windowsettings {
+    position: absolute;
+    z-index: 7;
+    background-color: #2196F3;
+    border: 2px solid #46acff;
+    text-align: center;
+    overflow: hidden;
+    width: 30vw;
+    height: 30vh;
+    cursor: auto;
+    overflow: hidden;
+    display: none;
+  }
+
+  #windowsettingsheader {
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    cursor: auto;
+    z-index: 9;
+    background-color: #2196F3;
+    color: #fff;
+    text-align: center;
+  }
+
+  #windoweducake {
+    position: absolute;
+    z-index: 7;
+    background-color: #2196F3;
+    border: 2px solid #46acff;
+    text-align: center;
+    overflow: hidden;
+    width: 30vw;
+    height: 30vh;
+    cursor: auto;
+    overflow: hidden;
+    display: none;
+  }
+
+  #windoweducakeheader {
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    cursor: auto;
+    z-index: 9;
+    background-color: #2196F3;
+    color: #fff;
+    text-align: center;
+  }
+
+  #windowkahoot {
+    position: absolute;
+    z-index: 7;
+    background-color: #2196F3;
+    border: 2px solid #46acff;
+    text-align: center;
+    overflow: hidden;
+    width: 30vw;
+    height: 30vh;
+    cursor: auto;
+    overflow: hidden;
+    display: none;
+  }
+
+  #windowkahootheader {
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    cursor: auto;
+    z-index: 9;
+    background-color: #2196F3;
+    color: #fff;
+    text-align: center;
+  }
+
+  .desktopbackground {
+    z-index: 11;
+    width: 99vw;
+    height: 99vh;
+  }
+
+  input[type="button"] {
+    outline: none;
+  }
+  input[type="button"]::-moz-focus-inner {
+    border: 0;
+  }
+
+  input[type="image"] {
+    outline: none;
+  }
+  input[type="image"]::-moz-focus-inner {
+    border: 0;
+  }
+
+  .windowframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    position: fixed;
+    background-image: url("/Ampersan/assets/Amperdesktop_Backgrounds/(1).PNG")
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+/* Track */
+  ::-webkit-scrollbar-track {
+    background: #333333;
+  }
+
+/* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 0px;
+  }
+
+/* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(94, 94, 94);
+  } 
+
+  ::-webkit-scrollbar-corner {
+    background-color: rgba(51, 51, 51, 0);
+  }
+
+  .notificationcard {
+    margin-left: 1vw;
+    width: 23vw;
+    height: 10vh;
+    background-color: #333333;
+    margin-bottom: 1vh;
+  }
+
+  .usersb {
+    width: 23vw;
+    height: 38vh;
+    margin-left: 1vw;
+    background-color: #333333;
+    overflow: hidden;
+  }
+
+  .sbuserlogo {
+    margin-top: 1vh;
+    margin-left: 8vw;
+    width: 8vw;
+  }
+
+  .userlogout {
+    background-color: #46acff;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20px;
+    height: 5vh;
+    width: 21vw;
+    margin-left: 1vw;
+  }
+
+  .sbuserlogout {
+    background-color: #292929;
+    list-style-type: none;
+    list-style: none;
+    transition: 501ms;
+  }
+
+  .sbuserlogout:hover {
+    background-color: #131313;
+  }
+
+  .notificationssb {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  div {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .sbnotificationtextlarge {
+    font-size: 30px;
+    padding-top: 0.5vh;
+    text-align: center;
+  }
+
+  .sbnotificationtextsmall {
+    font-size: 20px;
+    padding-left: 0.5vw;
+    padding-bottom: 0.5vh;
+    text-align: center;
+  }
+
+  .educake {
+    width: 18px;
+    float: right;
+  }
+</style>
+
+<script>
+  document.getElementById('sidebartoggle').addEventListener('click', function () {
+
+    (document.getElementById('sidebar').style.width == '0vw' || document.getElementById('sidebar').style.width == '')
+      ? document.getElementById('sidebar').style.width = '25vw'
+      : document.getElementById('sidebar').style.width = '0vw';
+
+    (document.getElementById('sidebar').style.marginLeft == '99vw' || document.getElementById('sidebar').style.marginLeft == '')
+      ? document.getElementById('sidebar').style.marginLeft = '74vw'
+      : document.getElementById('sidebar').style.marginLeft = '99vw';
+
+  }, false);
+
+  document.getElementById("settingsmaximise").addEventListener("click", function () {
+
+    (document.getElementById('windowsettings').style.width == '30vw' || document.getElementById('windowsettings').style.width == '')
+      ? document.getElementById('windowsettings').style.width = '95vw'
+      : document.getElementById('windowsettings').style.width = '30vw';
+
+    (document.getElementById('windowsettings').style.height == '20vw' || document.getElementById('windowsettings').style.height == '')
+      ? document.getElementById('windowsettings').style.height = '45vw'
+      : document.getElementById('windowsettings').style.height = '20vw';
+
+  }, false)
+
+    document.getElementById("educakemaximise").addEventListener("click", function () {
+
+      (document.getElementById('windoweducake').style.width == '30vw' || document.getElementById('windoweducake').style.width == '')
+        ? document.getElementById('windoweducake').style.width = '95vw'
+        : document.getElementById('windoweducake').style.width = '30vw';
+
+      (document.getElementById('windoweducake').style.height == '20vw' || document.getElementById('windoweducake').style.height == '')
+        ? document.getElementById('windoweducake').style.height = '45vw'
+        : document.getElementById('windoweducake').style.height = '20vw';
+
+    }, false)
+
+    document.getElementById("kahootmaximise").addEventListener("click", function () {
+
+      (document.getElementById('windowkahoot').style.width == '30vw' || document.getElementById('windowkahoot').style.width == '')
+        ? document.getElementById('windowkahoot').style.width = '95vw'
+        : document.getElementById('windowkahoot').style.width = '30vw';
+
+      (document.getElementById('windowkahoot').style.height == '20vw' || document.getElementById('windowkahoot').style.height == '')
+        ? document.getElementById('windowkahoot').style.height = '45vw'
+        : document.getElementById('windowkahoot').style.height = '20vw';
+
+    }, false)
+
+    document.getElementById('kahoot').addEventListener('click', function () {
+
+      (document.getElementById('windowkahoot').style.display == 'none' || document.getElementById('windowkahoot').style.display == '')
+        ? document.getElementById('windowkahoot').style.display = 'block'
+        : document.getElementById('windowkahoot').style.display = 'none';
+
+    }, false);
+
+      document.getElementById('settings').addEventListener('click', function () {
+
+      (document.getElementById('windowsettings').style.display == 'none' || document.getElementById('windowsettings').style.display == '')
+        ? document.getElementById('windowsettings').style.display = 'block'
+        : document.getElementById('windowsettings').style.display = 'none';
+
+      }, false);
+
+      document.getElementById('educake').addEventListener('click', function () {
+
+      (document.getElementById('windoweducake').style.display == 'none' || document.getElementById('windoweducake').style.display == '')
+        ? document.getElementById('windoweducake').style.display = 'block'
+        : document.getElementById('windoweducake').style.display = 'none';
+
+      }, false);
+</script>

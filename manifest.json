@@ -1,19 +1,19 @@
 {
-    "name": "Ampersan Development Beta",
-    "short_name": "Ampersan",
-    "start_url": "index.html",
-    "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#333",
-    "orientation": "landscape-primary",
-    "icons": [
-      {
-        "src": "/Ampersan/assets/favicon.png",
-        "type": "image/png", "sizes": "144x144"
-      },
-      {
-        "src": "/Ampersan/assets/favicon.ico",
-        "type": "image/ico", "sizes": "144x144"
-      }
-    ]
-  }
+  "name": "Ampersan Beta",
+  "short_name": "Ampersan",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#a02905",
+  "theme_color": "#333",
+  "orientation": "landscape-primary",
+  "icons": [
+    {
+      "src": "/Ampersan/assets/favicon.png",
+      "type": "image/png", "sizes": "144x144"
+    },
+    {
+      "src": "/Ampersan/assets/favicon.ico",
+      "type": "image/ico", "sizes": "144x144"
+    }
+  ]
+}
