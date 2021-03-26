@@ -41,7 +41,7 @@
           </div>
           <div class="notificationcard">
             <p class="sbnotificationtextlarge">404</p>
-            <p class="sbnotificationtextsmall">Code Me Idiot</p>
+            <p class="sbnotificationtextsmall">Bruh Code Me</p>
           </div>
         </div>
         <div class="usersb">
@@ -53,16 +53,22 @@
         </div>
         <div class="settingssb"></div>
       </div>
+      <div id="glancebar">
+        <div class="gbborder">
+          <div class="gbappcard">
+            <p class="gbappname">Educake</p>
+          </div>
+          <div class="gbappcard">
+            <p class="gbappname">Kahoot</p>
+          </div>
+          <div class="gbappcard">
+            <p class="gbappname">Settings</p>
+          </div>
       <footer class="footer">
         <div class="taskbar">
 
           <div class="taskbarapp">
             <input type="image" id="placeholder" class="app" src="/Ampersan/assets/icons/appiconerror.png">
-            </input>
-          </div>
-
-          <div class="taskbarapp">
-            <input type="image" class="app" id="notes" src="/Ampersan/assets/IMG_0794.PNG">
             </input>
           </div>
 
@@ -82,7 +88,7 @@
           </div>
 
           <div class="taskbarsolidleft">
-            <input type="image" class="app" src="/Ampersan/assets/IMG_0810.PNG">
+            <input type="image" class="app" id="glancebartoggle" src="/Ampersan/assets/IMG_0810.PNG">
             </input>
           </div>
 
@@ -137,8 +143,6 @@
     margin-right: 1vw;
     z-index: 2;
     position: fixed;
-    width: 4.7vw;
-    height: 4.8vh;
     text-align: center;
   }
 
@@ -149,8 +153,6 @@
     margin-right: 1vw;
     z-index: 2;
     position: fixed;
-    width: 4.7vw;
-    height: 4.8vh;
     text-align: center;
     margin-left: 94vw;
   }
@@ -380,9 +382,41 @@
     width: 18px;
     float: right;
   }
+
+  .gbapp {
+    background-color: #2196F3;
+    text-align: center;
+  }
+
+  .gbappcard {
+    background-color: #46acff;
+    width: 13vw;
+    margin-left: 0.5vw;
+  }
+
+  #glancebar {
+    width: 0vw;
+    overflow-x: hidden;
+    transition: 250ms;
+    background-color: #888;
+    margin-top: 50vh;
+  }
+
+  .gbborder {
+    margin-top: 0.5vh;
+    z-index: 1;
+  }
 </style>
 
 <script>
+    document.getElementById('glancebartoggle').addEventListener('click', function () {
+
+    (document.getElementById('glancebar').style.width == '0vw' || document.getElementById('glancebar').style.width == '')
+      ? document.getElementById('glancebar').style.width = '15vw'
+      : document.getElementById('glancebar').style.width = '0vw';
+
+  }, false);
+
   document.getElementById('sidebartoggle').addEventListener('click', function () {
 
     (document.getElementById('sidebar').style.width == '0vw' || document.getElementById('sidebar').style.width == '')
