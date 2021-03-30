@@ -1,5 +1,11 @@
 // Make the DIV element draggable:
-dragElement(document.getElementById("windowsettings"));
+
+//Settings
+
+// change "appname" to the name of the app using the api,
+// make sure that there are no duplicate names
+
+dragElement(document.getElementById("window" + "settings"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -49,3 +55,31 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+
+document.getElementById("settings" + "maximise").addEventListener("click", function () {
+
+  (document.getElementById('window' + "settings").style.width == '30vw' || document.getElementById('window' + "settings").style.width == '')
+    ? document.getElementById('window' + "settings").style.width = '95vw'
+    : document.getElementById('window' + "settings").style.width = '30vw';
+
+  (document.getElementById('window' + "settings").style.height == '20vw' || document.getElementById('window' + "settings").style.height == '')
+    ? document.getElementById('window' + "settings").style.height = '45vw'
+    : document.getElementById('window' + "settings").style.height = '20vw';
+
+}, false)
+
+document.getElementById("settings").addEventListener('click', function () {
+
+  (document.getElementById('window' + "settings").style.display == 'none' || document.getElementById('window' + "settings").style.display == '')
+    ? document.getElementById('window' + "settings").style.display = 'block'
+    : document.getElementById('window' + "settings").style.display = 'none';
+
+}, false);
+
+document.getElementById("settings" + "close").addEventListener('click', function () {
+
+  (document.getElementById('window' + "settings").style.display == 'none' || document.getElementById('window' + "settings").style.display == '')
+    ? document.getElementById('window' + "settings").style.display = 'none'
+    : document.getElementById('window' + "settings").style.display = 'none';
+
+}, false);

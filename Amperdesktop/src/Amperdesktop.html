@@ -14,6 +14,7 @@
       <div id="windowsettingsheader">
         <a>Settings</a>
         <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-square.svg" class="educake" id="settingsmaximise">
+        <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-cross.svg" class="educake" id="settingsclose">
       </div>
     <iframe style="z-index: 8" class="windowframe" src="/Ampersan/Amperdesktop/defaultapps/Settings/src/app.html" frameborder="0"></iframe>
   </div>
@@ -21,6 +22,7 @@
     <div id="windoweducakeheader">
       <a>Educake</a>
       <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-square.svg" class="educake" id="educakemaximise">
+      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-cross.svg" class="educake" id="educakeclose">
     </div>
     <iframe style="z-index: 8" class="windowframe" src="https://educake.co.uk" frameborder="0"></iframe>
   </div>
@@ -28,8 +30,17 @@
     <div id="windowkahootheader">
       <a>Kahoot</a>
       <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-square.svg" class="educake" id="kahootmaximise">
+      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-cross.svg" class="educake" id="kahootclose">
     </div>
     <iframe style="z-index: 8" class="windowframe" src="https://kahoot.it" frameborder="0"></iframe>
+  </div>
+  <div id="windownotes">
+    <div id="windownotesheader">
+      <a>Notes</a>
+      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-square.svg" class="educake" id="notesmaximise">
+      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-cross.svg" class="educake" id="notesclose">
+    </div>
+    <iframe style="z-index: 8" class="windowframe" src="/Ampersan/Amperdesktop/defaultapps/Notes/Notes.html" frameborder="0"></iframe>
   </div>
     <div>
       <div id="sidebar">
@@ -41,7 +52,7 @@
           </div>
           <div class="notificationcard">
             <p class="sbnotificationtextlarge">404</p>
-            <p class="sbnotificationtextsmall">Bruh Code Me</p>
+            <p class="sbnotificationtextsmall">---Not Found---</p>
           </div>
         </div>
         <div class="usersb">
@@ -87,13 +98,18 @@
             </input>
           </div>
 
+          <div class="taskbarapp">
+            <input type="image" class="app" id="notes" src="/Ampersan/Amperdesktop/defaultapps/Notes/appicon.png">
+            </input>
+          </div>
+
           <div class="taskbarsolidleft">
-            <input type="image" class="app" id="glancebartoggle" src="/Ampersan/assets/IMG_0810.PNG">
+            <input type="image" class="appsolid" id="glancebartoggle" src='/Ampersan/assets/IMG_0810.PNG'>
             </input>
           </div>
 
           <div class="taskbarsolidright">
-            <input type="image" id="sidebartoggle" class="app" src="/Ampersan/assets/IMG_0808.PNG">
+            <input type="image" id="sidebartoggle" class="appsolid" src="/Ampersan/assets/IMG_0808.PNG">
             </input>
           </div>
         </footer>
@@ -104,9 +120,13 @@
 </html>
 
 <script src="/Ampersan/js/UserVisualData.js"></script>
+<!--Below Not Working Urgent Fix Needed-->
+<!--GlobalVariable has been reused-->
 <script src="/Ampersan/Amperdesktop/defaultapps/Settings/window_api.js"></script>
 <script src="/Ampersan/Amperdesktop/defaultapps/Educake/window_api.js"></script>
 <script src="/Ampersan/Amperdesktop/defaultapps/Kahoot/window_api.js"></script>
+<script src="/Ampersan/Amperdesktop/defaultapps/Notes/window_api.js"></script>
+<!--Below Not Working Urgent Fix Needed-->
 
 <style>
   iframe {
@@ -146,7 +166,7 @@
     text-align: center;
   }
 
-    .taskbarsolidright {
+  .taskbarsolidright {
     background-color: rgb(99, 99, 99);
     margin-top: auto;
     display: flex;
@@ -176,6 +196,11 @@
     width: 4.8vw;
   }
 
+  .appsolid {
+    width: 4.8vw;
+    height: 4.8vw;
+  }
+
   #windowsettings {
     position: absolute;
     z-index: 7;
@@ -191,6 +216,32 @@
   }
 
   #windowsettingsheader {
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    cursor: auto;
+    z-index: 9;
+    background-color: #2196F3;
+    color: #fff;
+    text-align: center;
+  }
+
+  #windownotes {
+    position: absolute;
+    z-index: 7;
+    background-color: #2196F3;
+    border: 2px solid #46acff;
+    text-align: center;
+    overflow: hidden;
+    width: 30vw;
+    height: 30vh;
+    cursor: auto;
+    overflow: hidden;
+    display: none;
+  }
+
+  #windownotesheader {
     padding-top: 4px;
     padding-left: 10px;
     padding-right: 10px;
@@ -280,7 +331,9 @@
   }
 
   body {
+    background-position: 50% 10%;
     position: fixed;
+    background-size: auto;
     background-image: url("/Ampersan/assets/Amperdesktop_Backgrounds/(1).PNG")
   }
 
@@ -314,6 +367,7 @@
     height: 10vh;
     background-color: #333333;
     margin-bottom: 1vh;
+    overflow-y: scroll;
   }
 
   .usersb {
@@ -380,6 +434,7 @@
 
   .educake {
     width: 18px;
+    height: 18px;
     float: right;
   }
 
@@ -399,11 +454,11 @@
     overflow-x: hidden;
     transition: 250ms;
     background-color: #888;
-    margin-top: 50vh;
+    height: 90vh;
   }
 
   .gbborder {
-    margin-top: 0.5vh;
+    padding-top: 0.5vh;
     z-index: 1;
   }
 </style>
@@ -414,7 +469,6 @@
     (document.getElementById('glancebar').style.width == '0vw' || document.getElementById('glancebar').style.width == '')
       ? document.getElementById('glancebar').style.width = '15vw'
       : document.getElementById('glancebar').style.width = '0vw';
-
   }, false);
 
   document.getElementById('sidebartoggle').addEventListener('click', function () {
@@ -428,64 +482,4 @@
       : document.getElementById('sidebar').style.marginLeft = '99vw';
 
   }, false);
-
-  document.getElementById("settingsmaximise").addEventListener("click", function () {
-
-    (document.getElementById('windowsettings').style.width == '30vw' || document.getElementById('windowsettings').style.width == '')
-      ? document.getElementById('windowsettings').style.width = '95vw'
-      : document.getElementById('windowsettings').style.width = '30vw';
-
-    (document.getElementById('windowsettings').style.height == '20vw' || document.getElementById('windowsettings').style.height == '')
-      ? document.getElementById('windowsettings').style.height = '45vw'
-      : document.getElementById('windowsettings').style.height = '20vw';
-
-  }, false)
-
-    document.getElementById("educakemaximise").addEventListener("click", function () {
-
-      (document.getElementById('windoweducake').style.width == '30vw' || document.getElementById('windoweducake').style.width == '')
-        ? document.getElementById('windoweducake').style.width = '95vw'
-        : document.getElementById('windoweducake').style.width = '30vw';
-
-      (document.getElementById('windoweducake').style.height == '20vw' || document.getElementById('windoweducake').style.height == '')
-        ? document.getElementById('windoweducake').style.height = '45vw'
-        : document.getElementById('windoweducake').style.height = '20vw';
-
-    }, false)
-
-    document.getElementById("kahootmaximise").addEventListener("click", function () {
-
-      (document.getElementById('windowkahoot').style.width == '30vw' || document.getElementById('windowkahoot').style.width == '')
-        ? document.getElementById('windowkahoot').style.width = '95vw'
-        : document.getElementById('windowkahoot').style.width = '30vw';
-
-      (document.getElementById('windowkahoot').style.height == '20vw' || document.getElementById('windowkahoot').style.height == '')
-        ? document.getElementById('windowkahoot').style.height = '45vw'
-        : document.getElementById('windowkahoot').style.height = '20vw';
-
-    }, false)
-
-    document.getElementById('kahoot').addEventListener('click', function () {
-
-      (document.getElementById('windowkahoot').style.display == 'none' || document.getElementById('windowkahoot').style.display == '')
-        ? document.getElementById('windowkahoot').style.display = 'block'
-        : document.getElementById('windowkahoot').style.display = 'none';
-
-    }, false);
-
-      document.getElementById('settings').addEventListener('click', function () {
-
-      (document.getElementById('windowsettings').style.display == 'none' || document.getElementById('windowsettings').style.display == '')
-        ? document.getElementById('windowsettings').style.display = 'block'
-        : document.getElementById('windowsettings').style.display = 'none';
-
-      }, false);
-
-      document.getElementById('educake').addEventListener('click', function () {
-
-      (document.getElementById('windoweducake').style.display == 'none' || document.getElementById('windoweducake').style.display == '')
-        ? document.getElementById('windoweducake').style.display = 'block'
-        : document.getElementById('windoweducake').style.display = 'none';
-
-      }, false);
 </script>

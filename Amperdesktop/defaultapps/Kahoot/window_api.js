@@ -1,5 +1,11 @@
 // Make the DIV element draggable:
-dragElement(document.getElementById("windowkahoot"));
+
+//Kahoot
+
+// change "appname" to the name of the app using the api,
+// make sure that there are no duplicate names
+
+dragElement(document.getElementById("window" + "kahoot"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -49,3 +55,31 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+
+document.getElementById("kahoot" + "maximise").addEventListener("click", function () {
+
+  (document.getElementById('window' + "kahoot").style.width == '30vw' || document.getElementById('window' + "kahoot").style.width == '')
+    ? document.getElementById('window' + "kahoot").style.width = '95vw'
+    : document.getElementById('window' + "kahoot").style.width = '30vw';
+
+  (document.getElementById('window' + "kahoot").style.height == '20vw' || document.getElementById('window' + "kahoot").style.height == '')
+    ? document.getElementById('window' + "kahoot").style.height = '45vw'
+    : document.getElementById('window' + "kahoot").style.height = '20vw';
+
+}, false)
+
+document.getElementById("kahoot").addEventListener('click', function () {
+
+  (document.getElementById('window' + "kahoot").style.display == 'none' || document.getElementById('window' + "kahoot").style.display == '')
+    ? document.getElementById('window' + "kahoot").style.display = 'block'
+    : document.getElementById('window' + "kahoot").style.display = 'none';
+
+}, false);
+
+document.getElementById("kahoot" + "close").addEventListener('click', function () {
+
+  (document.getElementById('window' + "kahoot").style.display == 'none' || document.getElementById('window' + "kahoot").style.display == '')
+    ? document.getElementById('window' + "kahoot").style.display = 'none'
+    : document.getElementById('window' + "kahoot").style.display = 'none';
+
+}, false);

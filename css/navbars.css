@@ -85,6 +85,10 @@ li a {
   transition: 500ms;
 }
 
+.vnbarlogo {
+  height: 6vh;
+}
+
 li a:hover {
   background-color: rgb(34, 34, 34);
   font-family: Arial, Helvetica, sans-serif;
@@ -153,27 +157,6 @@ a {
 .maincontentnoleftnav {
   padding-left: 10vw;
   padding-top: 2vh;
-}
-
-.appcard {
-  text-align: center;
-  background-color: #333333;
-  color: white;
-  margin: 2vw;
-  padding: 1vw;
-  border-radius: 20px;
-  transition: 0.5s;
-  box-shadow: 0vw 0vh 0.5vw rgb(31, 31, 31);
-}
-
-.appcard:hover {
-  box-shadow: 0vw 0vh 2vw rgb(31, 31, 31);
-}
-
-.appcards {
-  display: flex;
-  padding-top: 0vh;
-  padding-left: 10vw;
 }
 
 p {

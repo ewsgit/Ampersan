@@ -1,11 +1,11 @@
 // Make the DIV element draggable:
 
-//Educake
+//Notes
 
 // change "appname" to the name of the app using the api,
 // make sure that there are no duplicate names
 
-dragElement(document.getElementById("window" + "educake"));
+dragElement(document.getElementById("window" + "notes"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -56,30 +56,30 @@ function dragElement(elmnt) {
   }
 }
 
-document.getElementById("educake" + "maximise").addEventListener("click", function () {
+document.getElementById("notes" + "maximise").addEventListener("click", function () {
 
-  (document.getElementById('window' + "educake").style.width == '30vw' || document.getElementById('window' + "educake").style.width == '')
-    ? document.getElementById('window' + "educake").style.width = '95vw'
-    : document.getElementById('window' + "educake").style.width = '30vw';
+  (document.getElementById('window' + "notes").style.width == '30vw' || document.getElementById('window' + "notes").style.width == '')
+    ? document.getElementById('window' + "notes").style.width = '95vw'
+    : document.getElementById('window' + "notes").style.width = '30vw';
 
-  (document.getElementById('window' + "educake").style.height == '20vw' || document.getElementById('window' + "educake").style.height == '')
-    ? document.getElementById('window' + "educake").style.height = '45vw'
-    : document.getElementById('window' + "educake").style.height = '20vw';
+  (document.getElementById('window' + "notes").style.height == '20vw' || document.getElementById('window' + "notes").style.height == '')
+    ? document.getElementById('window' + "notes").style.height = '45vw'
+    : document.getElementById('window' + "notes").style.height = '20vw';
 
 }, false)
 
-document.getElementById("educake").addEventListener('click', function () {
+document.getElementById("notes").addEventListener('click', function () {
 
-  (document.getElementById('window' + "educake").style.display == 'none' || document.getElementById('window' + "educake").style.display == '')
-    ? document.getElementById('window' + "educake").style.display = 'block'
-    : document.getElementById('window' + "educake").style.display = 'none';
+  (document.getElementById('window' + "notes").style.display == 'none' || document.getElementById('window' + "notes").style.display == '')
+    ? document.getElementById('window' + "notes").style.display = 'block'
+    : document.getElementById('window' + "notes").style.display = 'none';
 
 }, false);
 
-document.getElementById("educake" + "close").addEventListener('click', function () {
+document.getElementById("notes" + "close").addEventListener('click', function () {
 
-  (document.getElementById('window' + "educake").style.display == 'none' || document.getElementById('window' + "educake").style.display == '')
-    ? document.getElementById('window' + "educake").style.display = 'none'
-    : document.getElementById('window' + "educake").style.display = 'none';
+  (document.getElementById('window' + "notes").style.display == 'none' || document.getElementById('window' + "notes").style.display == '')
+    ? document.getElementById('window' + "notes").style.display = 'none'
+    : document.getElementById('window' + "notes").style.display = 'none';
 
 }, false);
