@@ -58,13 +58,13 @@ function dragElement(elmnt) {
 
 document.getElementById("notes" + "maximise").addEventListener("click", function () {
 
-  (document.getElementById('window' + "notes").style.width == '30vw' || document.getElementById('window' + "notes").style.width == '')
+  (document.getElementById('window' + "notes").style.width == '50vw' || document.getElementById('window' + "notes").style.width == '')
     ? document.getElementById('window' + "notes").style.width = '95vw'
-    : document.getElementById('window' + "notes").style.width = '30vw';
+    : document.getElementById('window' + "notes").style.width = '50vw';
 
-  (document.getElementById('window' + "notes").style.height == '20vw' || document.getElementById('window' + "notes").style.height == '')
+  (document.getElementById('window' + "notes").style.height == '35vw' || document.getElementById('window' + "notes").style.height == '')
     ? document.getElementById('window' + "notes").style.height = '45vw'
-    : document.getElementById('window' + "notes").style.height = '20vw';
+    : document.getElementById('window' + "notes").style.height = '35vw';
 
 }, false)
 
