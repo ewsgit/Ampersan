@@ -1,4 +1,4 @@
-const Ampercache = "Ampersanv1"
+const Ampercache = "Ampercachev1"
 const Ampercachecomps = [
   "/",
   "/Ampersan/assets/",
@@ -6,12 +6,10 @@ const Ampercachecomps = [
   "/Ampersan/assets/Amperdesktop_Backgrounds/",
   "/Ampersan/js/",
   "/Ampersan/css/",
-  "/Ampersan/Quizes/",
-  "/Ampersan/Quizes/html/",
-  "/Ampersan/Quizes/html/Idiot_test/",
   "/Ampersan/Settings/",
   "/Ampersan/Settings/html/",
   "/Ampersan/Settings/js/",
+  "/Ampersan",
 ]
 
 self.addEventListener("install", installEvent => {
@@ -31,4 +29,5 @@ self.addEventListener("fetch", fetchEvent => {
     )   
   })
 
-console.log("Ampercache Has Concluded Successfully");
+console.log("Ampercache Has Concluded Successfully!");
+console.log(":D");
