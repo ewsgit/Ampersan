@@ -46,21 +46,25 @@
       <div id="sidebar">
         <div class="notificationssb">
           <h2>Notifications</h2>
-          <div class="notificationcard">
-            <p class="sbnotificationtextlarge">Educake</p>
-            <p class="sbnotificationtextsmall">Username: ethanw0758</p>
+          <div class="notificationcard" id="notifcard">
+            <p class="sbnotificationtextlarge" id="notiftitle">Educake</p>
+            <p class="sbnotificationtextsmall" id="notifbody">Username: ethanw0758</p>
           </div>
-          <div class="notificationcard">
-            <p class="sbnotificationtextlarge">404</p>
-            <p class="sbnotificationtextsmall">---Not Found---</p>
+          <div class="notificationcard" id="notifcard">
+            <p class="sbnotificationtextlarge" id="notiftitle">404</p>
+            <p class="sbnotificationtextsmall" id="notifbody">---Not Found---</p>
           </div>
         </div>
         <div class="usersb">
           <img class="sbuserlogo" src="/Ampersan/assets/blankusericon.png" alt="Nothing to see here.">
           <h2>Unknown User</h2>
-          <li class="sbuserlogout">
-            <a href="/Ampersan/Apps.html">Logout</a>
+          <li class="sbuser">
+            <a class="sbuserbutton" href="/Ampersan/Amperdesktop/src/Login.html">Switch User</a>
+            <a class="sbuserbutton" href="/Ampersan/Apps.html">Logout</a>
           </li>
+        </div>
+        <div class="sbsettingsbuttons">
+          <button id="changedesktopbackground" class="sbsettingsbutton">Change Desktop</button>
         </div>
         <div class="settingssb"></div>
       </div>
@@ -128,7 +132,16 @@
 <script src="/Ampersan/Amperdesktop/defaultapps/Notes/window_api.js"></script>
 <!--Below Not Working Urgent Fix Needed-->
 
+<script src="/Ampersan/Amperdesktop/defaultapps/Settings/src/js/desktopbackground.js"></script>
+
 <style>
+  .sbsettingsbuttons {
+    padding-left: 1vw;
+  }
+  .sbsettingsbutton {
+    width: 11.5vw;
+    height: 5vh;
+  }
   iframe {
     margin-top: 0;
     margin-left: 0;
@@ -367,12 +380,12 @@
     height: 10vh;
     background-color: #333333;
     margin-bottom: 1vh;
-    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
   .usersb {
     width: 23vw;
-    height: 38vh;
     margin-left: 1vw;
     background-color: #333333;
     overflow: hidden;
@@ -384,21 +397,12 @@
     width: 8vw;
   }
 
-  .userlogout {
-    background-color: #46acff;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    border-radius: 20px;
-    height: 5vh;
-    width: 21vw;
-    margin-left: 1vw;
-  }
-
-  .sbuserlogout {
+  .sbuser {
     background-color: #292929;
     list-style-type: none;
     list-style: none;
-    transition: 501ms;
+    transition: 500ms;
+    display: flex;
   }
 
   .sbuserlogout:hover {
@@ -453,7 +457,7 @@
     width: 0vw;
     overflow-x: hidden;
     transition: 250ms;
-    background-color: #888;
+    background-color: rgb(99, 99, 99);
     height: 90vh;
   }
 
@@ -461,10 +465,16 @@
     padding-top: 0.5vh;
     z-index: 1;
   }
+
+  .sbuserbutton {
+    width: 11.5vw;
+  }
 </style>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+
 <script>
-    document.getElementById('glancebartoggle').addEventListener('click', function () {
+  document.getElementById('glancebartoggle').addEventListener('click', function () {
 
     (document.getElementById('glancebar').style.width == '0vw' || document.getElementById('glancebar').style.width == '')
       ? document.getElementById('glancebar').style.width = '15vw'
@@ -482,4 +492,70 @@
       : document.getElementById('sidebar').style.marginLeft = '99vw';
 
   }, false);
+
+  document.getElementById('notifcard').addEventListener('click', function () {
+
+    (document.getElementById('notiftitle').style.display == 'none' || document.getElementById('notiftitle').style.display == '')
+      ? document.getElementById('notiftitle').style.display = 'block'
+      : document.getElementById('notiftitle').style.display = 'none';
+
+    (document.getElementById('notifbody').style.display == 'block' || document.getElementById('notifbody').style.display == '')
+      ? document.getElementById('notifbody').style.display = 'none'
+      : document.getElementById('notifbody').style.display = 'block';
+
+    }, false);
+
+  document.getElementById('changedesktopbackground').addEventListener('click', function () {
+
+    if (desktopbackground == 10) {
+      $('body').css('background-image', 'url("/Ampersan/assets/Amperdesktop_Backgrounds/(10).png")');
+      console.log("10");
+    };
+
+    if (desktopbackground == 9) {
+      $('body').css('background-image', 'url("/Ampersan/assets/Amperdesktop_Backgrounds/(9).png")');
+      console.log("9");
+    };
+
+    if (desktopbackground == 8) {
+      $('body').css('background-image', 'url("/Ampersan/assets/Amperdesktop_Backgrounds/(8).png")');
+      console.log("8");
+    };
+
+    if (desktopbackground == 7) {
+      $('body').css('background-image', 'url("/Ampersan/assets/Amperdesktop_Backgrounds/(7).png")');
+      console.log("7");
+    };
+
+    if (desktopbackground == 6) {
+      $('body').css('background-image', 'url("/Ampersan/assets/Amperdesktop_Backgrounds/(6).png")');
+      console.log("6");
+    };
+
+    if (desktopbackground == 5) {
+      $('body').css('background-image', 'url("/Ampersan/assets/Amperdesktop_Backgrounds/(5).png")');
+      console.log("5");
+    };
+
+    if (desktopbackground == 4) {
+      $('body').css('background-image', 'url("/Ampersan/assets/Amperdesktop_Backgrounds/(4).png")');
+      console.log("4");
+    };
+
+    if (desktopbackground == 3) {
+      $('body').css('background-image', 'url("/Ampersan/assets/Amperdesktop_Backgrounds/(3).png")');
+      console.log("3");
+    };
+  
+    if (desktopbackground == 2) {
+      $('body').css('background-image', 'url("/Ampersan/assets/Amperdesktop_Backgrounds/(2).png")');
+      console.log("2");
+    };
+
+    if (desktopbackground == 1) {
+      $('body').css('background-image', 'url("/Ampersan/assets/Amperdesktop_Backgrounds/(1).png")');
+      console.log("1");
+    };
+
+  });
 </script>
