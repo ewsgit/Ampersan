@@ -94,6 +94,10 @@ li a:hover {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+li a:active {
+  background-color: rgb(158, 158, 158);
+}
+
 .active {
   background-color: rgb(77, 77, 77);
 }
@@ -188,4 +192,13 @@ p {
 
 ::-webkit-scrollbar-corner {
   background-color: #333;
+}
+
+div {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

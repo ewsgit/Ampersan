@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/Ampersan/css/style01.css">
   <link rel="stylesheet" href="/Ampersan/css/navbars.css">
+  <link rel="stylesheet" href="/Ampersan/Amperdesktop/src/window.css">
 </head>
 
 <body>
@@ -26,6 +27,14 @@
     </div>
     <iframe style="z-index: 8" class="windowframe" src="https://educake.co.uk" frameborder="0"></iframe>
   </div>
+  <div id="windowappim">
+    <div id="windowappimheader">
+      <a>Application Installation Manager</a>
+      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-square.svg" class="educake" id="appimmaximise">
+      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-cross.svg" class="educake" id="appimclose">
+    </div>
+    <iframe style="z-index: 8" class="windowframe" src="/Ampersan/Amperdesktop/defaultapps/Appinstallmanager/src/index.html" frameborder="0"></iframe>
+  </div>
   <div id="windowkahoot">
     <div id="windowkahootheader">
       <a>Kahoot</a>
@@ -40,7 +49,7 @@
       <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-square.svg" class="educake" id="notesmaximise">
       <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-cross.svg" class="educake" id="notesclose">
     </div>
-    <iframe style="z-index: 8" class="windowframe" src="/Ampersan/Amperdesktop/defaultapps/Notes/Notes.html" frameborder="0"></iframe>
+    <iframe style="z-index: 8" class="windowframe" src="/Ampersan/Amperdesktop/defaultapps/Notes/src/app.html" frameborder="0"></iframe>
   </div>
     <div>
       <div id="sidebar">
@@ -63,21 +72,27 @@
             <a class="sbuserbutton" href="/Ampersan/Apps.html">Logout</a>
           </li>
         </div>
-        <div class="sbsettingsbuttons">
-          <button id="changedesktopbackground" class="sbsettingsbutton">Change Desktop</button>
-        </div>
         <div class="settingssb"></div>
       </div>
       <div id="glancebar">
         <div class="gbborder">
           <div class="gbappcard">
-            <p class="gbappname">Educake</p>
+            <div class="gbapp">
+              <img src="/Ampersan/Amperdesktop/defaultapps/Educake/appicon.png" alt="">
+              <p class="gbappname">Educake</p>
+            </div>
           </div>
           <div class="gbappcard">
-            <p class="gbappname">Kahoot</p>
+            <div class="gbapp">
+              <img src="/Ampersan/Amperdesktop/defaultapps/Kahoot/appicon.png" alt="">
+              <p class="gbappname">Kahoot</p>
+            </div>
           </div>
           <div class="gbappcard">
-            <p class="gbappname">Settings</p>
+            <div class="gbapp">
+              <img src="/Ampersan/Amperdesktop/defaultapps/Settings/appicon.png" alt="">
+              <p class="gbappname">Settings</p>
+            </div>
           </div>
       <footer class="footer">
         <div class="taskbar">
@@ -107,14 +122,19 @@
             </input>
           </div>
 
-          <div class="taskbarsolidleft">
-            <input type="image" class="appsolid" id="glancebartoggle" src='/Ampersan/assets/IMG_0810.PNG'>
+          <div class="taskbarapp">
+            <input type="image" class="app" id="appim" src="/Ampersan/Amperdesktop/defaultapps/Appinstallmanager/appicon.png">
             </input>
           </div>
 
+          <div class="taskbarsolidleft">
+            <div class="gblogo appsolid" id="glancebartoggle">
+            </div>
+          </div>
+
           <div class="taskbarsolidright">
-            <input type="image" id="sidebartoggle" class="appsolid" src="/Ampersan/assets/IMG_0808.PNG">
-            </input>
+            <div id="sidebartoggle" class="sbtoggle appsolid">
+            </div>
           </div>
         </footer>
       </div>
@@ -124,24 +144,21 @@
 </html>
 
 <script src="/Ampersan/js/UserVisualData.js"></script>
-<!--Below Not Working Urgent Fix Needed-->
-<!--GlobalVariable has been reused-->
 <script src="/Ampersan/Amperdesktop/defaultapps/Settings/window_api.js"></script>
 <script src="/Ampersan/Amperdesktop/defaultapps/Educake/window_api.js"></script>
 <script src="/Ampersan/Amperdesktop/defaultapps/Kahoot/window_api.js"></script>
 <script src="/Ampersan/Amperdesktop/defaultapps/Notes/window_api.js"></script>
-<!--Below Not Working Urgent Fix Needed-->
+<script src="/Ampersan/Amperdesktop/defaultapps/Appinstallmanager/window_api.js"></script>
+
+<link rel="stylesheet" href="/Ampersan/Amperdesktop/defaultapps/Appinstallmanager/src/app.css">
+<link rel="stylesheet" href="/Ampersan/Amperdesktop/defaultapps/Educake/src/app.css">
+<link rel="stylesheet" href="/Ampersan/Amperdesktop/defaultapps/Kahoot/src/app.css">
+<link rel="stylesheet" href="/Ampersan/Amperdesktop/defaultapps/Notes/src/app.css">
+<link rel="stylesheet" href="/Ampersan/Amperdesktop/defaultapps/Settings/src/app.css">
 
 <script src="/Ampersan/Amperdesktop/defaultapps/Settings/src/js/desktopbackground.js"></script>
 
 <style>
-  .sbsettingsbuttons {
-    padding-left: 1vw;
-  }
-  .sbsettingsbutton {
-    width: 11.5vw;
-    height: 5vh;
-  }
   iframe {
     margin-top: 0;
     margin-left: 0;
@@ -149,8 +166,8 @@
   #sidebar {
     background-color: rgb(99, 99, 99);
     width: 0vw;
-    height: 91vh;
-    margin-left: 99vw;
+    height: 100vh;
+    margin-left: 100vw;
     position: fixed;
     overflow-x: hidden;
     transition: 250ms;
@@ -160,13 +177,13 @@
     background-color: rgb(99, 99, 99);
     margin-top: auto;
     display: flex;
-    margin-right: 1vw;
     overflow: hidden;
     z-index: 1;
     position: fixed;
-    bottom: 1vh;
-    width: 99vw;
+    bottom: 0vh;
+    width: 100vw;
     text-align: center;
+    height: 50px;
   }
 
   .taskbarsolidleft {
@@ -183,15 +200,14 @@
     background-color: rgb(99, 99, 99);
     margin-top: auto;
     display: flex;
-    margin-right: 1vw;
     z-index: 2;
     position: fixed;
     text-align: center;
-    margin-left: 94vw;
+    right: 0.1vw;
   }
 
   .taskbarapp {
-    width: 4.8vw;
+    width: 48px;
     margin-bottom: 0;
     padding-bottom: 0;
     padding-right: 0.1vw;
@@ -206,116 +222,16 @@
   .app {
     background-color: rgba(255, 0, 255, 0);
     border: 0;
-    width: 4.8vw;
+    width: 48px;
+    padding-top: 1px;
+    padding-left: 1px;
   }
 
   .appsolid {
-    width: 4.8vw;
-    height: 4.8vw;
-  }
-
-  #windowsettings {
-    position: absolute;
-    z-index: 7;
-    background-color: #2196F3;
-    border: 2px solid #46acff;
-    text-align: center;
-    overflow: hidden;
-    width: 30vw;
-    height: 30vh;
-    cursor: auto;
-    overflow: hidden;
-    display: none;
-  }
-
-  #windowsettingsheader {
-    padding-top: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 3px;
-    cursor: auto;
-    z-index: 9;
-    background-color: #2196F3;
-    color: #fff;
-    text-align: center;
-  }
-
-  #windownotes {
-    position: absolute;
-    z-index: 7;
-    background-color: #2196F3;
-    border: 2px solid #46acff;
-    text-align: center;
-    overflow: hidden;
-    width: 50vw;
-    height: 30vw;
-    cursor: auto;
-    overflow: hidden;
-    display: none;
-  }
-
-  #windownotesheader {
-    padding-top: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 3px;
-    cursor: auto;
-    z-index: 9;
-    background-color: #2196F3;
-    color: #fff;
-    text-align: center;
-  }
-
-  #windoweducake {
-    position: absolute;
-    z-index: 7;
-    background-color: #2196F3;
-    border: 2px solid #46acff;
-    text-align: center;
-    overflow: hidden;
-    width: 30vw;
-    height: 30vh;
-    cursor: auto;
-    overflow: hidden;
-    display: none;
-  }
-
-  #windoweducakeheader {
-    padding-top: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 3px;
-    cursor: auto;
-    z-index: 9;
-    background-color: #2196F3;
-    color: #fff;
-    text-align: center;
-  }
-
-  #windowkahoot {
-    position: absolute;
-    z-index: 7;
-    background-color: #2196F3;
-    border: 2px solid #46acff;
-    text-align: center;
-    overflow: hidden;
-    width: 30vw;
-    height: 30vh;
-    cursor: auto;
-    overflow: hidden;
-    display: none;
-  }
-
-  #windowkahootheader {
-    padding-top: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 3px;
-    cursor: auto;
-    z-index: 9;
-    background-color: #2196F3;
-    color: #fff;
-    text-align: center;
+    width: 48px;
+    height: 48px;
+    padding-top: 1px;
+    padding-left: 1px;
   }
 
   .desktopbackground {
@@ -344,14 +260,15 @@
   }
 
   body {
-    background-position: 50% 10%;
+    margin: 0 0 0 0;
+    background-position: 50% 2.5%;
     position: fixed;
     background-size: auto;
-    background-image: url("/Ampersan/assets/Amperdesktop_Backgrounds/(1).PNG")
+    background-image: url("/Ampersan/assets/Amperdesktop_Backgrounds/(10).PNG");
   }
 
   ::-webkit-scrollbar {
-    width: 0px;
+    width: 0.5vw;
   }
 
 /* Track */
@@ -410,7 +327,7 @@
   }
 
   .notificationssb {
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
   }
 
@@ -443,14 +360,22 @@
   }
 
   .gbapp {
-    background-color: #2196F3;
+    background-color: #333333;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .gbapp img {
+    height: 4vw;
+    width: 4vw;
+    padding-right: 1vw;
   }
 
   .gbappcard {
-    background-color: #46acff;
-    width: 13vw;
+    width: 14vw;
     margin-left: 0.5vw;
+    margin-top: 0.5vh;
   }
 
   #glancebar {
@@ -458,7 +383,9 @@
     overflow-x: hidden;
     transition: 250ms;
     background-color: rgb(99, 99, 99);
-    height: 90vh;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   .gbborder {
@@ -469,6 +396,39 @@
   .sbuserbutton {
     width: 11.5vw;
   }
+
+  .gblogo {
+    background-size: contain;
+    background-image: url("/Ampersan/assets/IMG_0810.PNG");
+    transition: 200ms;
+  }
+
+  .gblogo:hover {
+    background-size: contain;
+    background-image: url("/Ampersan/assets/IMG_0811.PNG");
+  }
+
+  .gblogo:active {
+    background-size: contain;
+    background-image: url("/Ampersan/assets/IMG_0806.PNG");
+  }
+
+  .sbtoggle {
+    background-size: contain;
+    background-image: url("/Ampersan/assets/IMG_0808.PNG");
+    transition: 200ms;
+  }
+
+  .sbtoggle:hover {
+    background-size: contain;
+    background-image: url("/Ampersan/assets/IMG_0807.PNG");
+  }
+
+  .sbtoggle:active {
+    background-size: contain;
+    background-image: url("/Ampersan/assets/IMG_0812.PNG");
+  }
+
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
@@ -477,7 +437,7 @@
   document.getElementById('glancebartoggle').addEventListener('click', function () {
 
     (document.getElementById('glancebar').style.width == '0vw' || document.getElementById('glancebar').style.width == '')
-      ? document.getElementById('glancebar').style.width = '15vw'
+      ? document.getElementById('glancebar').style.width = '15.5vw'
       : document.getElementById('glancebar').style.width = '0vw';
   }, false);
 
@@ -487,9 +447,9 @@
       ? document.getElementById('sidebar').style.width = '25vw'
       : document.getElementById('sidebar').style.width = '0vw';
 
-    (document.getElementById('sidebar').style.marginLeft == '99vw' || document.getElementById('sidebar').style.marginLeft == '')
-      ? document.getElementById('sidebar').style.marginLeft = '74vw'
-      : document.getElementById('sidebar').style.marginLeft = '99vw';
+    (document.getElementById('sidebar').style.marginLeft == '100vw' || document.getElementById('sidebar').style.marginLeft == '')
+      ? document.getElementById('sidebar').style.marginLeft = '75vw'
+      : document.getElementById('sidebar').style.marginLeft = '100vw';
 
   }, false);
 
@@ -504,58 +464,4 @@
       : document.getElementById('notifbody').style.display = 'block';
 
     }, false);
-
-  document.getElementById('changedesktopbackground').addEventListener('click', function () {
-
-    if (desktopbackground == 10) {
-      $('body').css('background-image', 'url("/Ampersan/assets/Amperdesktop_Backgrounds/(10).png")');
-      console.log("10");
-    };
-
-    if (desktopbackground == 9) {
-      $('body').css('background-image', 'url("/Ampersan/assets/Amperdesktop_Backgrounds/(9).png")');
-      console.log("9");
-    };
-
-    if (desktopbackground == 8) {
-      $('body').css('background-image', 'url("/Ampersan/assets/Amperdesktop_Backgrounds/(8).png")');
-      console.log("8");
-    };
-
-    if (desktopbackground == 7) {
-      $('body').css('background-image', 'url("/Ampersan/assets/Amperdesktop_Backgrounds/(7).png")');
-      console.log("7");
-    };
-
-    if (desktopbackground == 6) {
-      $('body').css('background-image', 'url("/Ampersan/assets/Amperdesktop_Backgrounds/(6).png")');
-      console.log("6");
-    };
-
-    if (desktopbackground == 5) {
-      $('body').css('background-image', 'url("/Ampersan/assets/Amperdesktop_Backgrounds/(5).png")');
-      console.log("5");
-    };
-
-    if (desktopbackground == 4) {
-      $('body').css('background-image', 'url("/Ampersan/assets/Amperdesktop_Backgrounds/(4).png")');
-      console.log("4");
-    };
-
-    if (desktopbackground == 3) {
-      $('body').css('background-image', 'url("/Ampersan/assets/Amperdesktop_Backgrounds/(3).png")');
-      console.log("3");
-    };
-  
-    if (desktopbackground == 2) {
-      $('body').css('background-image', 'url("/Ampersan/assets/Amperdesktop_Backgrounds/(2).png")');
-      console.log("2");
-    };
-
-    if (desktopbackground == 1) {
-      $('body').css('background-image', 'url("/Ampersan/assets/Amperdesktop_Backgrounds/(1).png")');
-      console.log("1");
-    };
-
-  });
 </script>

@@ -9,7 +9,8 @@ const Ampercachecomps = [
   "/Ampersan/Settings/",
   "/Ampersan/Settings/html/",
   "/Ampersan/Settings/js/",
-  "/Ampersan",
+  "/Ampersan/",
+  "/Ampersan/Amperdesktop/",
 ]
 
 self.addEventListener("install", installEvent => {

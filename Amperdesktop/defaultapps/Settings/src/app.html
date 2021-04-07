@@ -8,6 +8,10 @@
 <body>
   <div class="sidebarnav">
     <li class="active"><img src="/Ampersan/assets/icons/svg/fi-rr-eye.svg"></li>
+    <li><img src="/Ampersan/assets/icons/svg/fi-rr-caret-up.svg"></li>
+    <li><img src="/Ampersan/assets/icons/svg/fi-rr-caret-down.svg"></li>
+    <li><img src="/Ampersan/assets/icons/svg/fi-rr-caret-left.svg"></li>
+    <li><img src="/Ampersan/assets/icons/svg/fi-rr-caret-right.svg"></li>
   </div>
 
   <div class="maincontent">
@@ -15,10 +19,10 @@
       <img class="dbpreview" src="/Ampersan/assets/Amperdesktop_Backgrounds/(1).PNG">
       <div class="dbselector">
         <div class="dbselectorcard">
-          <a>1</a>
+          <button type="image" src="/Ampersan/assets/Amperdesktop_Backgrounds/(1).PNG"></button>
         </div>
         <div class="dbselectorcard">
-          <a>2</a>
+          <button type="image" src="/Ampersan/assets/Amperdesktop_Backgrounds/(2).PNG"></button>
         </div>
       </div>
     </div>
@@ -31,25 +35,29 @@
     margin-top: 0px;
     margin-left: 0px;
     display: flex;
+    overflow: hidden;
   }
   .sidebarnav {
     width: 75px;
     height: 100%;
     background-color: #333;
     z-index: 1;
+    overflow-y: scroll;
   }
   li {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    transition: 500ms;
+    transition: 250ms;
   }
   li:hover {
     background-color: rgb(34, 34, 34);
     font-family: Arial, Helvetica, sans-serif;
+  }
+  li:active {
+    background-color: rgb(158, 158, 158);
   }
   .maincontent {
     margin-left: 5vw;
@@ -81,6 +89,26 @@
     margin-top: 0.5vw;
     margin-left: 0.5vw;
   }
+
+  button {
+    width: 39.25vw;
+    height: 10vh;
+    background-size: auto;
+  }
+
+  .active {
+  background-color: rgb(77, 77, 77);
+  }
+
+  div {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
 </style>
 
 <script src="js/desktopbackground.js" />
