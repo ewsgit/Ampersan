@@ -3,16 +3,44 @@
   width: 10vw;
   background-color: #333;
   position: fixed;
-  height: 92vh;
+  height: 94vh;
   overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
   box-shadow: 0vw 0vh 1vw rgb(31, 31, 31);
   z-index: 10;
 }
 
+.verticalnb li {
+  display: flex;
+}
+
+.verticalnb li a {
+  z-index: 11;
+}
+
+.activevnbar:hover {
+  width: 1vw;
+}
 .vnpossync {
   padding-top: 6vh;
   z-index: 10;
+}
+
+.activevnbar {
+  background-color: orangered;
+  width: 0.5vw;
+  height: 5vh;
+  z-index: 12;
+  transition: 150ms;
+}
+
+.horizontalnb li a {
+  width: auto;
+}
+
+.insetnb li a {
+  width: 18.5vw;
+  text-align: center;
 }
 
 .insetnb {
@@ -22,12 +50,12 @@
   width: 20vw;
   background-color: #333;
   position: fixed;
-  height: 93vh;
+  height: 96vh;
   overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
   box-shadow: 0vw 0vh 1vw rgb(31, 31, 31);
-  padding-left: 10vw;
-  padding-top: 5vh;
+  margin-left: 10vw;
+  padding-top: 6vh;
   z-index: 7;
 }
 
@@ -38,7 +66,7 @@
   width: 89vw;
   background-color: #333;
   position: fixed;
-  height: 93vh;
+  height: 95vh;
   overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
   box-shadow: 0vw 0vh 1vw rgb(31, 31, 31);
@@ -58,7 +86,9 @@
 }
 
 .horizontalnb {
-  width: 99vw;
+  display: flex;
+  align-items: center;
+  width: 100vw;
   overflow: hidden;
   background-color: #333;
   font-family: Arial, Helvetica, sans-serif;
@@ -79,14 +109,16 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  font-size: 2.5vh;
+  padding: 1vh 16px 1vh 16px;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   transition: 500ms;
+  width: 10vw;
 }
 
 .vnbarlogo {
-  height: 6vh;
+  height: 8vh;        
 }
 
 li a:hover {
@@ -201,4 +233,72 @@ div {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+body {
+  scrollbar-color:#888 #333 rgb(99,99,99);
+  padding: 0;
+  margin: 0;
+}
+
+.settingslink {
+  bottom: 0px;
+  position: absolute;
+  width: 10vw;
+}
+
+.usersettingsmenucentre li {
+  display: flex;
+}
+
+.usersettingsnavbarleft li {
+  display: flex;
+}
+
+.insetnb li {
+  display: flex;
+}
+
+.gobackactive a {
+  background-color: #ffffff00;
+  transition: 500ms;
+}
+
+.deleteactive a {
+  background-color: #ffffff00;
+  transition: 500ms;
+}
+
+.gobackactive a:hover {
+  background-color: #ffffff00;
+}
+
+.deleteactive a:hover {
+  background-color: #ffffff00;
+}
+
+.gobackactive a:active {
+  background-color: #ffffff00;
+}
+
+.deleteactive a:active {
+  background-color: #ffffff00;
+}
+
+.deleteactive {
+  text-align: center;
+}
+
+.gobackactive {
+  justify-content: center;
+  align-items: center;
+}
+
+.deleteactive {
+  justify-content: center;
+  align-items: center;
+}
+
+.usersettingsnavbarleft li {
+  width: 11vw;
 }

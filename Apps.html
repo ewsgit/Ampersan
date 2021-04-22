@@ -11,15 +11,15 @@
 
 <body>
     <div class="horizontalnb">
-      <img class="vnbarlogo" alt="Logo" src="/Ampersan/assets/Ampersan__alpha_small.png"/>
-      <li style="float:right"><a href="/Ampersan/index.html">Logout</a></li>
-      <li style="float:right"><a id="username01">A Critical Error Has Occured!</a></li>
+      <img class="vnbarlogo" alt="Logo" src="/Ampersan/assets/Ampersan_alpha_large.png"/>
+      <li><a href="/Ampersan/index.html">Logout</a></li>
+      <li><a id="username01">A Critical Error Has Occured!</a></li>
     </div>
 
     <div class="vnpossync">
       <div class="verticalnb">
-        <li><a href="/Ampersan/Apps.html" class="active">Apps</a></li>
-        <li><a href="/Ampersan/Settings/html/settings_User 1.html">Settings</a></li>
+        <li><div class="activevnbar"></div><a href="/Ampersan/Apps.html" class="active">Apps</a></li>
+        <li class="settingslink"><a href="/Ampersan/Settings/html/settings_User 1.html">Settings</a></li>
       </div>
     </div>
 
@@ -62,19 +62,25 @@
   margin: 2vw;
   padding: 1vw;
   border-radius: 20px;
-  transition: 500ms;
+  transition: 300ms;
   height: auto;
-  width: auto;
   box-shadow: 0vw 0vh 0.5vw rgb(31, 31, 31);
 }
 
 .appcard:hover {
   box-shadow: 0vw 0vh 3vw rgb(0, 0, 0);
+  background-color: #474747;
+}
+
+.appcard:active {
+  box-shadow: 0vw 0vh 5vw rgb(0, 0, 0);
+  background-color: #6d6d6d;
 }
 
 .appcards {
-  display: flex;
+  display: grid;
   padding-top: 0vh;
-  padding-left: 10vw;
+  padding-left: 15vw;
+  grid-template-columns: repeat(4, 20vw) auto;
 }
 </style>

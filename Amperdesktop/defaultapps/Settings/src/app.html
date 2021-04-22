@@ -19,16 +19,18 @@
       <img class="dbpreview" src="/Ampersan/assets/Amperdesktop_Backgrounds/(1).PNG">
       <div class="dbselector">
         <div class="dbselectorcard">
-          <button type="image" src="/Ampersan/assets/Amperdesktop_Backgrounds/(1).PNG"></button>
+          <button type="image" onclick="background1()" src="/Ampersan/assets/Amperdesktop_Backgrounds/(1).PNG"></button>
         </div>
         <div class="dbselectorcard">
-          <button type="image" src="/Ampersan/assets/Amperdesktop_Backgrounds/(2).PNG"></button>
+          <button type="image" onclick="background2()" src="/Ampersan/assets/Amperdesktop_Backgrounds/(2).PNG"></button>
         </div>
       </div>
     </div>
   </div>
 </body>
 </html>
+
+<script src="/Ampersan/Amperdesktop/defaultapps/Settings/src/js/desktopbackground.js"></script>
 
 <style>
   body {
@@ -107,8 +109,33 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    overflow-y: auto;
   }
 
-</style>
+   /* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
 
-<script src="js/desktopbackground.js" />
+/* Track */
+::-webkit-scrollbar-track {
+  background: #333333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2px;
+  transition: 500ms;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(94, 94, 94);
+} 
+
+::-webkit-scrollbar-corner {
+  background-color: #333;
+}
+</style>

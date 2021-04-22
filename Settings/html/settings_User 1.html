@@ -12,12 +12,12 @@
 <body>
   <div class="insetnb" id="insetnb">
     <h1 class="insetnbtext">Settings</h1>
-    <li  class="active"><a href="/Ampersan/Settings/html/settings_User 1.html">User</a></li>
+    <li  class="active"><div class="activevnbar"></div><a href="/Ampersan/Settings/html/settings_User 1.html">User</a></li>
     <li><a href="/Ampersan/Settings/html/settings_general.html">General</a></li>
   </div>
 
     <div class="horizontalnb">
-      <img class="vnbarlogo" src="/Ampersan/assets/Ampersan__alpha_small.png" />
+      <img class="vnbarlogo" alt="Logo" src="/Ampersan/assets/Ampersan_alpha_large.png" />
       <li style="float:right"><a href="/Ampersan/index.html">Logout</a></li>
       <li style="float:right"><a id="username01">A CRITICAL Error Has Occured In The User Login System!</a></li>
     </div>
@@ -25,7 +25,7 @@
     <div class="vnpossync">
       <div class="verticalnb">
         <li><a href="/Ampersan/Apps.html">Apps</a></li>
-        <li><a href="/Ampersan/Settings/html/settings_User 1.html" class="active">Settings</a></li>
+        <li class="settingslink active"><div class="activevnbar"></div><a href="/Ampersan/Settings/html/settings_User 1.html">Settings</a></li>
       </div>
     </div>
 
@@ -33,17 +33,21 @@
       <h1 class="maincontenttitle">Account</h1>
         <div class="maincontentsection2" id="maincontentsection2">
           <img src="/Ampersan/assets/blankusericon.png" alt="blankusericon">
-          <h1 id="username02" class="username02">UserNameError</h1>
+          <div class="flexusersection">
+            <h1 id="username02" class="username02">UserNameError</h1>
+          </div>
         </div>
         <div class="usersettingscontentmain">
           <div class="usersettingsnavbarleft">
-            <li class="active"><a href="/Ampersan/Settings/html/settings_User 1.html">1</a></li>
-            <li><a href="/Ampersan/Settings/html/settings_User 2.html">2</a></li>
-            <li><a href="/Ampersan/Settings/html/settings_User 3.html">3</a></li>
+            <li class="active"><div class="activevnbar"></div><a href="/Ampersan/Settings/html/settings_User 1.html">Info</a></li>
+            <li><a href="/Ampersan/Settings/html/settings_User 2.html">Preferences</a></li>
+            <li class="deleteactive"><a href="/Ampersan/Settings/html/settings_User 3.html">Delete</a></li>
           </div>
           <div class="usersettingsmenucentre">
             <h1 class="centered" style="font-size: 3vh;">User Infomation</h1>
-            <p class="centered">Account age: (ERROR CODE 1)</p>
+            <p class="centered">Account Age: (ERROR CODE 1)</p>
+            <p class="centered">Account Email: (ERROR CODE 2)</p>
+            <p class="centered">Full Name: (ERROR CODE 3)</p>
           </div>
         </div>
     </div>
@@ -54,6 +58,19 @@
 
 <style>
 
+  .deleteactive {
+    transition: 500ms;
+    background-color: rgb(165, 0, 0);
+  }
+
+  .deleteactive:hover {
+    background-color: rgb(104, 0, 0);
+  }
+
+  .deleteactive:active {
+    background-color: rgb(209, 0, 0);
+  }
+
   .maincontentsection2 {
     display: flex;
     flex-direction: row;
@@ -63,9 +80,9 @@
     font-size: 2vw;
   }
 
-  .username02 {
-    padding-top: 1.5vh;
-    margin-left: 6vw;
+  .flexusersection{
+    display: flex;
+    justify-content: center;
   }
 
   .usersettingsnavbarleft {

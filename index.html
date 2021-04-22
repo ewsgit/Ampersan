@@ -152,6 +152,7 @@
 
   /* Modal Content/Box */
   .modal-content {
+    display: block;
     background-color: #fefefe;
     margin: 5% auto 5% auto;
     /* 5% from the top, 15% from the bottom and centered */
@@ -267,13 +268,26 @@
     transition: 500ms;
   }
 
-  .version:hover {
+  .info:hover {
     background-color: #29612b;
     border-radius: 25px;
   }
 
-  .flex {
-    display: flex;
+  .info {
+    background-color: #4CAF50;
+    padding: 10px 18px;
+    margin-right: 2 vw;
+    border-radius: 10px;
+    width: 5vw;
+    float: right;
+    margin: 8px;
+    text-align: center;
+    transition: 500ms;
+  }
+
+  .version:hover {
+    background-color: #29612b;
+    border-radius: 25px;
   }
 
   .avatartext {
@@ -281,6 +295,10 @@
     font-size: 5vw;
     font-family: monospace;
     color: #bb342a;
+  }
+
+  .flex {
+    display: flex;
   }
 </style>
 </head>
@@ -308,6 +326,9 @@
       <a><button type="button" onclick="Signup()" class="createbtn">Create Account?</button></a>
       <div class="version">
         <a id="version">404</a>
+      </div>
+      <div class="info">
+        <a href="/Ampersan/info.html">Info</a>
       </div>
     </div>
   </form>

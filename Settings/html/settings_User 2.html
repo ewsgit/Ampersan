@@ -12,12 +12,12 @@
 <body>
   <div class="insetnb" id="insetnb">
     <h1 class="insetnbtext">Settings</h1>
-    <li  class="active"><a href="/Ampersan/Settings/html/settings_User 1.html">User</a></li>
+    <li  class="active"><div class="activevnbar"></div><a href="/Ampersan/Settings/html/settings_User 1.html">User</a></li>
     <li><a href="/Ampersan/Settings/html/settings_general.html">General</a></li>
   </div>
 
     <div class="horizontalnb">
-      <img class="vnbarlogo" src="/Ampersan/assets/Ampersan__alpha_small.png" />
+      <img class="vnbarlogo" alt="Logo" src="/Ampersan/assets/Ampersan_alpha_large.png" />
       <li style="float:right"><a href="/Ampersan/index.html">Logout</a></li>
       <li style="float:right"><a id="username01">A CRITICAL Error Has Occured In The User System!</a></li>
     </div>
@@ -25,7 +25,7 @@
     <div class="vnpossync">
       <div class="verticalnb">
         <li><a href="/Ampersan/Apps.html">Apps</a></li>
-        <li><a href="/Ampersan/Settings/html/settings_User 1.html" class="active">Settings</a></li>
+        <li class="settingslink active"><div class="activevnbar"></div><a href="/Ampersan/Settings/html/settings_User 1.html">Settings</a></li>
       </div>
     </div>
 
@@ -37,9 +37,9 @@
         </div>
         <div class="usersettingscontentmain">
           <div class="usersettingsnavbarleft">
-            <li><a href="/Ampersan/Settings/html/settings_User 1.html">1</a></li>
-            <li class="active"><a href="/Ampersan/Settings/html/settings_User 2.html">2</a></li>
-            <li><a href="/Ampersan/Settings/html/settings_User 3.html">3</a></li>
+            <li><a href="/Ampersan/Settings/html/settings_User 1.html">Info</a></li>
+            <li class="active"><div class="activevnbar"></div><a href="/Ampersan/Settings/html/settings_User 2.html">Preferences</a></li>
+            <li class="deleteactive"><a href="/Ampersan/Settings/html/settings_User 3.html">Delete</a></li>
           </div>
           <div class="usersettingsmenucentre"></div>
         </div>
@@ -50,6 +50,19 @@
 <script src="/Ampersan/js/UserVisualData.js"></script>
 
 <style>
+
+  .deleteactive {
+    transition: 500ms;
+    background-color: rgb(165, 0, 0);
+  }
+
+  .deleteactive:hover {
+    background-color: rgb(104, 0, 0);
+  }
+
+  .deleteactive:active {
+    background-color: rgb(209, 0, 0);
+  }
 
   .maincontentsection2 {
     display: flex;
