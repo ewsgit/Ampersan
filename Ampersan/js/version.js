@@ -1,7 +1,7 @@
 var aboutampersan = [
- "v0.1.4",               //0
+ "v0.1.3",               //0
  "Development Release",  //1
- "Alpha",                 //2
+ "Beta",                 //2
  "Ampersan Dev Team",    //3
  "Public Release"        //4
 ];

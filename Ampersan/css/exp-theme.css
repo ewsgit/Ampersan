@@ -1,0 +1,109 @@
+.bodyclass {
+  background: linear-gradient(
+    to right bottom,
+    rgba(219, 219, 219, 0.596),
+    rgba(185, 185, 185, 0.596)
+  );
+  z-index: 10;
+  width: 95vw;
+  height: 95vh;
+  border-radius: 2.5vw;
+  backdrop-filter: blur(100px);
+}
+
+.bodyclasspossync {
+  padding-left: 2vw;
+  padding-top: 1vh;
+}
+
+h1 {
+  font-size: 48px;
+  font: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.verticalnb {
+  background: linear-gradient(
+    to right bottom,
+    rgba(219, 219, 219, 0.596),
+    rgba(185, 185, 185, 0.596)
+  );
+  box-shadow: 0 0 0;
+  border-radius: 25px;
+  z-index: 11;
+  height: 88vh;
+  padding-top: 7vh;
+}
+
+.vnpossync {
+  padding-top: 0vh;
+}
+
+.horizontalnb {
+  background: linear-gradient(
+    to right bottom,
+    rgba(219, 219, 219, 0.596),
+    rgba(185, 185, 185, 0.596)
+  );
+  box-shadow: 0 0 0;
+  border-radius: 25px;
+  height: 7vh;
+  z-index: 12;
+  width: 95vw;
+}
+
+.insetnb {
+  background: linear-gradient(
+    to right bottom,
+    rgba(219, 219, 219, 0.596),
+    rgba(185, 185, 185, 0.596)
+  );
+  box-shadow: 0 0 0;
+  border-radius: 25px;
+  z-index: 11;
+  height: 90vh;
+}
+a {
+  color: #333333;
+}
+
+a:hover {
+  color: rgb(51, 51, 51);
+}
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 500ms;
+  border-radius: 0px;
+  background-color: rgba(216, 216, 216, 0.623);
+}
+
+li a:hover {
+  background-color: rgba(196, 196, 196, 0.5);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+}
+
+.active {
+  background-color: rgba(196, 196, 196, 0.5);
+}
+
+button {
+  background: rgba(216, 216, 216, 0.623);
+  border-radius: 10px;
+  color: #474747;
+  transition: 500ms;
+  width: 15vw;
+  height: 7.5vh;
+}
+
+button:hover {
+  background: rgba(196, 196, 196, 0.5);
+  border-radius: 15px;
+  color: #333333;
+}
