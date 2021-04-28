@@ -82,4 +82,16 @@ document.getElementById("notes" + "close").addEventListener('click', function ()
     ? document.getElementById('window' + "notes").style.display = 'none'
     : document.getElementById('window' + "notes").style.display = 'none';
 
+  (document.getElementById('notes' + "tb").style.display == 'none' || document.getElementById('notes' + "tb").style.display == '')
+    ? document.getElementById('notes' + "tb").style.display = 'block'
+    : document.getElementById('notes' + "tb").style.display = 'none';
+
+}, false);
+
+document.getElementById("notes" + "minimise").addEventListener('click', function () {
+
+  (document.getElementById('window' + "notes").style.display == 'none' || document.getElementById('window' + "notes").style.display == '')
+    ? document.getElementById('window' + "notes").style.display = 'none'
+    : document.getElementById('window' + "notes").style.display = 'none';
+
 }, false);

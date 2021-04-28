@@ -82,4 +82,16 @@ document.getElementById("kahoot" + "close").addEventListener('click', function (
     ? document.getElementById('window' + "kahoot").style.display = 'none'
     : document.getElementById('window' + "kahoot").style.display = 'none';
 
+  (document.getElementById('kahoot' + "tb").style.display == 'none' || document.getElementById('kahoot' + "tb").style.display == '')
+    ? document.getElementById('kahoot' + "tb").style.display = 'block'
+    : document.getElementById('kahoot' + "tb").style.display = 'none';
+
+}, false);
+
+document.getElementById("kahoot" + "minimise").addEventListener('click', function () {
+
+  (document.getElementById('window' + "kahoot").style.display == 'none' || document.getElementById('window' + "kahoot").style.display == '')
+    ? document.getElementById('window' + "kahoot").style.display = 'none'
+    : document.getElementById('window' + "kahoot").style.display = 'none';
+
 }, false);

@@ -82,4 +82,16 @@ document.getElementById("educake" + "close").addEventListener('click', function 
     ? document.getElementById('window' + "educake").style.display = 'none'
     : document.getElementById('window' + "educake").style.display = 'none';
 
+  (document.getElementById('educake' + "tb").style.display == 'none' || document.getElementById('educake' + "tb").style.display == '')
+    ? document.getElementById('educake' + "tb").style.display = 'block'
+    : document.getElementById('educake' + "tb").style.display = 'none';
+
+}, false);
+
+document.getElementById("educake" + "minimise").addEventListener('click', function () {
+
+  (document.getElementById('window' + "educake").style.display == 'none' || document.getElementById('window' + "educake").style.display == '')
+    ? document.getElementById('window' + "educake").style.display = 'none'
+    : document.getElementById('window' + "educake").style.display = 'none';
+
 }, false);

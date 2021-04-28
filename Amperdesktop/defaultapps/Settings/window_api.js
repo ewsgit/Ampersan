@@ -82,4 +82,16 @@ document.getElementById("settings" + "close").addEventListener('click', function
     ? document.getElementById('window' + "settings").style.display = 'none'
     : document.getElementById('window' + "settings").style.display = 'none';
 
+  (document.getElementById('settings' + "tb").style.display == 'none' || document.getElementById('settings' + "tb").style.display == '')
+    ? document.getElementById('settings' + "tb").style.display = 'block'
+    : document.getElementById('settings' + "tb").style.display = 'none';
+
+}, false);
+
+document.getElementById("settings" + "minimise").addEventListener('click', function () {
+
+  (document.getElementById('window' + "settings").style.display == 'none' || document.getElementById('window' + "settings").style.display == '')
+    ? document.getElementById('window' + "settings").style.display = 'none'
+    : document.getElementById('window' + "settings").style.display = 'none';
+
 }, false);
