@@ -83,3 +83,23 @@ document.getElementById("appim" + "close").addEventListener('click', function ()
     : document.getElementById('window' + "appim").style.display = 'none';
 
 }, false);
+
+document.getElementById("appim" + "fullscreen").addEventListener('click', function () {
+
+  (document.getElementById('window' + "appim").style.width == '30vw' || document.getElementById('window' + "appim").style.width == '')
+    ? document.getElementById('window' + "appim").style.width = '100vw'
+    : document.getElementById('window' + "appim").style.width = '30vw';
+  
+  (document.getElementById('window' + "appim").style.height == '20vw' || document.getElementById('window' + "appim").style.height == '')
+    ? document.getElementById('window' + "appim").style.height = '100vw'
+    : document.getElementById('window' + "appim").style.height = '20vw';
+  
+  (document.getElementById('window' + "appim").style.top == '0' || document.getElementById('window' + "appim").style.top == '')
+    ? document.getElementById('window' + "appim").style.top = '0'
+    : document.getElementById('window' + "appim").style.top = '0';
+  
+  (document.getElementById('window' + "appim").style.left == '0' || document.getElementById('window' + "appim").style.left == '')
+    ? document.getElementById('window' + "appim").style.left = '0'
+    : document.getElementById('window' + "appim").style.left = '0';
+
+}, false);

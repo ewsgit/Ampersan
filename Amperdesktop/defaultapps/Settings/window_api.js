@@ -95,3 +95,23 @@ document.getElementById("settings" + "minimise").addEventListener('click', funct
     : document.getElementById('window' + "settings").style.display = 'none';
 
 }, false);
+
+document.getElementById("settings" + "fullscreen").addEventListener('click', function () {
+
+  (document.getElementById('window' + "settings").style.width == '30vw' || document.getElementById('window' + "settings").style.width == '')
+    ? document.getElementById('window' + "settings").style.width = '100vw'
+    : document.getElementById('window' + "settings").style.width = '30vw';
+
+  (document.getElementById('window' + "settings").style.height == '20vw' || document.getElementById('window' + "settings").style.height == '')
+    ? document.getElementById('window' + "settings").style.height = '100vw'
+    : document.getElementById('window' + "settings").style.height = '20vw';
+
+  (document.getElementById('window' + "settings").style.top == '0' || document.getElementById('window' + "settings").style.top == '')
+    ? document.getElementById('window' + "settings").style.top = '0'
+    : document.getElementById('window' + "settings").style.top = '0';
+
+  (document.getElementById('window' + "settings").style.left == '0' || document.getElementById('window' + "settings").style.left == '')
+    ? document.getElementById('window' + "settings").style.left = '0'
+    : document.getElementById('window' + "settings").style.left = '0';
+
+}, false);

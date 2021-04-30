@@ -95,3 +95,23 @@ document.getElementById("kahoot" + "minimise").addEventListener('click', functio
     : document.getElementById('window' + "kahoot").style.display = 'none';
 
 }, false);
+
+document.getElementById("kahoot" + "fullscreen").addEventListener('click', function () {
+
+  (document.getElementById('window' + "kahoot").style.width == '30vw' || document.getElementById('window' + "kahoot").style.width == '')
+    ? document.getElementById('window' + "kahoot").style.width = '100vw'
+    : document.getElementById('window' + "kahoot").style.width = '30vw';
+
+  (document.getElementById('window' + "kahoot").style.height == '20vw' || document.getElementById('window' + "kahoot").style.height == '')
+    ? document.getElementById('window' + "kahoot").style.height = '100vw'
+    : document.getElementById('window' + "kahoot").style.height = '20vw';
+
+  (document.getElementById('window' + "kahoot").style.top == '0' || document.getElementById('window' + "kahoot").style.top == '')
+    ? document.getElementById('window' + "kahoot").style.top = '0'
+    : document.getElementById('window' + "kahoot").style.top = '0';
+
+  (document.getElementById('window' + "kahoot").style.left == '0' || document.getElementById('window' + "kahoot").style.left == '')
+    ? document.getElementById('window' + "kahoot").style.left = '0'
+    : document.getElementById('window' + "kahoot").style.left = '0';
+
+}, false);

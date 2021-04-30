@@ -95,3 +95,23 @@ document.getElementById("notes" + "minimise").addEventListener('click', function
     : document.getElementById('window' + "notes").style.display = 'none';
 
 }, false);
+
+document.getElementById("notes" + "fullscreen").addEventListener('click', function () {
+
+  (document.getElementById('window' + "notes").style.width == '30vw' || document.getElementById('window' + "notes").style.width == '')
+    ? document.getElementById('window' + "notes").style.width = '100vw'
+    : document.getElementById('window' + "notes").style.width = '30vw';
+
+  (document.getElementById('window' + "notes").style.height == '20vw' || document.getElementById('window' + "notes").style.height == '')
+    ? document.getElementById('window' + "notes").style.height = '100vw'
+    : document.getElementById('window' + "notes").style.height = '20vw';
+
+  (document.getElementById('window' + "notes").style.top == '0' || document.getElementById('window' + "notes").style.top == '')
+    ? document.getElementById('window' + "notes").style.top = '0'
+    : document.getElementById('window' + "notes").style.top = '0';
+
+  (document.getElementById('window' + "notes").style.left == '0' || document.getElementById('window' + "notes").style.left == '')
+    ? document.getElementById('window' + "notes").style.left = '0'
+    : document.getElementById('window' + "notes").style.left = '0';
+
+}, false);

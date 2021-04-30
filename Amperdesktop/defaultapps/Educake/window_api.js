@@ -95,3 +95,23 @@ document.getElementById("educake" + "minimise").addEventListener('click', functi
     : document.getElementById('window' + "educake").style.display = 'none';
 
 }, false);
+
+document.getElementById("educake" + "fullscreen").addEventListener('click', function () {
+
+  (document.getElementById('window' + "educake").style.width == '30vw' || document.getElementById('window' + "educake").style.width == '')
+    ? document.getElementById('window' + "educake").style.width = '100vw'
+    : document.getElementById('window' + "educake").style.width = '30vw';
+
+  (document.getElementById('window' + "educake").style.height == '20vw' || document.getElementById('window' + "educake").style.height == '')
+    ? document.getElementById('window' + "educake").style.height = '100vw'
+    : document.getElementById('window' + "educake").style.height = '20vw';
+
+  (document.getElementById('window' + "educake").style.top == '0' || document.getElementById('window' + "educake").style.top == '')
+    ? document.getElementById('window' + "educake").style.top = '0'
+    : document.getElementById('window' + "educake").style.top = '0';
+
+  (document.getElementById('window' + "educake").style.left == '0' || document.getElementById('window' + "educake").style.left == '')
+    ? document.getElementById('window' + "educake").style.left = '0'
+    : document.getElementById('window' + "educake").style.left = '0';
+
+}, false);
