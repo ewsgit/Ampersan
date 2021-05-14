@@ -199,33 +199,6 @@ p {
   color: white;
 }
 
- /* width */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #333333;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 2px;
-  transition: 500ms;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(94, 94, 94);
-} 
-
-::-webkit-scrollbar-corner {
-  background-color: #333;
-}
-
 div {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -313,4 +286,12 @@ body {
   height: 5vh;
   width: 5vh;
   padding-right: 0.5vw;
+}
+
+#displaymodetoggle1 {
+  margin-right: 0.5vw;
+}
+
+#displaymodetoggle2 {
+  margin-right: 0.5vw;
 }

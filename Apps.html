@@ -53,9 +53,6 @@
         <h3 onclick="Debug_Clear_Local_Storage()">Clear_Local_Storage</h3>
       </div>
       <div class="debugmenucard">
-        <h3 onclick="Debug_Toggle_Notification()">Toggle_Notifications</h3>
-      </div>
-      <div class="debugmenucard">
         <h3 onclick="Notify_API()">Notify_API</h3>
       </div>
       <div class="debugmenucard"></div>
@@ -73,7 +70,7 @@
     <div class="horizontalnb">
       <img draggable="false" (dragstart)="false;" class="vnbarlogo" alt="Logo" src="/Ampersan/assets/Ampersan_alpha_large.png"/>
       <div class="horizontalnbright">
-        <li id="displaymodetoggle1"><a>Simple Display Mode</a></li>
+        <li id="displaymodetoggle1"><a>Complex Display Mode</a></li>
         <img draggable="false" (dragstart)="false;" src="/Ampersan/assets/blankusericon.png" alt="">
         <li><a id="username01">A Critical Error Has Occured!</a></li>
         <li><a href="/Ampersan/index.html">Logout</a></li>
@@ -110,7 +107,7 @@
     <div class="horizontalnb">
       <img draggable="false" (dragstart)="false;" class="vnbarlogo" alt="Logo" src="/Ampersan/assets/Ampersan_alpha_large.png"/>
       <div class="horizontalnbright">
-        <li id="displaymodetoggle2"><a>Complex Display Mode</a></li>
+        <li id="displaymodetoggle2"><a>Simple Display Mode</a></li>
         <img draggable="false" (dragstart)="false;" src="/Ampersan/assets/blankusericon.png" alt="">
         <li><a id="username01">A Critical Error Has Occured!</a></li>
         <li><a href="/Ampersan/index.html">Logout</a></li>
@@ -213,16 +210,18 @@
 
 .card2high {
   width: 20vw;
-  height: 70vh;
+  height: calc(70vh + 1vw);
   border-radius: 20px;
   transition: 150ms linear;
   margin-left: 1vw;
   margin-right: 1vw;
   overflow: hidden;
+  grid-row: span 2;
 }
 
 .card:hover {
   box-shadow: 0 0 1.5vw #000000;
+  background-color: #0000002c;
 }
 
 .mainbody {
@@ -231,11 +230,14 @@
 }
 
 .cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw 20vw;
+  grid-template-rows: 35vh 35vh;
+  grid-gap: 1vw;
 }
 
 .lowercard {
-  background-color: #252525bb;
+  background-color: #252525b4;
   height: 10vh;
   position: relative;
   display: flex;
@@ -261,7 +263,6 @@
 .card:hover .lowercard {
   top: -15vh;
   height: 15vh;
-  background-color: #252525;
 }
 
 .card2high:hover .lowercard2high {
@@ -284,7 +285,7 @@
 
 .startbg {
   background-color: #292929;
-  height: 70vh;
+  height: calc(70vh + 1vw);
   width: 20vw;
 }
 
@@ -591,14 +592,6 @@ function Debug_Clear_Local_Storage() {
   localStorage.clear();
 }
 
-function Debug_Toggle_Notification() {
-  if (document.getElementById("notificationcard").style.display == "none") {
-    document.getElementById("notificationcard").style.display = "flex"
-  } else {
-    document.getElementById("notificationcard").style.display = "none"
-  }
-}
-
 document.getElementById("widgetmenuglance").style.animation = '500ms ease 0s 1 normal forwards running closewidgetmenuglance'
 document.getElementById("debugmenu").style.animation = '500ms ease 0s 1 normal forwards running closewidgetmenuglance'
 
@@ -606,7 +599,6 @@ document.getElementById("simplemode").style.display = "block";
 document.getElementById("complexmode").style.display = "none";
 
 function Notify_API() {
-  sessionStorage.setItem("NotificationAPI4", 1)
   sessionStorage.setItem("NotificationAPI3", 1)
   sessionStorage.setItem("NotificationAPI2", "Body")
   sessionStorage.setItem("NotificationAPI1", "Title")
