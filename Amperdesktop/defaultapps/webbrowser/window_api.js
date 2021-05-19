@@ -1,11 +1,11 @@
 // Make the DIV element draggable:
 
-//webbrowser
+//WebBrowser
 
 // change "appname" to the name of the app using the api,
 // make sure that there are no duplicate names
 
-dragElement(document.getElementById("window" + "webbrowser"));
+dragElement(document.getElementById("window" + "WebBrowser"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -56,62 +56,62 @@ function dragElement(elmnt) {
   }
 }
 
-document.getElementById("webbrowser" + "maximise").addEventListener("click", function () {
+document.getElementById("WebBrowser" + "maximise").addEventListener("click", function () {
 
-  (document.getElementById('window' + "webbrowser").style.width == '30vw' || document.getElementById('window' + "webbrowser").style.width == '')
-    ? document.getElementById('window' + "webbrowser").style.width = '95vw'
-    : document.getElementById('window' + "webbrowser").style.width = '30vw';
+  (document.getElementById('window' + "WebBrowser").style.width == '30vw' || document.getElementById('window' + "WebBrowser").style.width == '')
+    ? document.getElementById('window' + "WebBrowser").style.width = '95vw'
+    : document.getElementById('window' + "WebBrowser").style.width = '30vw';
 
-  (document.getElementById('window' + "webbrowser").style.height == '20vw' || document.getElementById('window' + "webbrowser").style.height == '')
-    ? document.getElementById('window' + "webbrowser").style.height = '45vw'
-    : document.getElementById('window' + "webbrowser").style.height = '20vw';
+  (document.getElementById('window' + "WebBrowser").style.height == '20vw' || document.getElementById('window' + "WebBrowser").style.height == '')
+    ? document.getElementById('window' + "WebBrowser").style.height = '45vw'
+    : document.getElementById('window' + "WebBrowser").style.height = '20vw';
 
 }, false)
 
-document.getElementById("webbrowser").addEventListener('click', function () {
+document.getElementById("WebBrowser").addEventListener('click', function () {
 
-  (document.getElementById('window' + "webbrowser").style.display == 'none' || document.getElementById('window' + "webbrowser").style.display == '')
-    ? document.getElementById('window' + "webbrowser").style.display = 'block'
-    : document.getElementById('window' + "webbrowser").style.display = 'none';
-
-}, false);
-
-document.getElementById("webbrowser" + "close").addEventListener('click', function () {
-
-  (document.getElementById('window' + "webbrowser").style.display == 'none' || document.getElementById('window' + "webbrowser").style.display == '')
-    ? document.getElementById('window' + "webbrowser").style.display = 'none'
-    : document.getElementById('window' + "webbrowser").style.display = 'none';
-
-  (document.getElementById('webbrowser' + "tb").style.display == 'none' || document.getElementById('webbrowser' + "tb").style.display == '')
-    ? document.getElementById('webbrowser' + "tb").style.display = 'block'
-    : document.getElementById('webbrowser' + "tb").style.display = 'none';
+  (document.getElementById('window' + "WebBrowser").style.display == 'none' || document.getElementById('window' + "WebBrowser").style.display == '')
+    ? document.getElementById('window' + "WebBrowser").style.display = 'block'
+    : document.getElementById('window' + "WebBrowser").style.display = 'none';
 
 }, false);
 
-document.getElementById("webbrowser" + "minimise").addEventListener('click', function () {
+document.getElementById("WebBrowser" + "close").addEventListener('click', function () {
 
-  (document.getElementById('window' + "webbrowser").style.display == 'none' || document.getElementById('window' + "webbrowser").style.display == '')
-    ? document.getElementById('window' + "webbrowser").style.display = 'none'
-    : document.getElementById('window' + "webbrowser").style.display = 'none';
+  (document.getElementById('window' + "WebBrowser").style.display == 'none' || document.getElementById('window' + "WebBrowser").style.display == '')
+    ? document.getElementById('window' + "WebBrowser").style.display = 'none'
+    : document.getElementById('window' + "WebBrowser").style.display = 'none';
+
+  (document.getElementById('WebBrowser' + "tb").style.display == 'none' || document.getElementById('WebBrowser' + "tb").style.display == '')
+    ? document.getElementById('WebBrowser' + "tb").style.display = 'block'
+    : document.getElementById('WebBrowser' + "tb").style.display = 'none';
 
 }, false);
 
-document.getElementById("webbrowser" + "fullscreen").addEventListener('click', function () {
+document.getElementById("WebBrowser" + "minimise").addEventListener('click', function () {
 
-  (document.getElementById('window' + "webbrowser").style.width == '30vw' || document.getElementById('window' + "webbrowser").style.width == '')
-    ? document.getElementById('window' + "webbrowser").style.width = '100vw'
-    : document.getElementById('window' + "webbrowser").style.width = '30vw';
+  (document.getElementById('window' + "WebBrowser").style.display == 'none' || document.getElementById('window' + "WebBrowser").style.display == '')
+    ? document.getElementById('window' + "WebBrowser").style.display = 'none'
+    : document.getElementById('window' + "WebBrowser").style.display = 'none';
 
-  (document.getElementById('window' + "webbrowser").style.height == '20vw' || document.getElementById('window' + "webbrowser").style.height == '')
-    ? document.getElementById('window' + "webbrowser").style.height = '100vw'
-    : document.getElementById('window' + "webbrowser").style.height = '20vw';
+}, false);
 
-  (document.getElementById('window' + "webbrowser").style.top == '0' || document.getElementById('window' + "webbrowser").style.top == '')
-    ? document.getElementById('window' + "webbrowser").style.top = '0'
-    : document.getElementById('window' + "webbrowser").style.top = '0';
+document.getElementById("WebBrowser" + "fullscreen").addEventListener('click', function () {
 
-  (document.getElementById('window' + "webbrowser").style.left == '0' || document.getElementById('window' + "webbrowser").style.left == '')
-    ? document.getElementById('window' + "webbrowser").style.left = '0'
-    : document.getElementById('window' + "webbrowser").style.left = '0';
+  (document.getElementById('window' + "WebBrowser").style.width == '30vw' || document.getElementById('window' + "WebBrowser").style.width == '')
+    ? document.getElementById('window' + "WebBrowser").style.width = '100vw'
+    : document.getElementById('window' + "WebBrowser").style.width = '30vw';
+
+  (document.getElementById('window' + "WebBrowser").style.height == '20vw' || document.getElementById('window' + "WebBrowser").style.height == '')
+    ? document.getElementById('window' + "WebBrowser").style.height = '100vw'
+    : document.getElementById('window' + "WebBrowser").style.height = '20vw';
+
+  (document.getElementById('window' + "WebBrowser").style.top == '0' || document.getElementById('window' + "WebBrowser").style.top == '')
+    ? document.getElementById('window' + "WebBrowser").style.top = '0'
+    : document.getElementById('window' + "WebBrowser").style.top = '0';
+
+  (document.getElementById('window' + "WebBrowser").style.left == '0' || document.getElementById('window' + "WebBrowser").style.left == '')
+    ? document.getElementById('window' + "WebBrowser").style.left = '0'
+    : document.getElementById('window' + "WebBrowser").style.left = '0';
 
 }, false);

@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <title></title>
-    <link rel='stylesheet' href='style.css'>
-  </head>
-  <body>
-    <header>
-      <div id='color-select'>
-        <div class='color-box white'></div>
-        <div class='color-box orange'></div>
-        <div class='color-box banana'></div>
-        <div class='color-box honeydew'></div>
-        <div class='color-box flora'></div>
-        <div class='color-box aqua'></div>
-        <div class='color-box ice'></div>
-        <div class='color-box sky'></div>
-        <div class='color-box orchid'></div>
-        <div class='color-box lavendar'></div>
-        <div class='color-box pink'></div>
+
+<head>
+  <meta charset='utf-8'>
+  <title></title>
+  <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+  <header>
+    <div id='color-select'>
+      <div class='color-box white'></div>
+      <div class='color-box orange'></div>
+      <div class='color-box banana'></div>
+      <div class='color-box honeydew'></div>
+      <div class='color-box flora'></div>
+      <div class='color-box aqua'></div>
+      <div class='color-box ice'></div>
+      <div class='color-box sky'></div>
+      <div class='color-box orchid'></div>
+      <div class='color-box lavendar'></div>
+      <div class='color-box pink'></div>
+    </div>
+  </header>
+  <main>
+    <div class="headers">
+      <div id="list-head">
+        <b>Notes</b>
       </div>
-    </header>
-    <main>
-      <div class="headers">
-        <div id="list-head">
-          <b>Notes</b>
-        </div>
-        <div id="note-head">
-          <b>Notepad</b>
-        </div>
+      <div id="note-head">
+        <b>Notepad</b>
       </div>
-      <noteList>
-        <div id='listed'>
-        </div>
-      </noteList>
-      <notepad>
-        <div id="note-title">
-          <input id="title-field" type="text" placeholder="Title...">
-        </div>
-        <div id="note-body">
-          <textarea id="body-field"></textarea>
-        </div>
-      </notepad>
-    </main>
-    <footer>
-      <button id="btn-save">Save</button>
-      <button id="btn-delete">Delete</button>
-    </footer>
-  </body>
-  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
-  <script type='text/javascript' src='/Ampersan/js/notes.js'></script>
+    </div>
+    <noteList>
+      <div id='listed'>
+      </div>
+    </noteList>
+    <notepad>
+      <div id="note-title">
+        <input id="title-field" type="text" placeholder="Title...">
+      </div>
+      <div id="note-body">
+        <textarea id="body-field"></textarea>
+      </div>
+    </notepad>
+  </main>
+  <footer>
+    <button id="btn-save">Save</button>
+    <button id="btn-delete">Delete</button>
+  </footer>
+</body>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+<script type='text/javascript' src='js/notes.js'></script>
+
 </html>
 
 <style>
@@ -59,13 +62,13 @@
   }
 
   ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+    width: 10px;
+    height: 10px;
   }
 
   /* Track */
   ::-webkit-scrollbar-track {
-  background: #333333;
+    background: #333333;
   }
 
   /* Handle */
@@ -78,10 +81,9 @@
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(94, 94, 94);
-  } 
+  }
 
   ::-webkit-scrollbar-corner {
     background-color: #333;
   }
-
 </style>

@@ -1,16 +1,16 @@
 const Ampercache = "Ampercachev1"
 const Ampercachecomps = [
   "/",
-  "/Ampersan/assets/",
-  "/Ampersan/assets/icons/",
-  "/Ampersan/assets/Amperdesktop_Backgrounds/",
-  "/Ampersan/js/",
-  "/Ampersan/css/",
-  "/Ampersan/Settings/",
-  "/Ampersan/Settings/html/",
-  "/Ampersan/Settings/js/",
-  "/Ampersan/",
-  "/Ampersan/Amperdesktop/",
+  "assets/",
+  "assets/icons/",
+  "assets/Amperdesktop_Backgrounds/",
+  "js/",
+  "css/",
+  "Settings/",
+  "Settings/html/",
+  "Settings/js/",
+  "",
+  "Amperdesktop/",
 ]
 
 self.addEventListener("install", installEvent => {

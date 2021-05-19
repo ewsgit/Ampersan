@@ -1,0 +1,18 @@
+{
+	"profiles":{
+		"ethanwellssmith2@gmail.com":{
+			"users":{
+				"1":{
+					"appsinstalled":[
+						"settings",
+						"notes"
+					],
+					"positions":{
+						"settings":[0,0,0],
+						"notes":[0,0,0]
+					}
+				}
+			}
+		}
+	}
+}

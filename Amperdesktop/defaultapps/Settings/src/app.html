@@ -1,36 +1,39 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Settings</title>
 </head>
+
 <body>
   <div class="sidebarnav">
-    <li class="active"><img src="/Ampersan/assets/icons/svg/fi-rr-eye.svg"></li>
-    <li><img src="/Ampersan/assets/icons/svg/fi-rr-caret-up.svg"></li>
-    <li><img src="/Ampersan/assets/icons/svg/fi-rr-caret-down.svg"></li>
-    <li><img src="/Ampersan/assets/icons/svg/fi-rr-caret-left.svg"></li>
-    <li><img src="/Ampersan/assets/icons/svg/fi-rr-caret-right.svg"></li>
+    <li class="active"><img src="assets/icons/svg/fi-rr-eye.svg"></li>
+    <li><img src="assets/icons/svg/fi-rr-caret-up.svg"></li>
+    <li><img src="assets/icons/svg/fi-rr-caret-down.svg"></li>
+    <li><img src="assets/icons/svg/fi-rr-caret-left.svg"></li>
+    <li><img src="assets/icons/svg/fi-rr-caret-right.svg"></li>
   </div>
 
   <div class="maincontent">
     <div class="dbselectoroutline">
-      <img class="dbpreview" src="/Ampersan/assets/Amperdesktop_Backgrounds/(1).PNG">
+      <img class="dbpreview" src="assets/Amperdesktop_Backgrounds/(1).PNG">
       <div class="dbselector">
         <div class="dbselectorcard">
-          <button type="image" onclick="background1()" src="/Ampersan/assets/Amperdesktop_Backgrounds/(1).PNG"></button>
+          <button type="image" onclick="background1()" src="assets/Amperdesktop_Backgrounds/(1).PNG"></button>
         </div>
         <div class="dbselectorcard">
-          <button type="image" onclick="background2()" src="/Ampersan/assets/Amperdesktop_Backgrounds/(2).PNG"></button>
+          <button type="image" onclick="background2()" src="assets/Amperdesktop_Backgrounds/(2).PNG"></button>
         </div>
       </div>
     </div>
   </div>
 </body>
+
 </html>
 
-<script src="/Ampersan/Amperdesktop/defaultapps/Settings/src/js/desktopbackground.js"></script>
+<script src="Amperdesktop/defaultapps/Settings/src/js/desktopbackground.js"></script>
 
 <style>
   body {
@@ -39,6 +42,7 @@
     display: flex;
     overflow: hidden;
   }
+
   .sidebarnav {
     width: 75px;
     height: 100%;
@@ -46,6 +50,7 @@
     z-index: 1;
     overflow-y: scroll;
   }
+
   li {
     display: block;
     text-align: center;
@@ -54,21 +59,26 @@
     font-family: Arial, Helvetica, sans-serif;
     transition: 250ms;
   }
+
   li:hover {
     background-color: rgb(34, 34, 34);
     font-family: Arial, Helvetica, sans-serif;
   }
+
   li:active {
     background-color: rgb(158, 158, 158);
   }
+
   .maincontent {
     margin-left: 5vw;
   }
+
   .dbselectoroutline {
     background-color: rgb(70, 70, 70);
     width: 82vw;
     height: 100%;
   }
+
   .dbselector {
     height: 50vh;
     width: 80vw;
@@ -78,12 +88,14 @@
     background-color: #333;
     display: flex;
   }
+
   .dbpreview {
     width: 40vw;
     height: 20vw;
     margin-left: 20vw;
     padding-top: 1vh;
   }
+
   .dbselectorcard {
     width: 39.25vw;
     height: 10vh;
@@ -99,7 +111,7 @@
   }
 
   .active {
-  background-color: rgb(77, 77, 77);
+    background-color: rgb(77, 77, 77);
   }
 
   div {
@@ -112,30 +124,30 @@
     overflow-y: auto;
   }
 
-   /* width */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #333333;
-}
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #333333;
+  }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 2px;
-  transition: 500ms;
-}
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 2px;
+    transition: 500ms;
+  }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(94, 94, 94);
-} 
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(94, 94, 94);
+  }
 
-::-webkit-scrollbar-corner {
-  background-color: #333;
-}
+  ::-webkit-scrollbar-corner {
+    background-color: #333;
+  }
 </style>

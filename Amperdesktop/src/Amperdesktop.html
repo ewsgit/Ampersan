@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <title>Ampersan Amperdesktop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/Ampersan/css/style01.css">
-  <link rel="stylesheet" href="/Ampersan/css/navbars.css">
-  <link rel="shortcut icon" href="/Ampersan/assets/appiconnobg.png" type="image/x-icon">
-  <link rel="manifest" href="/Ampersan/manifest.json">
+  <link rel="stylesheet" href="css/style01.css">
+  <link rel="stylesheet" href="css/navbars.css">
+  <link rel="shortcut icon" href="assets/appicon.png" type="image/x-icon">
+  <link rel="manifest" href="manifest.json">
+  <script src="Amperdesktop/src/windowinjector.js" defer></script>
 </head>
 
 <body>
@@ -16,71 +17,60 @@
   <div class="window" id="windowsettings">
     <div class="windowheader" id="windowsettingsheader">
       <a>Settings</a>
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-cross.svg" class="windowactions" id="settingsclose">
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-square.svg" class="windowactions" id="settingsmaximise">
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-minus.svg" class="windowactions" id="settingsminimise">
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-resources.svg" class="windowactions" id="settingsfullscreen">
+      <input type="image" src="assets/icons/svg/fi-rr-cross.svg" class="windowactions" id="settingsclose">
+      <input type="image" src="assets/icons/svg/fi-rr-square.svg" class="windowactions" id="settingsmaximise">
+      <input type="image" src="assets/icons/svg/fi-rr-minus.svg" class="windowactions" id="settingsminimise">
+      <input type="image" src="assets/icons/svg/fi-rr-resources.svg" class="windowactions" id="settingsfullscreen">
     </div>
     <div class="windowframediv">
-      <iframe style="z-index: 8" class="windowframe" src="/Ampersan/Amperdesktop/defaultapps/Settings/src/app.html" frameborder="0"></iframe>
-    </div>
-  </div>
-  <div class="window" id="windowwebbrowser">
-    <div class="windowheader" id="windowwebbrowserheader">
-      <input type="text" onchange="browserbrowse()" id="webbrowserinput">
-      <a>Web Browser</a>
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-cross.svg" class="windowactions" id="webbrowserclose">
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-square.svg" class="windowactions" id="webbrowsermaximise">
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-minus.svg" class="windowactions" id="webbrowserminimise">
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-resources.svg" class="windowactions" id="webbrowserfullscreen">
-    </div>
-    <div class="windowframediv">
-      <iframe style="z-index: 8" id="webbrowserdisplay" class="windowframe" src="/Ampersan/Amperdesktop/defaultapps/webbrowser/src/app.html"frameborder="0"></iframe>
+      <iframe style="z-index: 8" class="windowframe" src="Amperdesktop/defaultapps/Settings/src/app.html"
+        frameborder="0"></iframe>
     </div>
   </div>
   <div class="window" id="windowcalculator">
     <div class="windowheader" id="windowcalculatorheader">
       <a>Calculator</a>
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-cross.svg" class="windowactions" id="calculatorclose">
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-minus.svg" class="windowactions" id="calculatorminimise">
+      <input type="image" src="assets/icons/svg/fi-rr-cross.svg" class="windowactions" id="calculatorclose">
+      <input type="image" src="assets/icons/svg/fi-rr-minus.svg" class="windowactions" id="calculatorminimise">
     </div>
     <div class="windowframediv">
-      <iframe id="windowcalculatorframe" style="z-index: 8" class="windowframe" src="/Ampersan/Amperdesktop/defaultapps/Calculator/src/app.html"
-        frameborder="0"></iframe>
+      <iframe id="windowcalculatorframe" style="z-index: 8" class="windowframe"
+        src="Amperdesktop/defaultapps/Calculator/src/app.html" frameborder="0"></iframe>
     </div>
   </div>
   <div class="window" id="windoweducake">
     <div id="windoweducakeheader">
       <a>Educake</a>
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-cross.svg" class="windowactions" id="educakeclose">
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-square.svg" class="windowactions" id="educakemaximise">
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-minus.svg" class="windowactions" id="educakeminimise">
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-resources.svg" class="windowactions" id="educakefullscreen">
-  </div>
-  <div class="windowframediv">
-    <iframe style="z-index: 8" class="windowframe" src="https://educake.co.uk" frameborder="0"></iframe>
-  </div>
+      <input type="image" src="assets/icons/svg/fi-rr-cross.svg" class="windowactions" id="educakeclose">
+      <input type="image" src="assets/icons/svg/fi-rr-square.svg" class="windowactions" id="educakemaximise">
+      <input type="image" src="assets/icons/svg/fi-rr-minus.svg" class="windowactions" id="educakeminimise">
+      <input type="image" src="assets/icons/svg/fi-rr-resources.svg" class="windowactions" id="educakefullscreen">
+    </div>
+    <div class="windowframediv">
+      <iframe style="z-index: 8" class="windowframe" src="https://educake.co.uk" frameborder="0"></iframe>
+    </div>
   </div>
   <div class="window" id="windowappim">
     <div class="windowheader" id="windowappimheader">
       <a>Application Installation Manager</a>
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-cross.svg" class="windowactions" id="appimclose">
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-square.svg" class="windowactions" id="appimmaximise">
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-minus.svg" class="windowactions" id="appimminimise">
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-resources.svg" class="windowactions" id="appimfullscreen">
+      <input type="image" src="assets/icons/svg/fi-rr-cross.svg" class="windowactions" id="appimclose">
+      <input type="image" src="assets/icons/svg/fi-rr-square.svg" class="windowactions" id="appimmaximise">
+      <input type="image" src="assets/icons/svg/fi-rr-minus.svg" class="windowactions" id="appimminimise">
+      <input type="image" src="assets/icons/svg/fi-rr-resources.svg" class="windowactions" id="appimfullscreen">
+    </div>
+    <div class="windowframediv">
+      <iframe style="z-index: 8" class="windowframe" src="Amperdesktop/defaultapps/Appinstallmanager/src/index.html"
+        frameborder="0"></iframe>
+    </div>
   </div>
-  <div class="windowframediv">
-    <iframe style="z-index: 8" class="windowframe" src="/Ampersan/Amperdesktop/defaultapps/Appinstallmanager/src/index.html" frameborder="0"></iframe>
-  </div>
-</div>
-<div class="window" id="windowkahoot">
-  <div class="windowheader" id="windowkahootheader">
-    <a>Kahoot</a>
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-cross.svg" class="windowactions" id="kahootclose">
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-square.svg" class="windowactions" id="kahootmaximise">
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-minus.svg" class="windowactions" id="kahootminimise">
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-resources.svg" class="windowactions" id="kahootfullscreen">
-  </div>
+  <div class="window" id="windowkahoot">
+    <div class="windowheader" id="windowkahootheader">
+      <a>Kahoot</a>
+      <input type="image" src="assets/icons/svg/fi-rr-cross.svg" class="windowactions" id="kahootclose">
+      <input type="image" src="assets/icons/svg/fi-rr-square.svg" class="windowactions" id="kahootmaximise">
+      <input type="image" src="assets/icons/svg/fi-rr-minus.svg" class="windowactions" id="kahootminimise">
+      <input type="image" src="assets/icons/svg/fi-rr-resources.svg" class="windowactions" id="kahootfullscreen">
+    </div>
     <div class="windowframediv">
       <iframe style="z-index: 8" class="windowframe" src="https://kahoot.it" frameborder="0"></iframe>
     </div>
@@ -88,167 +78,166 @@
   <div class="window" id="windownotes">
     <div class="windowheader" id="windownotesheader">
       <a>Notes</a>
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-cross.svg" class="windowactions" id="notesclose">
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-square.svg" class="windowactions" id="notesmaximise">
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-minus.svg" class="windowactions" id="notesminimise">
-      <input type="image" src="/Ampersan/assets/icons/svg/fi-rr-resources.svg" class="windowactions" id="notesfullscreen">
+      <input type="image" src="assets/icons/svg/fi-rr-cross.svg" class="windowactions" id="notesclose">
+      <input type="image" src="assets/icons/svg/fi-rr-square.svg" class="windowactions" id="notesmaximise">
+      <input type="image" src="assets/icons/svg/fi-rr-minus.svg" class="windowactions" id="notesminimise">
+      <input type="image" src="assets/icons/svg/fi-rr-resources.svg" class="windowactions" id="notesfullscreen">
     </div>
     <div class="windowframediv">
-      <iframe style="z-index: 8" class="windowframe" src="/Ampersan/Amperdesktop/defaultapps/Notes/src/app.html" frameborder="0"></iframe>
+      <iframe style="z-index: 8" class="windowframe" src="Amperdesktop/defaultapps/Notes/src/app.html"
+        frameborder="0"></iframe>
     </div>
   </div>
   </div>
-    <div>
-      <div id="sidebar">
-        <div class="notificationssb">
-          <h2>Notifications</h2>
-          <div class="notificationcard" id="notifcard">
-            <p class="sbnotificationtextlarge" id="notiftitle">Educake</p>
-            <p class="sbnotificationtextsmall" id="notifbody">Username: ethanw0758</p>
-          </div>
-          <div class="notificationcard" id="notifcard">
-            <p class="sbnotificationtextlarge" id="notiftitle">404</p>
-            <p class="sbnotificationtextsmall" id="notifbody">---Not Found---</p>
-          </div>
+  <div>
+    <div id="sidebar">
+      <div class="notificationssb">
+        <h2>Notifications</h2>
+        <div class="notificationcard" id="notifcard">
+          <p class="sbnotificationtextlarge" id="notiftitle">Educake</p>
+          <p class="sbnotificationtextsmall" id="notifbody">Username: ethanw0758</p>
         </div>
-        <div class="usersb">
-          <img class="sbuserlogo" src="/Ampersan/assets/blankusericon.png" alt="Nothing to see here.">
-          <h2 id="username03">Unknown User</h2>
-          <li class="sbuser">
-            <a class="sbuserbutton" href="/Ampersan/Amperdesktop/src/Login.html">Switch User</a>
-            <a class="sbuserbutton" href="/Ampersan/Apps.html">Logout</a>
-          </li>
+        <div class="notificationcard" id="notifcard">
+          <p class="sbnotificationtextlarge" id="notiftitle">404</p>
+          <p class="sbnotificationtextsmall" id="notifbody">---Not Found---</p>
         </div>
-        <div class="settingssb"></div>
       </div>
-      <div id="glancebar">
-        <div class="gbborder">
-          <div class="gbappcard" id="educakegb">
-            <div class="gbapp">
-              <img src="/Ampersan/Amperdesktop/defaultapps/Educake/appicon.png" alt="">
-              <p class="gbappname">Educake</p>
+      <div class="usersb">
+        <img class="sbuserlogo" src="assets/blankusericon.png" alt="Nothing to see here.">
+        <h2 id="username03">Unknown User</h2>
+        <li class="sbuser">
+          <a class="sbuserbutton" href="Amperdesktop/src/Login.html">Switch User</a>
+          <a class="sbuserbutton" href="Apps.html">Logout</a>
+        </li>
+      </div>
+      <div class="settingssb"></div>
+    </div>
+    <div id="glancebar">
+      <div class="gbborder">
+        <div class="gbappcard" id="educakegb">
+          <div class="gbapp">
+            <img src="Amperdesktop/defaultapps/Educake/appicon.png" alt="">
+            <p class="gbappname">Educake</p>
+          </div>
+        </div>
+        <div class="gbappcard" id="kahootgb">
+          <div class="gbapp">
+            <img src="Amperdesktop/defaultapps/Kahoot/appicon.png" alt="">
+            <p class="gbappname">Kahoot</p>
+          </div>
+        </div>
+        <div class="gbappcard" id="settingsgb">
+          <div class="gbapp">
+            <img src="Amperdesktop/defaultapps/Settings/appicon.png" alt="">
+            <p class="gbappname">Settings</p>
+          </div>
+        </div>
+        <div class="gbappcard" id="appimgb">
+          <div class="gbapp">
+            <img src="Amperdesktop/defaultapps/Appinstallmanager/appicon.png" alt="">
+            <p class="gbappname">AIM</p>
+          </div>
+        </div>
+        <div class="gbappcard" id="notesgb">
+          <div class="gbapp">
+            <img src="Amperdesktop/defaultapps/Notes/appicon.png" alt="">
+            <p class="gbappname">Notes</p>
+          </div>
+        </div>
+        <div class="gbappcard" id="calculatorgb">
+          <div class="gbapp">
+            <img src="Amperdesktop/defaultapps/Calculator/appicon.png" alt="">
+            <p class="gbappname">Calculator</p>
+          </div>
+        </div>
+        <div class="gbappcard" id="webbrowsergb">
+          <div class="gbapp">
+            <img src="Amperdesktop/defaultapps/webbrowser/appicon.png" alt="">
+            <p class="gbappname">webbrowser</p>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="taskbar">
+
+            <div class="taskbarapp">
+              <input type="image" id="placeholder" class="app" src="assets/icons/appiconerror.png">
+              </input>
             </div>
-          </div>
-          <div class="gbappcard" id="kahootgb">
-            <div class="gbapp">
-              <img src="/Ampersan/Amperdesktop/defaultapps/Kahoot/appicon.png" alt="">
-              <p class="gbappname">Kahoot</p>
+
+            <div class="taskbarapp" id="educaketb">
+              <input type="image" class="app" id="educake" src="Amperdesktop/defaultapps/Educake/appicon.png">
+              </input>
             </div>
-          </div>
-          <div class="gbappcard" id="settingsgb">
-            <div class="gbapp">
-              <img src="/Ampersan/Amperdesktop/defaultapps/Settings/appicon.png" alt="">
-              <p class="gbappname">Settings</p>
+
+            <div class="taskbarapp" id="settingstb">
+              <input type="image" class="app" id="settings" src="Amperdesktop/defaultapps/Settings/appicon.png">
+              </input>
             </div>
-          </div>
-          <div class="gbappcard" id="appimgb">
-            <div class="gbapp">
-              <img src="/Ampersan/Amperdesktop/defaultapps/Appinstallmanager/appicon.png" alt="">
-              <p class="gbappname">AIM</p>
+
+            <div class="taskbarapp" id="kahoottb">
+              <input type="image" class="app" id="kahoot" src="Amperdesktop/defaultapps/Kahoot/appicon.png">
+              </input>
             </div>
-          </div>
-          <div class="gbappcard" id="notesgb">
-            <div class="gbapp">
-              <img src="/Ampersan/Amperdesktop/defaultapps/Notes/appicon.png" alt="">
-              <p class="gbappname">Notes</p>
+
+            <div class="taskbarapp" id="notestb">
+              <input type="image" class="app" id="notes" src="Amperdesktop/defaultapps/Notes/appicon.png">
+              </input>
             </div>
-          </div>
-          <div class="gbappcard" id="calculatorgb">
-            <div class="gbapp">
-              <img src="/Ampersan/Amperdesktop/defaultapps/Calculator/appicon.png" alt="">
-              <p class="gbappname">Calculator</p>
+
+            <div class="taskbarapp" id="appimtb">
+              <input type="image" class="app" id="appim" src="Amperdesktop/defaultapps/Appinstallmanager/appicon.png">
+              </input>
             </div>
-          </div>
-          <div class="gbappcard" id="webbrowsergb">
-            <div class="gbapp">
-              <img src="/Ampersan/Amperdesktop/defaultapps/webbrowser/appicon.png" alt="">
-              <p class="gbappname">webbrowser</p>
+
+            <div class="taskbarapp" id="calculatortb">
+              <input type="image" class="app" id="calculator" src="Amperdesktop/defaultapps/Calculator/appicon.png">
+              </input>
             </div>
-          </div>
-      <footer class="footer">
-        <div class="taskbar">
 
-          <div class="taskbarapp">
-            <input type="image" id="placeholder" class="app" src="/Ampersan/assets/icons/appiconerror.png">
-            </input>
-          </div>
-
-          <div class="taskbarapp" id="educaketb">
-            <input type="image" class="app" id="educake" src="/Ampersan/Amperdesktop/defaultapps/Educake/appicon.png">
-            </input>
-          </div>
-
-          <div class="taskbarapp" id="settingstb">
-            <input type="image" class="app" id="settings" src="/Ampersan/Amperdesktop/defaultapps/Settings/appicon.png">
-            </input>
-          </div>
-
-          <div class="taskbarapp" id="kahoottb">
-            <input type="image" class="app" id="kahoot" src="/Ampersan/Amperdesktop/defaultapps/Kahoot/appicon.png">
-            </input>
-          </div>
-
-          <div class="taskbarapp" id="notestb">
-            <input type="image" class="app" id="notes" src="/Ampersan/Amperdesktop/defaultapps/Notes/appicon.png">
-            </input>
-          </div>
-
-          <div class="taskbarapp" id="appimtb">
-            <input type="image" class="app" id="appim" src="/Ampersan/Amperdesktop/defaultapps/Appinstallmanager/appicon.png">
-            </input>
-          </div>
-
-          <div class="taskbarapp" id="calculatortb">
-            <input type="image" class="app" id="calculator" src="/Ampersan/Amperdesktop/defaultapps/Calculator/appicon.png">
-            </input>
-          </div>
-
-          <div class="taskbarapp" id="webbrowsertb">
-            <input type="image" class="app" id="webbrowser" src="/Ampersan/Amperdesktop/defaultapps/webbrowser/appicon.png">
-            </input>
-          </div>
-
-          <div class="taskbarsolidleft">
-            <div class="gblogo appsolid" id="glancebartoggle">
+            <div class="taskbarapp" id="webbrowsertb">
+              <input type="image" class="app" id="webbrowser" src="Amperdesktop/defaultapps/webbrowser/appicon.png">
+              </input>
             </div>
-          </div>
 
-          <div class="taskbarsolidright">
-            <div id="sidebartoggle" class="sbtoggle appsolid">
+            <div class="taskbarsolidleft">
+              <div class="gblogo appsolid" id="glancebartoggle">
+              </div>
             </div>
-          </div>
+
+            <div class="taskbarsolidright">
+              <div id="sidebartoggle" class="sbtoggle appsolid">
+              </div>
+            </div>
         </footer>
       </div>
     </div>
 </body>
 
 </html>
-<script src="/Ampersan/js/UserVisualData.js"></script>
-<script src="/Ampersan/Amperdesktop/defaultapps/Settings/window_api.js"></script>
-<script src="/Ampersan/Amperdesktop/defaultapps/Educake/window_api.js"></script>
-<script src="/Ampersan/Amperdesktop/defaultapps/Kahoot/window_api.js"></script>
-<script src="/Ampersan/Amperdesktop/defaultapps/Notes/window_api.js"></script>
-<script src="/Ampersan/Amperdesktop/defaultapps/Appinstallmanager/window_api.js"></script>
-<script src="/Ampersan/Amperdesktop/defaultapps/Calculator/window_api.js"></script>
-<script src="/Ampersan/Amperdesktop/defaultapps/webbrowser/window_api.js"></script>
+<script src="js/UserVisualData.js"></script>
+<script src="Amperdesktop/defaultapps/Settings/window_api.js"></script>
+<script src="Amperdesktop/defaultapps/Educake/window_api.js"></script>
+<script src="Amperdesktop/defaultapps/Kahoot/window_api.js"></script>
+<script src="Amperdesktop/defaultapps/Notes/window_api.js"></script>
+<script src="Amperdesktop/defaultapps/Appinstallmanager/window_api.js"></script>
+<script src="Amperdesktop/defaultapps/Calculator/window_api.js"></script>
 
-<link rel="stylesheet" href="/Ampersan/Amperdesktop/defaultapps/Appinstallmanager/src/app.css">
-<link rel="stylesheet" href="/Ampersan/Amperdesktop/defaultapps/Educake/src/app.css">
-<link rel="stylesheet" href="/Ampersan/Amperdesktop/defaultapps/Kahoot/src/app.css">
-<link rel="stylesheet" href="/Ampersan/Amperdesktop/defaultapps/Notes/src/app.css">
-<link rel="stylesheet" href="/Ampersan/Amperdesktop/defaultapps/Settings/src/app.css">
-<link rel="stylesheet" href="/Ampersan/Amperdesktop/defaultapps/Calculator/src/app.css">
-<link rel="stylesheet" href="/Ampersan/Amperdesktop/defaultapps/webbrowser/src/app.css">
+<link rel="stylesheet" href="Amperdesktop/defaultapps/Appinstallmanager/src/app.css">
+<link rel="stylesheet" href="Amperdesktop/defaultapps/Educake/src/app.css">
+<link rel="stylesheet" href="Amperdesktop/defaultapps/Kahoot/src/app.css">
+<link rel="stylesheet" href="Amperdesktop/defaultapps/Notes/src/app.css">
+<link rel="stylesheet" href="Amperdesktop/defaultapps/Settings/src/app.css">
+<link rel="stylesheet" href="Amperdesktop/defaultapps/Calculator/src/app.css">
 
 <style>
   .window {
     background: linear-gradient(to bottom right, #00AAFF, #006fa7);
     border: 2px solid #46acff;
-  } 
+  }
 
-.windowheader {
-  height: 20px
-}
+  .windowheader {
+    height: 20px
+  }
 
 
   .windowframediv {
@@ -276,15 +265,15 @@
 
   .taskbar {
     background-color: rgb(99, 99, 99);
-    margin-top: auto;
     display: flex;
     overflow: hidden;
     z-index: -1;
     position: fixed;
-    bottom: 0vh;
+    bottom: 0;
     width: 100vw;
     text-align: center;
     height: 50px;
+    z-index: 100;
   }
 
   .taskbarsolidleft {
@@ -344,6 +333,7 @@
   input[type="button"] {
     outline: none;
   }
+
   input[type="button"]::-moz-focus-inner {
     border: 0;
   }
@@ -351,6 +341,7 @@
   input[type="image"] {
     outline: none;
   }
+
   input[type="image"]::-moz-focus-inner {
     border: 0;
   }
@@ -365,28 +356,28 @@
     background-position: 50% 2.5%;
     position: fixed;
     background-size: auto;
-    background-image: url("/Ampersan/Amperdesktop/defaultbackgrounds/(10).PNG");
+    background-image: url("Amperdesktop/defaultbackgrounds/(10).PNG");
   }
 
   ::-webkit-scrollbar {
     width: 0.5vw;
   }
 
-/* Track */
+  /* Track */
   ::-webkit-scrollbar-track {
     background: #333333;
   }
 
-/* Handle */
+  /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 0px;
   }
 
-/* Handle on hover */
+  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(94, 94, 94);
-  } 
+  }
 
   ::-webkit-scrollbar-corner {
     background-color: rgba(51, 51, 51, 0);
@@ -504,61 +495,61 @@
 
   .gblogo {
     background-size: contain;
-    background-image: url("/Ampersan/assets/IMG_0810.PNG");
+    background-image: url("assets/IMG_0810.PNG");
     transition: 200ms;
   }
 
   .gblogo:hover {
     background-size: contain;
-    background-image: url("/Ampersan/assets/IMG_0811.PNG");
+    background-image: url("assets/IMG_0811.PNG");
   }
 
   .gblogo:active {
     background-size: contain;
-    background-image: url("/Ampersan/assets/IMG_0806.PNG");
+    background-image: url("assets/IMG_0806.PNG");
   }
 
   .sbtoggle {
     background-size: contain;
-    background-image: url("/Ampersan/assets/IMG_0808.PNG");
+    background-image: url("assets/IMG_0808.PNG");
     transition: 200ms;
   }
 
   .sbtoggle:hover {
     background-size: contain;
-    background-image: url("/Ampersan/assets/IMG_0807.PNG");
+    background-image: url("assets/IMG_0807.PNG");
   }
 
   .sbtoggle:active {
     background-size: contain;
-    background-image: url("/Ampersan/assets/IMG_0812.PNG");
+    background-image: url("assets/IMG_0812.PNG");
   }
 
   /* Auto Gen App*/
-.autogenappwindow {
-  position: absolute;
-  z-index: 7;
-  text-align: center;
-  overflow: hidden;
-  width: 30vw;
-  height: 30vh;
-  cursor: auto;
-  overflow: hidden;
-  background: linear-gradient(to bottom right, #00AAFF, #006fa7);
-  border: 2px solid #46acff;
-}
+  .autogenappwindow {
+    position: absolute;
+    z-index: 7;
+    text-align: center;
+    overflow: hidden;
+    width: 30vw;
+    height: 30vh;
+    cursor: auto;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #00AAFF, #006fa7);
+    border: 2px solid #46acff;
+  }
 
-.autogenappwindowheader {
-  padding-top: 4px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 3px;
-  cursor: auto;
-  z-index: 9;
-  background-color: #2196F3;
-  color: #fff;
-  text-align: center;
-}
+  .autogenappwindowheader {
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    cursor: auto;
+    z-index: 9;
+    background-color: #2196F3;
+    color: #fff;
+    text-align: center;
+  }
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
@@ -588,7 +579,7 @@ document.getElementById('educakegb').addEventListener('click', function () {
   (document.getElementById('educaketb').style.width == '0px' || document.getElementById('educaketb').style.width == '')
   ? document.getElementById('educaketb').style.width = '48px'
   : document.getElementById('educaketb').style.width = '0px';
-  
+
   (document.getElementById('educaketb').style.display == 'none' || document.getElementById('educaketb').style.display == '')
   ? document.getElementById('educaketb').style.display = 'block'
   : document.getElementById('educaketb').style.display = 'none';

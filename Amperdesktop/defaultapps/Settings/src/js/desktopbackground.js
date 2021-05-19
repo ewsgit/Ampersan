@@ -1,3 +1,3 @@
 function desktopbackground1() {
-  document.getElementById("body").style.backgroundImage = url("/Ampersan/assets/Amperdesktop_Backgrounds/(3).PNG");
+  document.getElementById("body").style.backgroundImage = url("assets/Amperdesktop_Backgrounds/(3).PNG");
 };

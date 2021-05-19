@@ -1,256 +1,259 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <title>Ampersan Notes</title>
-    <link rel='stylesheet' href='Notes.css'>
-    <link rel="stylesheet" href="/Ampersan/css/navbars.css">
-    <link href="/Ampersanlight-theme.css" rel="stylesheet" id="theme-link" />
-  </head>
-  <body>
 
-        <div class="horizontalnb">
-      <img class="vnbarlogo" alt="Logo" src="/Ampersan/assets/Ampersan_alpha_large.png" />
-          <li style="float:right"><a href="/Ampersan/index.html">Logout</a></li>
-          <li style="float:right"><a id="username01">A Critical Error Has Occured!</a></li>
-        </div>
-        
-        <div class="vnpossync">
-          <div class="verticalnb">
-            <li><a href="/Ampersan/Apps.html" class="active">Apps</a></li>
-            <li class="settingslink"><a href="/Ampersan/Settings/html/settings_User 1.html">Settings</a></li>
-          </div>
-        </div>
+<head>
+  <meta charset='utf-8'>
+  <title>Ampersan Notes</title>
+  <link rel='stylesheet' href='Notes.css'>
+  <link rel="stylesheet" href="css/navbars.css">
+  <link href="/Ampersanlight-theme.css" rel="stylesheet" id="theme-link" />
+</head>
 
-        <div class="maincontentnoleftnav">
-                <div id='color-select'>
-                  <div class='color-box cwhite'></div>
-                  <div class='color-box cFFD37F'></div>
-                  <div class='color-box cFFFA81'></div>
-                  <div class='color-box cD5FA80'></div>
-                  <div class='color-box c78F87F'></div>
-                  <div class='color-box c79FBD6'></div>
-                  <div class='color-box c79FDFE'></div>
-                  <div class='color-box c7AD6FD'></div>
-                  <div class='color-box c7B84FC'></div>
-                  <div class='color-box cD687FC'></div>
-                  <div class='color-box cFF89FD'></div>
-                </div>
-              <main>
-                <div class="headers">
-                  <div id="list-head">
-                    <h1>Notes List</h1>
-                  </div>
-                  <div id="note-head">
-                    <b>Note Editor</b>
-                  </div>
-                </div>
-                <noteList>
-                  <div id='note'>
-                  </div>
-                </noteList>
-                <notepad>
-                  <div id="note-title">
-                    <input id="title-field" type="text" placeholder="Note Title">
-                  </div>
-                  <div id="note-body">
-                    <textarea id="body-field"></textarea>
-                  </div>
-                </notepad>
-              </main>
-              <div class="notebuttons" id="notebuttons">
-                <button id="btn-save">Save</button>
-                <button id="btn-delete">Delete</button>
-              </div>
+<body>
+
+  <div class="horizontalnb">
+    <img class="vnbarlogo" alt="Logo" src="assets/Ampersan_alpha_large.png" />
+    <li style="float:right"><a href="index.html">Logout</a></li>
+    <li style="float:right"><a id="username01">A Critical Error Has Occured!</a></li>
+  </div>
+
+  <div class="vnpossync">
+    <div class="verticalnb">
+      <li><a href="Apps.html" class="active">Apps</a></li>
+      <li class="settingslink"><a href="Settings/html/settings_User 1.html">Settings</a></li>
+    </div>
+  </div>
+
+  <div class="maincontentnoleftnav">
+    <div id='color-select'>
+      <div class='color-box cwhite'></div>
+      <div class='color-box cFFD37F'></div>
+      <div class='color-box cFFFA81'></div>
+      <div class='color-box cD5FA80'></div>
+      <div class='color-box c78F87F'></div>
+      <div class='color-box c79FBD6'></div>
+      <div class='color-box c79FDFE'></div>
+      <div class='color-box c7AD6FD'></div>
+      <div class='color-box c7B84FC'></div>
+      <div class='color-box cD687FC'></div>
+      <div class='color-box cFF89FD'></div>
+    </div>
+    <main>
+      <div class="headers">
+        <div id="list-head">
+          <h1>Notes List</h1>
         </div>
-  </body>
+        <div id="note-head">
+          <b>Note Editor</b>
+        </div>
+      </div>
+      <noteList>
+        <div id='note'>
+        </div>
+      </noteList>
+      <notepad>
+        <div id="note-title">
+          <input id="title-field" type="text" placeholder="Note Title">
+        </div>
+        <div id="note-body">
+          <textarea id="body-field"></textarea>
+        </div>
+      </notepad>
+    </main>
+    <div class="notebuttons" id="notebuttons">
+      <button id="btn-save">Save</button>
+      <button id="btn-delete">Delete</button>
+    </div>
+  </div>
+</body>
+
 </html>
 
 <style>
-.headers {
-  margin-top: 20px;
-  margin-bottom: -10px;
-  font-size: 20px;
-}
+  .headers {
+    margin-top: 20px;
+    margin-bottom: -10px;
+    font-size: 20px;
+  }
 
-#list-head {
-  margin-left: 2.5%;
-  width: 30.5%;
-  display: inline-block;
-  text-align: center;
-}
+  #list-head {
+    margin-left: 2.5%;
+    width: 30.5%;
+    display: inline-block;
+    text-align: center;
+  }
 
-#note-head {
-  width: 60%;
-  margin-left: 5%;
-  display: inline-block;
-  text-align: center;
-}
+  #note-head {
+    width: 60%;
+    margin-left: 5%;
+    display: inline-block;
+    text-align: center;
+  }
 
-noteList {
-  margin-top: 20px;
-  display: inline-block;
-  margin-left: 2.5%;
-  width: 30.5%;
-  height: 400px;
-  overflow: scroll;
-  border: solid 3px #929292;
-  border-radius: 5px;
-  background-color: #dedede;
-}
+  noteList {
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 2.5%;
+    width: 30.5%;
+    height: 400px;
+    overflow: scroll;
+    border: solid 3px #929292;
+    border-radius: 5px;
+    background-color: #dedede;
+  }
 
-.within-list {
-  cursor: pointer;
-}
+  .within-list {
+    cursor: pointer;
+  }
 
-.list-title {
-  font-weight: 600;
-  font-size: 20px;
-  padding: 5px 5px 0 5px;
-}
+  .list-title {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5px 5px 0 5px;
+  }
 
-.list-date {
-  font-weight: 200;
-  font-style: italic;
-  font-size: 12px;
-  padding: 0 5px 0 5px;
-}
+  .list-date {
+    font-weight: 200;
+    font-style: italic;
+    font-size: 12px;
+    padding: 0 5px 0 5px;
+  }
 
-.list-text {
-  padding: 0 5px 5px 5px;
-  border-bottom: solid 1px black;
-}
+  .list-text {
+    padding: 0 5px 5px 5px;
+    border-bottom: solid 1px black;
+  }
 
-notePad {
-  display: inline-block;
-  border: solid 3px black;
-  border-radius: 10px;
-  height: 400px;
-  overflow: scroll;
-  width: 60%;
-  margin-left: 5%;
-  margin-top: 0;
-}
+  notePad {
+    display: inline-block;
+    border: solid 3px black;
+    border-radius: 10px;
+    height: 400px;
+    overflow: scroll;
+    width: 60%;
+    margin-left: 5%;
+    margin-top: 0;
+  }
 
-#note-title {
-  font-size: 24px;
-  padding: 0 0 5px 5px;
-  border-bottom: solid 2px #dedede;
-}
+  #note-title {
+    font-size: 24px;
+    padding: 0 0 5px 5px;
+    border-bottom: solid 2px #dedede;
+  }
 
-#note-body {
-  padding: 5px;
-}
+  #note-body {
+    padding: 5px;
+  }
 
-#body-field,
-#title-field {
-  width: 100%;
-  border: none;
-  outline: none;
-  resize: none;
-}
+  #body-field,
+  #title-field {
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+  }
 
-#title-field {
-  font-size: 18px;
-  font-weight: 600;
-}
+  #title-field {
+    font-size: 18px;
+    font-weight: 600;
+  }
 
-#body-field {
-  font-size: 14px;
-  font-weight: 500;
-  height: 400px;
-}
+  #body-field {
+    font-size: 14px;
+    font-weight: 500;
+    height: 400px;
+  }
 
-#color-select {
-  display: flex;
-  flex-flow: row-reverse nowrap;
-  padding: 5px 10px 0 0;
-}
+  #color-select {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    padding: 5px 10px 0 0;
+  }
 
-.color-box {
-  border: solid 2px #929292;
-  height: 10px;
-  width: 10px;
-  margin-left: 5px;
-}
+  .color-box {
+    border: solid 2px #929292;
+    height: 10px;
+    width: 10px;
+    margin-left: 5px;
+  }
 
-.display {
-  display: visible;
-}
+  .display {
+    display: visible;
+  }
 
-.no-display {
-  display: none;
-}
+  .no-display {
+    display: none;
+  }
 
-.color-box:hover {
-  cursor: pointer;
-}
+  .color-box:hover {
+    cursor: pointer;
+  }
 
-#listed:nth-child(odd):hover {
-  cursor: pointer;
-}
+  #listed:nth-child(odd):hover {
+    cursor: pointer;
+  }
 
-.cwhite {
-  background-color: white;
-}
+  .cwhite {
+    background-color: white;
+  }
 
-.cFFD37F {
-  background-color: #ffd37f;
-}
+  .cFFD37F {
+    background-color: #ffd37f;
+  }
 
-.cFFFA81 {
-  background-color: #fffa81;
-}
+  .cFFFA81 {
+    background-color: #fffa81;
+  }
 
-.cD5FA80 {
-  background-color: #d5fa80;
-}
+  .cD5FA80 {
+    background-color: #d5fa80;
+  }
 
-.c78F87F {
-  background-color: #78f87f;
-}
+  .c78F87F {
+    background-color: #78f87f;
+  }
 
-.c79FBD6 {
-  background-color: #79fbd6;
-}
+  .c79FBD6 {
+    background-color: #79fbd6;
+  }
 
-.c79FDFE {
-  background-color: #79fdfe;
-}
+  .c79FDFE {
+    background-color: #79fdfe;
+  }
 
-.c7AD6FD {
-  background-color: #7ad6fd;
-}
+  .c7AD6FD {
+    background-color: #7ad6fd;
+  }
 
-.c7B84FC {
-  background-color: #7b84fc;
-}
+  .c7B84FC {
+    background-color: #7b84fc;
+  }
 
-.cD687FC {
-  background-color: #d687fc;
-}
+  .cD687FC {
+    background-color: #d687fc;
+  }
 
-.cFF89FD {
-  background-color: #ff89fd;
-}
+  .cFF89FD {
+    background-color: #ff89fd;
+  }
 
-a {
-  color: rgb(255, 255, 255);
-  font-style: none;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  a {
+    color: rgb(255, 255, 255);
+    font-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-.notebuttons {
-  padding-left: 2vw;
-}
+  .notebuttons {
+    padding-left: 2vw;
+  }
 
-h1 {
-  color: rgb(0, 0, 0);
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: left;
-  font-size: 4vw;
-}
+  h1 {
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 4vw;
+  }
 </style>
 
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
-<script src="/Ampersan/js/UserSystem.js"></script>
+<script src="js/UserSystem.js"></script>

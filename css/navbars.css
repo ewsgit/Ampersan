@@ -118,7 +118,8 @@ li a {
 }
 
 .vnbarlogo {
-  height: 8vh;        
+  margin-left: 0.25vw;
+  height: 5vh;
 }
 
 li a:hover {
