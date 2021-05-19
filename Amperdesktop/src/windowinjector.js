@@ -17,7 +17,7 @@ function windowapi() {
 			</div>
   </div>
 
-	<script src=/Amperdesktop/defaultapps/${appname}/window_api.js></script>
+	<script defer src=/Amperdesktop/defaultapps/${appname}/window_api.js></script>
 	<link rel=stylesheet href=/Amperdesktop/defaultapps/${appname}/app.css>
 `
 }
