@@ -1,3 +1,0 @@
-User-agent: *
-Disallow: /Ampersan/
-Allow: /Ampersan/index.html
