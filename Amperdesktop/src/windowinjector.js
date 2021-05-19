@@ -1,7 +1,7 @@
 function windowapi() {
 
 	const windowsdiv = document.getElementById("windows")
-	var appname = "WebBrowser"
+	var appname = "UnNamed"
 
 	windowsdiv.innerHTML = `
   <div class=window id=window${appname}>
