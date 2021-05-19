@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="shortcut icon" href="assets/appicon.png" type="image/x-icon">
+</head>
+
+<body>
+	<div id="backbutton" onclick="back()"></div>
+	<div id="lefthalf">
+		<div class="title">
+			<h1>AmperDesktop<br>Login</h1>
+		</div>
+	</div>
+	<div id="righthalf">
+		<div id="accounts">
+			<div id="account1" onclick="user1()">
+				<h1>User</h1>
+			</div>
+			<div id="account2" onclick="user2()">
+				<h1>User</h1>
+			</div>
+			<div id="account3" onclick="user3()">
+				<h1>User</h1>
+			</div>
+			<div id="account4" onclick="user4()">
+				<h1>User</h1>
+			</div>
+			<div id="account5" onclick="user5()">
+				<h1>User</h1>
+			</div>
+		</div>
+		<div id="login">
+			<div id="image"></div>
+			<div id="username">
+			</div>
+			<div id="password">
+			</div>
+		</div>
+		<div id="righthalfsettingsfooter">
+			<div id="footericon"><img src="assets/icons/svg/fi-rr-tool-marquee.svg" alt=""></div>
+		</div>
+	</div>
+</body>
+
+</html>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+	function user1() {
+		document.getElementById("account1").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("account2").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("account3").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("account4").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("account5").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("lefthalf").style.animation = "titleanimbackwards 1000ms forwards"
+	}
+
+	function user2() {
+		document.getElementById("account2").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("account1").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("account3").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("account4").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("account5").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("lefthalf").style.animation = "titleanimbackwards 1000ms forwards"
+	}
+
+	function user3() {
+		document.getElementById("account3").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("account1").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("account2").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("account4").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("account5").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("lefthalf").style.animation = "titleanimbackwards 1000ms forwards"
+	}
+
+	function user4() {
+		document.getElementById("account4").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("account1").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("account2").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("account3").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("account5").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("lefthalf").style.animation = "titleanimbackwards 1000ms forwards"
+	}
+
+	function user5() {
+		document.getElementById("account5").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("account1").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("account2").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("account3").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("account4").style.animation = "passwordscreentransitionleft 1000ms forwards"
+		document.getElementById("lefthalf").style.animation = "titleanimbackwards 1000ms forwards"
+	}
+
+	function back() {
+		document.getElementById("account5").style.animation = "passwordscreentransitionleftbackwards 1000ms forwards"
+		document.getElementById("account1").style.animation = "passwordscreentransitionleftbackwards 1000ms forwards"
+		document.getElementById("account2").style.animation = "passwordscreentransitionleftbackwards 1000ms forwards"
+		document.getElementById("account3").style.animation = "passwordscreentransitionleftbackwards 1000ms forwards"
+		document.getElementById("account4").style.animation = "passwordscreentransitionleftbackwards 1000ms forwards"
+		document.getElementById("lefthalf").style.animation = "titleanim 1000ms forwards"
+	}
+</script>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+	body {
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		padding: 0;
+		margin: 0;
+		background-color: rgb(80, 80, 80);
+		-ms-user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-webkit-touch-callout: none;
+		-khtml-user-select: none;
+		user-select: none;
+	}
+
+	#lefthalf {
+		background-color: rgb(97, 97, 97);
+		height: 100%;
+		box-shadow: 0 0 25px #00000071;
+		z-index: 1;
+		position: relative;
+		animation: titleanim 1s linear forwards;
+		width: 25%;
+	}
+
+	#righthalf {
+		background-color: rgb(80, 80, 80);
+		width: 75%;
+		height: 100%;
+		left: -60vw;
+		position: relative;
+		animation: bganim 1s 1s linear forwards;
+	}
+
+	#lefthalf h1 {
+		font-family: 'Noto Sans', sans-serif;
+		text-align: center;
+	}
+
+	.title {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: x-large;
+		color: white;
+	}
+
+	#account1 {
+		background-color: #0000006b;
+		position: relative;
+		width: 100%;
+		height: 20%;
+		border-radius: 1vw;
+		font-family: 'Noto Sans', sans-serif;
+		display: flex;
+		align-items: center;
+		color: white;
+		margin-bottom: 1vh;
+		transition: background-color 100ms linear;
+	}
+
+	#account1:hover {
+		background-color: #0000003f;
+	}
+
+	#account1:active {
+		background-color: #00000023;
+	}
+
+	#account1 h1 {
+		padding-left: 10%;
+	}
+
+	#account2 {
+		background-color: rgba(0, 0, 0, 0.42);
+		position: relative;
+		width: 100%;
+		height: 20%;
+		border-radius: 1vw;
+		font-family: 'Noto Sans', sans-serif;
+		display: flex;
+		align-items: center;
+		color: white;
+		margin-bottom: 1vh;
+		transition: background-color 100ms linear;
+	}
+
+	#account2:hover {
+		background-color: #0000003f;
+	}
+
+	#account2:active {
+		background-color: #00000023;
+	}
+
+	#account2 h1 {
+		padding-left: 10%;
+	}
+
+	#account3 {
+		background-color: #0000006b;
+		position: relative;
+		width: 100%;
+		height: 20%;
+		border-radius: 1vw;
+		font-family: 'Noto Sans', sans-serif;
+		display: flex;
+		align-items: center;
+		color: white;
+		margin-bottom: 1vh;
+		transition: background-color 100ms linear;
+	}
+
+	#account3:hover {
+		background-color: #0000003f;
+	}
+
+	#account3:active {
+		background-color: #00000023;
+	}
+
+	#account3 h1 {
+		padding-left: 10%;
+	}
+
+	#account4 {
+		background-color: #0000006b;
+		position: relative;
+		width: 100%;
+		height: 20%;
+		border-radius: 1vw;
+		font-family: 'Noto Sans', sans-serif;
+		display: flex;
+		align-items: center;
+		color: white;
+		margin-bottom: 1vh;
+		transition: background-color 100ms linear;
+	}
+
+	#account4:hover {
+		background-color: #0000003f;
+	}
+
+	#account4:active {
+		background-color: #00000023;
+	}
+
+	#account4 h1 {
+		padding-left: 10%;
+	}
+
+	#account5 {
+		background-color: #0000006b;
+		position: relative;
+		width: 100%;
+		height: 20%;
+		border-radius: 1vw;
+		font-family: 'Noto Sans', sans-serif;
+		display: flex;
+		align-items: center;
+		color: white;
+		margin-bottom: 1vh;
+		transition: background-color 100ms linear;
+	}
+
+	#account5:hover {
+		background-color: #0000003f;
+	}
+
+	#account5:active {
+		background-color: #00000023;
+	}
+
+	#account5 h1 {
+		padding-left: 10%;
+	}
+
+	#accounts {
+		width: 25%;
+		height: 50%;
+		position: relative;
+		top: 20%;
+		left: 20%;
+	}
+
+	#righthalfsettingsfooter {
+		width: 100%;
+		position: fixed;
+		bottom: -25vh;
+		right: 0;
+		background-color: rgb(63, 63, 63);
+		animation: bottombar 1s 1s linear forwards;
+	}
+
+	#footericon img {
+		height: 8vh;
+		margin-top: 0.5vh;
+		margin-right: 0.5vh;
+		margin-left: 0.5vh;
+	}
+
+	#footericon {
+		position: fixed;
+		right: 0;
+		background-color: #333333;
+		border-radius: 25%;
+		margin-top: 0.5vh;
+		margin-right: 0.5vh;
+	}
+
+	#backbutton {
+		background-color: #0000007a;
+		border-radius: 25%;
+		width: 5vw;
+		height: 5vw;
+		position: absolute;
+		top: 2.5vh;
+		left: 2.5vh;
+	}
+
+	#backbutton:hover {
+		background-color: #0000003f;
+	}
+
+	#backbutton:active {
+		background-color: #00000023;
+	}
+
+	#image {
+		border-radius: 20px;
+		width: 10vw;
+		height: 10vw;
+		background-color: #333333;
+	}
+
+	#login {
+		align-items: center;
+		display: flex;
+		position: fixed;
+		top: 20vh;
+		right: 20vw;
+		flex-direction: column;
+	}
+
+	@keyframes titleanim {
+		0% {
+			left: -25vw;
+		}
+
+		100% {
+			left: 0vw;
+		}
+	}
+
+	@keyframes titleanimbackwards {
+		0% {
+			left: 0vw;
+		}
+
+		100% {
+			left: -25vw;
+		}
+	}
+
+	@keyframes bganim {
+		0% {
+			left: -50vw;
+		}
+
+		100% {
+			left: -10vw;
+		}
+	}
+
+	@keyframes bottombar {
+		0% {
+			bottom: -10vh;
+			height: 10vh;
+		}
+
+		100% {
+			bottom: 0;
+			height: 10vh;
+		}
+	}
+
+	@keyframes passwordscreentransitionleft {
+		0% {
+			left: 0;
+		}
+
+		100% {
+			left: -25vw;
+		}
+	}
+
+	@keyframes passwordscreentransitionleftbackwards {
+		0% {
+			left: -25vw;
+		}
+
+		100% {
+			left: 0vw;
+		}
+	}
+
+	@keyframes backbutton {
+		0% {
+			left: -15vw;
+			top: -15vh;
+		}
+
+		100% {
+			left: 12vw;
+			top: 12vh;
+		}
+	}
+</style>

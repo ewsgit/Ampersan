@@ -1,0 +1,25 @@
+#windowappim {
+  position: absolute;
+  z-index: 7;
+  background-color: #2196F3;
+  border: 2px solid #46acff;
+  text-align: center;
+  overflow: hidden;
+  width: 30vw;
+  height: 30vh;
+  cursor: auto;
+  overflow: hidden;
+  display: none;
+}
+
+#windowappimheader {
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 3px;
+  cursor: auto;
+  z-index: 9;
+  background-color: #2196F3;
+  color: #fff;
+  text-align: center;
+}

@@ -1,0 +1,298 @@
+.verticalnb {
+  list-style-type: none;
+  width: 10vw;
+  background-color: #333;
+  position: fixed;
+  height: 94vh;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0vw 0vh 1vw rgb(31, 31, 31);
+  z-index: 10;
+}
+
+.verticalnb li {
+  display: flex;
+}
+
+.verticalnb li a {
+  z-index: 11;
+}
+
+.activevnbar:hover {
+  width: 1vw;
+}
+.vnpossync {
+  padding-top: 6vh;
+  z-index: 10;
+}
+
+.activevnbar {
+  background-color: orangered;
+  width: 0.5vw;
+  height: 5vh;
+  z-index: 12;
+  transition: 150ms;
+}
+
+.horizontalnb li a {
+  width: auto;
+}
+
+.insetnb li a {
+  width: 18.5vw;
+  text-align: center;
+}
+
+.insetnb {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  width: 20vw;
+  background-color: #333;
+  position: fixed;
+  height: 96vh;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0vw 0vh 1vw rgb(31, 31, 31);
+  margin-left: 10vw;
+  padding-top: 6vh;
+  z-index: 7;
+}
+
+.insetnbfull {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  width: 89vw;
+  background-color: #333;
+  position: fixed;
+  height: 95vh;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0vw 0vh 1vw rgb(31, 31, 31);
+  padding-left: 10vw;
+  padding-top: 5vh;
+  z-index: 8;
+}
+
+.insetnbfulltext {
+  text-align: center;
+  z-index: 11;
+}
+
+.insetnbtext {
+  text-align: center;
+  z-index: 11;
+}
+
+.horizontalnb {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  overflow: hidden;
+  list-style-type: none;
+  height: 6vh;
+  position: fixed;
+  box-shadow: 0vw 0vh 1vw rgb(31, 31, 31);
+  z-index: 10;
+}
+
+.horizontalnavbarimage {
+  z-index: 10;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 2.5vh;
+  padding: 1vh 16px 1vh 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 500ms;
+  width: 10vw;
+}
+
+.vnbarlogo {
+  margin-left: 0.25vw;
+  height: 5vh;
+}
+
+li a:hover {
+  background-color: rgb(34, 34, 34);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li a:active {
+  background-color: rgb(158, 158, 158);
+}
+
+.active {
+  background-color: rgb(77, 77, 77);
+}
+
+button {
+  float: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: #333;
+}
+
+button a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Change the link color to #111 (black) on hover */
+button a:hover {
+  background-color: rgb(223, 223, 223);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.maincontent {
+  padding-left: 38vw;
+  padding-top: 2vh;
+}
+
+.maincontenttitle {
+  text-align: center;
+}
+
+.maincontentnoleftnav {
+  padding-left: 10vw;
+  padding-top: 2vh;
+}
+
+p {
+  color: white;
+}
+
+div {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  scrollbar-color:#888 #333 rgb(99,99,99);
+  padding: 0;
+  margin: 0;
+}
+
+.settingslink {
+  bottom: 0px;
+  position: absolute;
+  width: 10vw;
+}
+
+.usersettingsmenucentre li {
+  display: flex;
+}
+
+.usersettingsnavbarleft li {
+  display: flex;
+}
+
+.insetnb li {
+  display: flex;
+}
+
+.gobackactive a {
+  background-color: #ffffff00;
+  transition: 500ms;
+}
+
+.deleteactive a {
+  background-color: #ffffff00;
+  transition: 500ms;
+}
+
+.gobackactive a:hover {
+  background-color: #ffffff00;
+}
+
+.deleteactive a:hover {
+  background-color: #ffffff00;
+}
+
+.gobackactive a:active {
+  background-color: #ffffff00;
+}
+
+.deleteactive a:active {
+  background-color: #ffffff00;
+}
+
+.deleteactive {
+  text-align: center;
+}
+
+.gobackactive {
+  justify-content: center;
+  align-items: center;
+}
+
+.deleteactive {
+  justify-content: center;
+  align-items: center;
+}
+
+.usersettingsnavbarleft li {
+  width: 11vw;
+}
+
+.horizontalnbright {
+  display: flex;
+  position: absolute;
+  right: 0.25vw;
+}
+
+.horizontalnbright img {
+  height: 5vh;
+  width: 5vh;
+  padding-right: 0.5vw;
+}
+
+#displaymodetoggle1 {
+  margin-right: 0.5vw;
+}
+
+#displaymodetoggle2 {
+  margin-right: 0.5vw;
+}

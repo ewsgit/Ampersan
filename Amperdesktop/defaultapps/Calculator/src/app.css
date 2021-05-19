@@ -1,0 +1,30 @@
+#windowcalculator {
+  position: fixed;
+  z-index: 7;
+  background-color: #2196F3;
+  border: 2px solid #46acff;
+  text-align: center;
+  overflow: hidden;
+  width: 18vw;
+  height: 50vh;
+  cursor: auto;
+  overflow: hidden;
+  display: none;
+}
+
+#windowcalculatorheader {
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 3px;
+  height: 2vh;
+  cursor: auto;
+  z-index: 9;
+  background-color: #2196F3;
+  color: #fff;
+  text-align: center;
+}
+
+#windowcalculatorframe {
+  height: 96%;
+}
