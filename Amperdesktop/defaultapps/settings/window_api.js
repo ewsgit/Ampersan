@@ -5,7 +5,7 @@
 // change "appname" to the name of the app using the api,
 // make sure that there are no duplicate names
 
-dragElement(document.getElementById("window" + "settings"));
+dragElement(document.getElementById("window" + "Settings"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -56,62 +56,62 @@ function dragElement(elmnt) {
   }
 }
 
-document.getElementById("settings" + "maximise").addEventListener("click", function () {
+document.getElementById("Settings" + "maximise").addEventListener("click", function () {
 
-  (document.getElementById('window' + "settings").style.width == '30vw' || document.getElementById('window' + "settings").style.width == '')
-    ? document.getElementById('window' + "settings").style.width = '95vw'
-    : document.getElementById('window' + "settings").style.width = '30vw';
+  (document.getElementById('window' + "Settings").style.width == '30vw' || document.getElementById('window' + "Settings").style.width == '')
+    ? document.getElementById('window' + "Settings").style.width = '95vw'
+    : document.getElementById('window' + "Settings").style.width = '30vw';
 
-  (document.getElementById('window' + "settings").style.height == '20vw' || document.getElementById('window' + "settings").style.height == '')
-    ? document.getElementById('window' + "settings").style.height = '45vw'
-    : document.getElementById('window' + "settings").style.height = '20vw';
+  (document.getElementById('window' + "Settings").style.height == '20vw' || document.getElementById('window' + "Settings").style.height == '')
+    ? document.getElementById('window' + "Settings").style.height = '45vw'
+    : document.getElementById('window' + "Settings").style.height = '20vw';
 
 }, false)
 
-document.getElementById("settings").addEventListener('click', function () {
+document.getElementById("Settings").addEventListener('click', function () {
 
-  (document.getElementById('window' + "settings").style.display == 'none' || document.getElementById('window' + "settings").style.display == '')
-    ? document.getElementById('window' + "settings").style.display = 'block'
-    : document.getElementById('window' + "settings").style.display = 'none';
-
-}, false);
-
-document.getElementById("settings" + "close").addEventListener('click', function () {
-
-  (document.getElementById('window' + "settings").style.display == 'none' || document.getElementById('window' + "settings").style.display == '')
-    ? document.getElementById('window' + "settings").style.display = 'none'
-    : document.getElementById('window' + "settings").style.display = 'none';
-
-  (document.getElementById('settings' + "tb").style.display == 'none' || document.getElementById('settings' + "tb").style.display == '')
-    ? document.getElementById('settings' + "tb").style.display = 'block'
-    : document.getElementById('settings' + "tb").style.display = 'none';
+  (document.getElementById('window' + "Settings").style.display == 'none' || document.getElementById('window' + "Settings").style.display == '')
+    ? document.getElementById('window' + "Settings").style.display = 'block'
+    : document.getElementById('window' + "Settings").style.display = 'none';
 
 }, false);
 
-document.getElementById("settings" + "minimise").addEventListener('click', function () {
+document.getElementById("Settings" + "close").addEventListener('click', function () {
 
-  (document.getElementById('window' + "settings").style.display == 'none' || document.getElementById('window' + "settings").style.display == '')
-    ? document.getElementById('window' + "settings").style.display = 'none'
-    : document.getElementById('window' + "settings").style.display = 'none';
+  (document.getElementById('window' + "Settings").style.display == 'none' || document.getElementById('window' + "Settings").style.display == '')
+    ? document.getElementById('window' + "Settings").style.display = 'none'
+    : document.getElementById('window' + "Settings").style.display = 'none';
+
+  (document.getElementById('Settings' + "tb").style.display == 'none' || document.getElementById('Settings' + "tb").style.display == '')
+    ? document.getElementById('Settings' + "tb").style.display = 'block'
+    : document.getElementById('Settings' + "tb").style.display = 'none';
 
 }, false);
 
-document.getElementById("settings" + "fullscreen").addEventListener('click', function () {
+document.getElementById("Settings" + "minimise").addEventListener('click', function () {
 
-  (document.getElementById('window' + "settings").style.width == '30vw' || document.getElementById('window' + "settings").style.width == '')
-    ? document.getElementById('window' + "settings").style.width = '100vw'
-    : document.getElementById('window' + "settings").style.width = '30vw';
+  (document.getElementById('window' + "Settings").style.display == 'none' || document.getElementById('window' + "Settings").style.display == '')
+    ? document.getElementById('window' + "Settings").style.display = 'none'
+    : document.getElementById('window' + "Settings").style.display = 'none';
 
-  (document.getElementById('window' + "settings").style.height == '20vw' || document.getElementById('window' + "settings").style.height == '')
-    ? document.getElementById('window' + "settings").style.height = '100vw'
-    : document.getElementById('window' + "settings").style.height = '20vw';
+}, false);
 
-  (document.getElementById('window' + "settings").style.top == '0' || document.getElementById('window' + "settings").style.top == '')
-    ? document.getElementById('window' + "settings").style.top = '0'
-    : document.getElementById('window' + "settings").style.top = '0';
+document.getElementById("Settings" + "fullscreen").addEventListener('click', function () {
 
-  (document.getElementById('window' + "settings").style.left == '0' || document.getElementById('window' + "settings").style.left == '')
-    ? document.getElementById('window' + "settings").style.left = '0'
-    : document.getElementById('window' + "settings").style.left = '0';
+  (document.getElementById('window' + "Settings").style.width == '30vw' || document.getElementById('window' + "Settings").style.width == '')
+    ? document.getElementById('window' + "Settings").style.width = '100vw'
+    : document.getElementById('window' + "Settings").style.width = '30vw';
+
+  (document.getElementById('window' + "Settings").style.height == '20vw' || document.getElementById('window' + "Settings").style.height == '')
+    ? document.getElementById('window' + "Settings").style.height = '100vw'
+    : document.getElementById('window' + "Settings").style.height = '20vw';
+
+  (document.getElementById('window' + "Settings").style.top == '0' || document.getElementById('window' + "Settings").style.top == '')
+    ? document.getElementById('window' + "Settings").style.top = '0'
+    : document.getElementById('window' + "Settings").style.top = '0';
+
+  (document.getElementById('window' + "Settings").style.left == '0' || document.getElementById('window' + "Settings").style.left == '')
+    ? document.getElementById('window' + "Settings").style.left = '0'
+    : document.getElementById('window' + "Settings").style.left = '0';
 
 }, false);

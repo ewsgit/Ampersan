@@ -1,9 +1,9 @@
 function windowapi() {
 
-	const windowsdiv = document.getElementById("windows")
-	var appname = "UnNamed"
+	const windowsdiv = document.body
+	var appname = "Settings"
 
-	windowsdiv.innerHTML = `
+	windowsdiv.innerHTML += `
   <div class=window id=window${appname}>
 		<div class=windowheader id=window${appname}header>
 			<a>${appname}</a>

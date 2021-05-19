@@ -13,20 +13,6 @@
 </head>
 
 <body>
-  <div id="windows"></div>
-  <div class="window" id="windowsettings">
-    <div class="windowheader" id="windowsettingsheader">
-      <a>Settings</a>
-      <input type="image" src="/assets/icons/svg/fi-rr-cross.svg" class="windowactions" id="settingsclose">
-      <input type="image" src="/assets/icons/svg/fi-rr-square.svg" class="windowactions" id="settingsmaximise">
-      <input type="image" src="/assets/icons/svg/fi-rr-minus.svg" class="windowactions" id="settingsminimise">
-      <input type="image" src="/assets/icons/svg/fi-rr-resources.svg" class="windowactions" id="settingsfullscreen">
-    </div>
-    <div class="windowframediv">
-      <iframe style="z-index: 8" class="windowframe" src="/Amperdesktop/defaultapps/Settings/src/app.html"
-        frameborder="0"></iframe>
-    </div>
-  </div>
   <div class="window" id="windowcalculator">
     <div class="windowheader" id="windowcalculatorheader">
       <a>Calculator</a>
@@ -88,7 +74,6 @@
         frameborder="0"></iframe>
     </div>
   </div>
-  </div>
   <div>
     <div id="sidebar">
       <div class="notificationssb">
@@ -126,7 +111,7 @@
             <p class="gbappname">Kahoot</p>
           </div>
         </div>
-        <div class="gbappcard" id="settingsgb">
+        <div class="gbappcard" id="Settingsgb">
           <div class="gbapp">
             <img src="/Amperdesktop/defaultapps/Settings/appicon.png" alt="">
             <p class="gbappname">Settings</p>
@@ -169,8 +154,8 @@
               </input>
             </div>
 
-            <div class="taskbarapp" id="settingstb">
-              <input type="image" class="app" id="settings" src="/Amperdesktop/defaultapps/Settings/appicon.png">
+            <div class="taskbarapp" id="Settingstb">
+              <input type="image" class="app" id="Settings" src="/Amperdesktop/defaultapps/Settings/appicon.png">
               </input>
             </div>
 
@@ -590,19 +575,19 @@
 
   }, false);
 
-  document.getElementById('settingsgb').addEventListener('click', function () {
+  document.getElementById('Settingsgb').addEventListener('click', function () {
 
-    (document.getElementById('settingstb').style.width == '0px' || document.getElementById('settingstb').style.width == '')
-      ? document.getElementById('settingstb').style.width = '48px'
-      : document.getElementById('settingstb').style.width = '0px';
+    (document.getElementById('Settingstb').style.width == '0px' || document.getElementById('Settingstb').style.width == '')
+      ? document.getElementById('Settingstb').style.width = '48px'
+      : document.getElementById('Settingstb').style.width = '0px';
 
-    (document.getElementById('settingstb').style.display == 'none' || document.getElementById('settingstb').style.display == '')
-      ? document.getElementById('settingstb').style.display = 'block'
-      : document.getElementById('settingstb').style.display = 'none';
+    (document.getElementById('Settingstb').style.display == 'none' || document.getElementById('Settingstb').style.display == '')
+      ? document.getElementById('Settingstb').style.display = 'block'
+      : document.getElementById('Settingstb').style.display = 'none';
 
-    (document.getElementById('settingstb').style.paddingLeft == '0px' || document.getElementById('settingstb').style.paddingLeft == '')
-      ? document.getElementById('settingstb').style.paddingLeft = '1px'
-      : document.getElementById('settingstb').style.paddingLeft = '0px';
+    (document.getElementById('Settingstb').style.paddingLeft == '0px' || document.getElementById('Settingstb').style.paddingLeft == '')
+      ? document.getElementById('Settingstb').style.paddingLeft = '1px'
+      : document.getElementById('Settingstb').style.paddingLeft = '0px';
 
   }, false);
 
@@ -689,7 +674,7 @@
   document.getElementById('calculatortb').style.display = 'none';
   document.getElementById('appimtb').style.display = 'none'
   document.getElementById('notestb').style.display = 'none'
-  document.getElementById('settingstb').style.display = 'none'
+  document.getElementById('Settingstb').style.display = 'none'
   document.getElementById('kahoottb').style.display = 'none'
   document.getElementById('educaketb').style.display = 'none'
   document.getElementById('webbrowsertb').style.display = 'none'
