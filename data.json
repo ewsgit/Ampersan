@@ -1,15 +1,17 @@
 {
 	"profiles":{
 		"ethanwellssmith2@gmail.com":{
-			"users":{
+			"sub_users":{
 				"1":{
-					"appsinstalled":[
-						"settings",
-						"notes"
-					],
-					"positions":{
-						"settings":[0,0,0],
-						"notes":[0,0,0]
+					"tablet_mode":{
+						"apps_installed":[
+							"settings",
+							"notes"
+						],
+						"app_positions":{
+							"settings":[0,0,0],
+							"notes":[0,0,0]
+						}
 					}
 				}
 			}

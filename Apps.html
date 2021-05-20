@@ -59,7 +59,7 @@
     <div class="horizontalnb">
       <img draggable="false" (dragstart)="false;" class="vnbarlogo" alt="Logo" src="/assets/Ampersan_alpha_large.png" />
       <div class="horizontalnbright">
-        <li id="displaymodetoggle1"><a>Complex Display Mode</a></li>
+        <li onclick="complexdisplaymode()"><a>Complex Display Mode</a></li>
         <img draggable="false" (dragstart)="false;" src="/assets/blankusericon.png" alt="">
         <li><a id="username01">A Critical Error Has Occured!</a></li>
         <li><a href="/index.html">Logout</a></li>
@@ -67,7 +67,7 @@
     </div>
     <div class="mainbody">
       <div class="cards">
-        <div id="welcomemessage" class="card2high">
+        <div id="welcomemessage" onclick="welcomemessagedismissed()" class="card2high">
           <div class="startbg">
             <div>
               <h2>Welcome To Ampersan</h2>
@@ -84,7 +84,7 @@
     <div class="horizontalnb">
       <img draggable="false" (dragstart)="false;" class="vnbarlogo" alt="Logo" src="/assets/Ampersan_alpha_large.png" />
       <div class="horizontalnbright">
-        <li id="displaymodetoggle2"><a>Simple Display Mode</a></li>
+        <li onclick="simpledisplaymode()"><a>Simple Display Mode</a></li>
         <img draggable="false" (dragstart)="false;" src="/assets/blankusericon.png" alt="">
         <li><a id="username01">A Critical Error Has Occured!</a></li>
         <li><a href="/index.html">Logout</a></li>
@@ -445,9 +445,10 @@
     height: 4vh;
     background-color: rgb(77, 77, 77);
     display: flex;
-    position: relative;
+    position: absolute;
     justify-content: center;
     align-items: center;
+    bottom: 0;
   }
 
   #notificationbody {
@@ -461,6 +462,8 @@
   .notificationrowflex {
     display: flex;
     flex-direction: row;
+    position: relative;
+    bottom: 0;
   }
 
   @keyframes notificationcardslidein {
@@ -470,7 +473,7 @@
     }
 
     25% {
-      height: 11vh;
+      height: 14vh;
       top: 10vh;
     }
 
@@ -485,7 +488,7 @@
     }
 
     25% {
-      height: 11vh;
+      height: 14vh;
       top: 10vh;
     }
 
@@ -497,7 +500,7 @@
 </style>
 
 <script>
-  document.getElementById('displaymodetoggle1').addEventListener('click', function () {
+  function simpledisplaymode() {
 
     (document.getElementById('simplemode').style.display == 'none' || document.getElementById('simplemode').style.display == '')
       ? document.getElementById('simplemode').style.display = 'block'
@@ -511,9 +514,9 @@
       ? localStorage.setItem("ampersansystemappsdisplaymode", 0)
       : localStorage.setItem("ampersansystemappsdisplaymode", 1);
 
-  }, false);
+  };
 
-  document.getElementById('displaymodetoggle2').addEventListener('click', function () {
+  function complexdisplaymode() {
 
     (document.getElementById('complexmode').style.display == 'none' || document.getElementById('complexmode').style.display == '')
       ? document.getElementById('complexmode').style.display = 'block'
@@ -527,7 +530,7 @@
       ? localStorage.setItem("ampersansystemappsdisplaymode", 1)
       : localStorage.setItem("ampersansystemappsdisplaymode", 0);
 
-  }, false);
+  };
 
   document.getElementById('debugmenutoggle').addEventListener('click', function () {
 
@@ -539,12 +542,13 @@
 
   }, false);
 
-  document.getElementById('welcomemessage').addEventListener('click', function () {
+  function welcomemessagedismissed() {
 
     document.getElementById("welcomemessage").style.display = "none"
     localStorage.setItem("ampersansystemwelcomemessage", 0)
+    console.log("Welcome Message Dismissed")
 
-  }, false);
+  };
 
   if (localStorage.getItem("ampersansystemwelcomemessage") == 0) {
     document.getElementById("welcomemessage").style.display = "none"
@@ -583,15 +587,9 @@
 
 <script src="/appssimpleinjector.js"></script>
 <script>
-  installapps("Settings")
-  installapps("Notes")
-  installapps("NULL")
-  installapps("NULL")
-  installapps("NULL")
-  installapps("NULL")
-  installapps("NULL")
-  installapps("NULL")
-  installapps("NULL")
-  installapps("NULL")
+  installapps("errorHD")
+  installapps("errorHD")
+  installapps("errorHD")
+  installapps("errorHD")
   installapps("errorHD")
 </script>
